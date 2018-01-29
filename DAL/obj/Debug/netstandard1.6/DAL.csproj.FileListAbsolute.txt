@@ -1,0 +1,71 @@
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+c:\users\kmeghana\documents\visual studio 2017\Projects\IdentityScoreJult28\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\aug082017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Sep11_2017\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Documents\Visual Studio 2017\Projects\Aug13\IdentityPstarDev01\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\bin\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Debug\netstandard1.6\DAL.csprojResolveAssemblyReference.cache

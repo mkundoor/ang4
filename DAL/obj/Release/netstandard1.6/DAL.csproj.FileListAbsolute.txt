@@ -1,0 +1,54 @@
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\CFAR\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2 - Copy (2)\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase2A - Copy\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\bin\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csprojResolveAssemblyReference.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\obj\Release\netstandard1.6\DAL.AssemblyInfoInputs.cache
