@@ -1,0 +1,31 @@
+<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left"><i class="fa fa-user-circle-o"></i>Edit</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              
+                <form novalidate>
+                    <div class="form-group has-feedback">
+                        <div class="col-md-9"> <input type="text" placeholder="List your Task" class="form-control" name="task" id = "task" [(ngModel)]="model.task" #task="ngModel"  maxlength="50">  </div>
+                        <div class="col-md-3">
+                            <label class="checkbox-inline"><input type="checkbox" value="" name="adminOnly" id = "adminOnly" [(ngModel)]="model.adminOnly" #adminOnly="ngModel">Admin Only</label>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="pull-right">
+                    <button  type="button" (click)="hide()" class="btn btn-danger" [disabled]="isSaving"><i class='fa fa-times'></i> cancel</button>
+                    <button type="submit" (click) ="save()" class="btn btn-primary" [disabled]="isSaving"><i *ngIf="!isSaving" class='fa fa-save'></i><i *ngIf="isSaving" class='fa fa-circle-o-notch fa-spin'></i> save</button>
+</div>
+            </div>
+        </div>
+    </div>
+</div>

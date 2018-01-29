@@ -1,0 +1,225 @@
+﻿.RegisterHeader {
+    margin-bottom: 20px;
+    color: #b48608;
+}
+
+.container-color {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f4f7f8;
+    /*background-color: #003366;*/
+}
+
+.bg-form {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    span.input-group-addon i {
+        color: #009edf;
+        font-size: 17px;
+    }
+}
+
+h1 {
+    color: #b48608;
+    font-family: 'Droid serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    margin: 10px 0 0 4px;
+    text-align: center;
+}
+
+p {
+    color: dimgrey;
+    font-family: 'Droid serif', serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 44px;
+    margin: 6px 0 0 6px;
+    text-align: left;
+}
+
+.box {
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+.dp-popup {
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+
+.input-group.date {
+    width: 200px;
+}
+
+/**********SOCIAL MEDIA ICONS CSS ****************/
+.btn-social-icon {
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 34px;
+    width: 34px;
+    padding: 0
+}
+
+    .btn-social-icon :first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 32px;
+        line-height: 34px;
+        font-size: 1.6em;
+        text-align: center;
+        border-right: 1px solid rgba(0,0,0,0.2)
+    }
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2)
+}
+
+    .btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active, .open .dropdown-toggle.btn-facebook {
+        color: #fff;
+        background-color: #30487b;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+    .btn-facebook:active, .btn-facebook.active, .open .dropdown-toggle.btn-facebook {
+        background-image: none
+    }
+
+    .btn-facebook.disabled, .btn-facebook[disabled], fieldset[disabled] .btn-facebook, .btn-facebook.disabled:hover, .btn-facebook[disabled]:hover, fieldset[disabled] .btn-facebook:hover, .btn-facebook.disabled:focus, .btn-facebook[disabled]:focus, fieldset[disabled] .btn-facebook:focus, .btn-facebook.disabled:active, .btn-facebook[disabled]:active, fieldset[disabled] .btn-facebook:active, .btn-facebook.disabled.active, .btn-facebook[disabled].active, fieldset[disabled] .btn-facebook.active {
+        background-color: #3b5998;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+.btn-twitter {
+    color: #fff;
+    background-color: #55acee;
+    border-color: rgba(0,0,0,0.2)
+}
+
+    .btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active, .btn-twitter.active, .open .dropdown-toggle.btn-twitter {
+        color: #fff;
+        background-color: #309aea;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+    .btn-twitter:active, .btn-twitter.active, .open .dropdown-toggle.btn-twitter {
+        background-image: none
+    }
+
+    .btn-twitter.disabled, .btn-twitter[disabled], fieldset[disabled] .btn-twitter, .btn-twitter.disabled:hover, .btn-twitter[disabled]:hover, fieldset[disabled] .btn-twitter:hover, .btn-twitter.disabled:focus, .btn-twitter[disabled]:focus, fieldset[disabled] .btn-twitter:focus, .btn-twitter.disabled:active, .btn-twitter[disabled]:active, fieldset[disabled] .btn-twitter:active, .btn-twitter.disabled.active, .btn-twitter[disabled].active, fieldset[disabled] .btn-twitter.active {
+        background-color: #55acee;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+.btn-google-plus {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: rgba(0,0,0,0.2)
+}
+
+    .btn-google-plus:hover, .btn-google-plus:focus, .btn-google-plus:active, .btn-google-plus.active, .open .dropdown-toggle.btn-google-plus {
+        color: #fff;
+        background-color: #ca3523;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+    .btn-google-plus:active, .btn-google-plus.active, .open .dropdown-toggle.btn-google-plus {
+        background-image: none
+    }
+
+    .btn-google-plus.disabled, .btn-google-plus[disabled], fieldset[disabled] .btn-google-plus, .btn-google-plus.disabled:hover, .btn-google-plus[disabled]:hover, fieldset[disabled] .btn-google-plus:hover, .btn-google-plus.disabled:focus, .btn-google-plus[disabled]:focus, fieldset[disabled] .btn-google-plus:focus, .btn-google-plus.disabled:active, .btn-google-plus[disabled]:active, fieldset[disabled] .btn-google-plus:active, .btn-google-plus.disabled.active, .btn-google-plus[disabled].active, fieldset[disabled] .btn-google-plus.active {
+        background-color: #dd4b39;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+.btn-instagram {
+    color: #fff;
+    background-color: #3f729b;
+    border-color: rgba(0,0,0,0.2)
+}
+
+    .btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
+        color: #fff;
+        background-color: #335d7e;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+    .btn-instagram:active, .btn-instagram.active, .open .dropdown-toggle.btn-instagram {
+        background-image: none
+    }
+
+    .btn-instagram.disabled, .btn-instagram[disabled], fieldset[disabled] .btn-instagram, .btn-instagram.disabled:hover, .btn-instagram[disabled]:hover, fieldset[disabled] .btn-instagram:hover, .btn-instagram.disabled:focus, .btn-instagram[disabled]:focus, fieldset[disabled] .btn-instagram:focus, .btn-instagram.disabled:active, .btn-instagram[disabled]:active, fieldset[disabled] .btn-instagram:active, .btn-instagram.disabled.active, .btn-instagram[disabled].active, fieldset[disabled] .btn-instagram.active {
+        background-color: #3f729b;
+        border-color: rgba(0,0,0,0.2)
+    }
+
+.social-linkedin {
+    background-color: #4875B4;
+    border-color: #466b99;
+}
+
+    .social-linkedin:hover {
+        background-color: #466b99;
+        border-color: #3b5a7c;
+    }
+
+.Colpad {
+    padding: 5px !important;
+    margin: 5px !important;
+}
+
+.othercss {
+    padding: 5px !important;
+    margin-left: 55px !important;
+}
+
+fieldset {
+    margin: 0px 4px 0px 4px;
+    border: 1px solid silver;
+    padding: 0px 0px 0px 6px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+legend {
+    color: dimgrey;
+    font-family: 'Droid serif', serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 44px;
+    margin: 6px 0 0 6px;
+    text-align: left;
+}
+
+h5 {
+    color: #808080;
+}
+
+/*.table-striped > tbody > tr:nth-child(odd) > td,
+tr.found {
+    background-color: #b9ddf7;
+}*/
+
+

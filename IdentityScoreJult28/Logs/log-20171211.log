@@ -1,0 +1,1306 @@
+2017-12-11T09:58:35.3271631-05:00  [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2017-12-11T09:58:35.5724432-05:00  [INF] Executed DbCommand (225ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2017-12-11T09:58:35.6667508-05:00  [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2017-12-11T09:58:36.7226507-05:00  [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-12-11T09:58:36.8430291-05:00  [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-12-11T09:58:38.2385286-05:00 0HLA0KUKGHJ2S [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2017-12-11T09:58:39.1791013-05:00 0HLA0KUKGHJ2S [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T09:58:40.3207730-05:00 0HLA0KUKGHJ2S [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-11T09:58:49.2017903-05:00 0HLA0KUKGHJ2S [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-11T09:58:53.5805737-05:00 0HLA0KUKGHJ2S [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 13546.3331ms (afa2e885)
+2017-12-11T09:58:53.6202358-05:00 0HLA0KUKGHJ2S [INF] Request finished in 15433.4498ms 200 text/html; charset=utf-8 (15c52c40)
+2017-12-11T09:58:53.6317664-05:00 0HLA0KUKGHJ2T [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=ddIqRo2Nw1g6L_gee5_tNI41x_iFdUjw6GCWN1DZnXI   (e5be5b71)
+2017-12-11T09:59:59.5270404-05:00  [INF] webpack built 50494353e59615f4366c in 86359ms (a21e22b0)
+2017-12-11T10:00:01.5262240-05:00  [ERR] Hash: 50494353e59615f4366c
+Version: webpack 2.6.1
+Time: 86359ms
+                               Asset     Size  Chunks                    Chunk Names
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+fd1f56af8e7577e1c3d8a7b508fba499.png  30.5 kB          [emitted]         
+d3ad436c1c84555e6738bf177aecc987.png  43.6 kB          [emitted]         
+b118353131dc197cb748c794c10473e7.png  25.6 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+                      main-client.js  15.8 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  19.3 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 15.5 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+  [985] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [986] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [987] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [1030] ./ClientApp/app/app.module.ts 16.8 kB {0} [built]
+ [1737] ./~/querystring-es3/index.js 127 bytes {0} [built]
+ [1976] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [2034] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [2035] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [2064] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2068] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2074] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2075] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2092] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2096] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 2082 hidden modules
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5646:15-36 Critical dependency: the request of a dependency is an expression
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5662:15-102 Critical dependency: the request of a dependency is an expression
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+
+ERROR in ./ClientApp/app/app.module.ts
+Module not found: Error: Can't resolve 'demo-utils/module' in 'C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app'
+ @ ./ClientApp/app/app.module.ts 35:15-43
+ @ ./ClientApp/boot-client.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts
+
+ERROR in [at-loader] ./ClientApp/app/app.module.ts:31:33 
+    TS2307: Cannot find module 'demo-utils/module'.
+
+ERROR in [at-loader] ./ClientApp/app/components/scheduling/scheduling.component.ts:11:24 
+    TS2307: Cannot find module '../demo-utils/colors'. (6798060d)
+2017-12-11T10:00:18.1622792-05:00 0HLA0KUKGHJ2T [INF] Request finished in 84531.0998ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T10:00:20.8086051-05:00 0HLA0KUKGHJ2U [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:00:20.8903830-05:00 0HLA0KUKGHJ2V [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:00:21.3635005-05:00 0HLA0KUKGHJ30 [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2017-12-11T10:00:25.5386432-05:00 0HLA0KUKGHJ2U [INF] Request finished in 4729.9294ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:00:25.5822820-05:00 0HLA0KUKGHJ2V [INF] Request finished in 4691.2274ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:00:25.8195063-05:00 0HLA0KUKGHJ31 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2017-12-11T10:00:25.8631364-05:00 0HLA0KUKGHJ31 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:00:25.8761804-05:00 0HLA0KUKGHJ31 [INF] Request finished in 56.6925ms 404  (15c52c40)
+2017-12-11T10:00:25.8847125-05:00 0HLA0KUKGHJ32 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2017-12-11T10:00:25.8852126-05:00 0HLA0KUKGHJ32 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:00:25.8857139-05:00 0HLA0KUKGHJ32 [INF] Request finished in 0.9001ms 404  (15c52c40)
+2017-12-11T10:14:31.9673610-05:00  [INF] webpack building... (478286db)
+2017-12-11T10:14:54.4837041-05:00  [INF] webpack built b811c7c5bce74803d429 in 22320ms (6443a4bb)
+2017-12-11T10:14:54.9271122-05:00  [ERR] Hash: b811c7c5bce74803d429
+Version: webpack 2.6.1
+Time: 22320ms
+                                   Asset      Size  Chunks                    Chunk Names
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    fd1f56af8e7577e1c3d8a7b508fba499.png   30.5 kB                            
+    d3ad436c1c84555e6738bf177aecc987.png   43.6 kB                            
+    b118353131dc197cb748c794c10473e7.png   25.6 kB                            
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   15.8 MB       0  [emitted]  [big]  main-client
+    0.50494353e59615f4366c.hot-update.js   7.39 kB       0  [emitted]         main-client
+    50494353e59615f4366c.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   19.3 MB       0  [emitted]         main-client
+0.50494353e59615f4366c.hot-update.js.map   10.4 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.50494353e59615f4366c.hot-update.js, main-client.js.map, 0.50494353e59615f4366c.hot-update.js.map (main-client) 15.5 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+   [17] external "vendor_be2a326321f1d1058a28" 42 bytes {0} [not cacheable]
+  [985] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [986] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [987] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [1030] ./ClientApp/app/app.module.ts 16.8 kB {0} [built]
+ [1737] ./~/querystring-es3/index.js 127 bytes {0}
+ [1976] ./~/strip-ansi/index.js 161 bytes {0}
+ [2035] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [2064] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2068] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2074] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2075] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2092] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2096] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 2083 hidden modules
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5646:15-36 Critical dependency: the request of a dependency is an expression
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5662:15-102 Critical dependency: the request of a dependency is an expression
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+
+ERROR in ./ClientApp/app/app.module.ts
+Module not found: Error: Can't resolve 'demo-utils/module' in 'C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app'
+ @ ./ClientApp/app/app.module.ts 35:15-43
+ @ ./ClientApp/boot-client.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts
+
+ERROR in [at-loader] ./ClientApp/app/app.module.ts:31:33 
+    TS2307: Cannot find module 'demo-utils/module'. (71a4a52b)
+2017-12-11T10:14:55.2732385-05:00  [INF] webpack building... (478286db)
+2017-12-11T10:14:59.2496136-05:00  [INF] webpack built b811c7c5bce74803d429 in 3927ms (1441f02c)
+2017-12-11T10:14:59.5186992-05:00  [ERR] Hash: b811c7c5bce74803d429
+Version: webpack 2.6.1
+Time: 3927ms
+                               Asset     Size  Chunks         Chunk Names
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB                 
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB                 
+fd1f56af8e7577e1c3d8a7b508fba499.png  30.5 kB                 
+d3ad436c1c84555e6738bf177aecc987.png  43.6 kB                 
+b118353131dc197cb748c794c10473e7.png  25.6 kB                 
+912ec66d7572ff821749319396470bde.svg   444 kB          [big]  
+                      main-client.js  15.8 MB       0  [big]  main-client
+                  main-client.js.map  19.3 MB       0         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 15.5 MB [entry]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+   [17] external "vendor_be2a326321f1d1058a28" 42 bytes {0} [not cacheable]
+  [985] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [986] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [987] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [1030] ./ClientApp/app/app.module.ts 16.8 kB {0} [built]
+ [1737] ./~/querystring-es3/index.js 127 bytes {0}
+ [1976] ./~/strip-ansi/index.js 161 bytes {0}
+ [2035] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [2064] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2068] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2074] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2075] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2092] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2096] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 2083 hidden modules
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5646:15-36 Critical dependency: the request of a dependency is an expression
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5662:15-102 Critical dependency: the request of a dependency is an expression
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+
+ERROR in ./ClientApp/app/app.module.ts
+Module not found: Error: Can't resolve 'demo-utils/module' in 'C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app'
+ @ ./ClientApp/app/app.module.ts 35:15-43
+ @ ./ClientApp/boot-client.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts
+
+ERROR in [at-loader] ./ClientApp/app/app.module.ts:31:33 
+    TS2307: Cannot find module 'demo-utils/module'. (e4c7d6c5)
+2017-12-11T10:15:28.2186805-05:00  [INF] webpack building... (478286db)
+2017-12-11T10:15:41.8023290-05:00  [INF] webpack built a976978a949c16c1117a in 13134ms (d3e3ea6c)
+2017-12-11T10:15:42.6773029-05:00 0HLA0KUKGHJ33 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/50494353e59615f4366c.hot-update.json   (e5be5b71)
+2017-12-11T10:15:42.8172598-05:00 0HLA0KUKGHJ33 [INF] Request finished in 140.1891ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:42.8995477-05:00  [ERR] Hash: a976978a949c16c1117a
+Version: webpack 2.6.1
+Time: 13134ms
+                                   Asset      Size  Chunks                    Chunk Names
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    fd1f56af8e7577e1c3d8a7b508fba499.png   30.5 kB                            
+    d3ad436c1c84555e6738bf177aecc987.png   43.6 kB                            
+    b118353131dc197cb748c794c10473e7.png   25.6 kB                            
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   15.9 MB       0  [emitted]  [big]  main-client
+    0.b811c7c5bce74803d429.hot-update.js   24.9 kB       0  [emitted]         main-client
+    b811c7c5bce74803d429.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   19.3 MB       0  [emitted]         main-client
+0.b811c7c5bce74803d429.hot-update.js.map   26.8 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.b811c7c5bce74803d429.hot-update.js, main-client.js.map, 0.b811c7c5bce74803d429.hot-update.js.map (main-client) 15.5 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+   [17] external "vendor_be2a326321f1d1058a28" 42 bytes {0} [not cacheable]
+  [985] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [986] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [987] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [1030] ./ClientApp/app/app.module.ts 16.8 kB {0} [built]
+ [1737] ./~/querystring-es3/index.js 127 bytes {0}
+ [1976] ./~/strip-ansi/index.js 161 bytes {0}
+ [2035] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [2064] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2068] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2074] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2075] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2092] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2096] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 2086 hidden modules
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5646:15-36 Critical dependency: the request of a dependency is an expression
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5662:15-102 Critical dependency: the request of a dependency is an expression
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css (54ed66e2)
+2017-12-11T10:15:42.8995477-05:00 0HLA0KUKGHJ34 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.50494353e59615f4366c.hot-update.js   (e5be5b71)
+2017-12-11T10:15:42.9602493-05:00 0HLA0KUKGHJ34 [INF] Request finished in 60.7963ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:43.0299695-05:00 0HLA0KUKGHJ35 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.50494353e59615f4366c.hot-update.js.map   (e5be5b71)
+2017-12-11T10:15:43.0435095-05:00 0HLA0KUKGHJ36 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/b811c7c5bce74803d429.hot-update.json   (e5be5b71)
+2017-12-11T10:15:43.1037130-05:00 0HLA0KUKGHJ37 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.50494353e59615f4366c.hot-update.js.map   (e5be5b71)
+2017-12-11T10:15:43.1488631-05:00 0HLA0KUKGHJ36 [INF] Request finished in 105.6455ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:43.1789618-05:00 0HLA0KUKGHJ38 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.b811c7c5bce74803d429.hot-update.js   (e5be5b71)
+2017-12-11T10:15:43.2100549-05:00 0HLA0KUKGHJ35 [INF] Request finished in 179.7156ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:43.7817745-05:00 0HLA0KUKGHJ37 [INF] Request finished in 677.7083ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:43.9227361-05:00 0HLA0KUKGHJ38 [INF] Request finished in 743.7776ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:43.9232378-05:00 0HLA0KUKGHJ39 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2017-12-11T10:15:43.9663698-05:00 0HLA0KUKGHJ39 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:15:43.9663698-05:00 0HLA0KUKGHJ39 [INF] Request finished in 43.5163ms 404  (15c52c40)
+2017-12-11T10:15:43.9884362-05:00 0HLA0KUKGHJ3A [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2017-12-11T10:15:43.9889375-05:00 0HLA0KUKGHJ3A [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:15:43.9894392-05:00 0HLA0KUKGHJ3A [INF] Request finished in 1.1983ms 404  (15c52c40)
+2017-12-11T10:15:43.9919455-05:00 0HLA0KUKGHJ3B [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.b811c7c5bce74803d429.hot-update.js.map   (e5be5b71)
+2017-12-11T10:15:44.0727364-05:00 0HLA0KUKGHJ3B [INF] Request finished in 80.6986ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:44.1053397-05:00 0HLA0KUKGHJ3C [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.b811c7c5bce74803d429.hot-update.js.map   (e5be5b71)
+2017-12-11T10:15:44.1831033-05:00 0HLA0KUKGHJ3C [INF] Request finished in 77.6172ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:15:44.1876144-05:00 0HLA0KUKGHJ3D [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2017-12-11T10:15:44.2272437-05:00 0HLA0KUKGHJ3D [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:15:44.2277446-05:00 0HLA0KUKGHJ3D [INF] Request finished in 40.009ms 404  (15c52c40)
+2017-12-11T10:15:44.2377712-05:00 0HLA0KUKGHJ3E [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2017-12-11T10:15:44.2382726-05:00 0HLA0KUKGHJ3E [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:15:44.2382726-05:00 0HLA0KUKGHJ3E [INF] Request finished in 0.5587ms 404  (15c52c40)
+2017-12-11T10:18:19.7832157-05:00 0HLA0KUKGHJ30 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-12-11T10:18:19.7877277-05:00 0HLA0KUKGHJ30 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2017-12-11T10:18:19.8158194-05:00 0HLA0KUKGHJ30 [ERR] Connection id ""0HLA0KUKDPMBA"": An unhandled exception was thrown by the application. (8c14976b)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-12-11T10:18:19.8158194-05:00 0HLA0KUKGHJ30 [INF] Request finished in 1078459.9089ms 200 text/event-stream; charset=utf-8 (15c52c40)
+2017-12-11T10:19:00.1059998-05:00  [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2017-12-11T10:19:00.1616847-05:00  [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2017-12-11T10:19:00.1952968-05:00  [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2017-12-11T10:19:00.9720560-05:00  [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-12-11T10:19:01.0638236-05:00  [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-12-11T10:19:01.5943779-05:00 0HLA0LA13C5HT [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2017-12-11T10:19:01.7544544-05:00 0HLA0LA13C5HT [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:19:02.5973633-05:00 0HLA0LA13C5HT [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-11T10:19:06.7073158-05:00 0HLA0LA13C5HT [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-11T10:19:07.8650999-05:00 0HLA0LA13C5HT [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 5490.5292ms (afa2e885)
+2017-12-11T10:19:07.9288189-05:00 0HLA0LA13C5HT [INF] Request finished in 6368.9312ms 200 text/html; charset=utf-8 (15c52c40)
+2017-12-11T10:19:07.9699460-05:00 0HLA0LA13C5HU [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=NAPe1sTgRRyBfy1bdKZ4KdHE2qdKLFSB43wfMcpNE2k   (e5be5b71)
+2017-12-11T10:20:06.7893055-05:00  [INF] webpack built 7453c78cf0e7a593f0c2 in 68516ms (31eff66f)
+2017-12-11T10:20:09.0261549-05:00  [ERR] Hash: 7453c78cf0e7a593f0c2
+Version: webpack 2.6.1
+Time: 68516ms
+                               Asset     Size  Chunks                    Chunk Names
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+fd1f56af8e7577e1c3d8a7b508fba499.png  30.5 kB          [emitted]         
+d3ad436c1c84555e6738bf177aecc987.png  43.6 kB          [emitted]         
+b118353131dc197cb748c794c10473e7.png  25.6 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+                      main-client.js  15.9 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  19.3 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 15.5 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+  [988] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [989] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [990] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [1031] ./ClientApp/app/app.module.ts 16.8 kB {0} [built]
+ [1741] ./~/querystring-es3/index.js 127 bytes {0} [built]
+ [1980] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [2038] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [2039] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [2068] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2072] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2078] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2079] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2096] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_be2a326321f1d1058a28 42 bytes {0} [not cacheable] [built]
+ [2100] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 2086 hidden modules
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5646:15-36 Critical dependency: the request of a dependency is an expression
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5662:15-102 Critical dependency: the request of a dependency is an expression
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css (439c2ef8)
+2017-12-11T10:20:18.5843406-05:00 0HLA0LA13C5HU [INF] Request finished in 70614.921ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T10:20:21.1556150-05:00 0HLA0LA13C5HV [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:20:23.1239299-05:00 0HLA0LA13C5I0 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:20:28.3474522-05:00 0HLA0LA13C5HV [INF] Request finished in 7192.1739ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:20:30.7382958-05:00 0HLA0LA13C5I0 [INF] Request finished in 7615.0002ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:20:30.9329276-05:00 0HLA0LA13C5I1 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2017-12-11T10:20:31.0006683-05:00 0HLA0LA13C5I1 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:20:31.0112036-05:00 0HLA0LA13C5I1 [INF] Request finished in 78.2469ms 404  (15c52c40)
+2017-12-11T10:20:31.0217320-05:00 0HLA0LA13C5I2 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2017-12-11T10:20:31.0222341-05:00 0HLA0LA13C5I2 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:20:31.0232360-05:00 0HLA0LA13C5I2 [INF] Request finished in 1.5827ms 404  (15c52c40)
+2017-12-11T10:20:31.1682644-05:00 0HLA0LA13C5I3 [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2017-12-11T10:21:15.6589461-05:00 0HLA0LA13C5I4 [INF] Request starting HTTP/1.1 GET http://localhost:4863/pstar/asc   (e5be5b71)
+2017-12-11T10:21:15.6594474-05:00 0HLA0LA13C5I4 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:21:15.7035969-05:00 0HLA0LA13C5I4 [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-11T10:21:15.7060937-05:00 0HLA0LA13C5I4 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-11T10:21:16.6586245-05:00 0HLA0LA13C5I4 [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 998.114ms (afa2e885)
+2017-12-11T10:21:16.6596259-05:00 0HLA0LA13C5I4 [INF] Request finished in 1000.1571ms 200 text/html; charset=utf-8 (15c52c40)
+2017-12-11T10:21:16.7739977-05:00 0HLA0LA13C5I5 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=Lrafq_3_EEbszOqzr-RZ80X1Uh3dbFc_Wjz-4sYuI-E   (e5be5b71)
+2017-12-11T10:21:22.4558072-05:00 0HLA0LA13C5I5 [INF] Request finished in 5681.9474ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T10:21:24.9993760-05:00 0HLA0LA13C5I6 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:21:26.7676827-05:00 0HLA0LA13C5I7 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:21:33.8387066-05:00 0HLA0LA13C5I8 [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2017-12-11T10:21:34.8524317-05:00 0HLA0LA13C5I7 [INF] Request finished in 8085.1483ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:21:34.9422211-05:00 0HLA0LA13C5I6 [INF] Request finished in 9942.9558ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:21:35.0209586-05:00 0HLA0LA13C5I9 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2017-12-11T10:21:35.0888774-05:00 0HLA0LA13C5I9 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:21:35.0908885-05:00 0HLA0LA13C5I9 [INF] Request finished in 69.7382ms 404  (15c52c40)
+2017-12-11T10:21:35.0999214-05:00 0HLA0LA13C5IA [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2017-12-11T10:21:35.1004219-05:00 0HLA0LA13C5IA [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:21:35.1004219-05:00 0HLA0LA13C5IA [INF] Request finished in 0.8549ms 404  (15c52c40)
+2017-12-11T10:21:36.0235695-05:00  [INF] Connection id ""0HLA0LA11FVVM"" communication error. (7fa6c29c)
+Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4081 ECANCELED operation canceled
+2017-12-11T10:21:36.1915943-05:00 0HLA0LA13C5I3 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-12-11T10:21:36.1986129-05:00 0HLA0LA13C5I3 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2017-12-11T10:21:36.8781964-05:00 0HLA0LA13C5I3 [ERR] Connection id ""0HLA0LA11FVVM"": An unhandled exception was thrown by the application. (8c14976b)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-12-11T10:21:36.8781964-05:00 0HLA0LA13C5I3 [INF] Request finished in 65710.4746ms 200 text/event-stream; charset=utf-8 (15c52c40)
+2017-12-11T10:22:37.9790286-05:00 0HLA0LA13C5IB [INF] Request starting HTTP/1.1 GET http://localhost:4863/pstar/schedule   (e5be5b71)
+2017-12-11T10:22:37.9810344-05:00 0HLA0LA13C5IB [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:22:38.0078379-05:00 0HLA0LA13C5IB [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-11T10:22:38.0088401-05:00 0HLA0LA13C5IB [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-11T10:22:38.0093423-05:00 0HLA0LA13C5IB [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 27.9881ms (afa2e885)
+2017-12-11T10:22:38.0098436-05:00 0HLA0LA13C5IB [INF] Request finished in 30.601ms 200 text/html; charset=utf-8 (15c52c40)
+2017-12-11T10:22:38.2290989-05:00 0HLA0LA13C5IC [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=Lrafq_3_EEbszOqzr-RZ80X1Uh3dbFc_Wjz-4sYuI-E   (e5be5b71)
+2017-12-11T10:22:44.4341056-05:00 0HLA0LA13C5IC [INF] Request finished in 6205.1294ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T10:22:46.0571861-05:00 0HLA0LA13C5I8 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-12-11T10:22:46.0622047-05:00 0HLA0LA13C5I8 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2017-12-11T10:22:46.0822838-05:00 0HLA0LA13C5I8 [ERR] Connection id ""0HLA0LA11FVVP"": An unhandled exception was thrown by the application. (8c14976b)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-12-11T10:22:46.0908105-05:00 0HLA0LA13C5I8 [INF] Request finished in 72253.6065ms 200 text/event-stream; charset=utf-8 (15c52c40)
+2017-12-11T10:22:46.5502584-05:00 0HLA0LA13C5ID [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T10:22:53.7301153-05:00 0HLA0LA13C5ID [INF] Request finished in 7179.874ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T10:22:54.5895594-05:00 0HLA0LA13C5IE [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2017-12-11T10:24:57.3445919-05:00 0HLA0LA13C5IF [INF] Request starting HTTP/1.1 POST http://localhost:4863/connect/token application/x-www-form-urlencoded 142 (e5be5b71)
+2017-12-11T10:24:57.5258199-05:00 0HLA0LA13C5IF [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}". (ebc01284)
+2017-12-11T10:24:57.5458801-05:00 0HLA0LA13C5IF [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2017-12-11T10:24:57.5463810-05:00 0HLA0LA13C5IF [INF] The token request was successfully validated. (d7e51e65)
+2017-12-11T10:24:57.5523974-05:00 0HLA0LA13C5IF [DBG] The default token request handling was skipped from user code. (72afae05)
+2017-12-11T10:24:57.5528996-05:00 0HLA0LA13C5IF [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T10:24:57.6941213-05:00 0HLA0LA13C5IF [INF] Executing action method "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" with arguments (["{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}"]) - ModelState is Valid (ba7f4ac2)
+2017-12-11T10:24:58.0196471-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (116ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-12-11T10:24:58.0721288-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-12-11T10:24:58.4619496-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (37ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-12-11T10:24:58.4975592-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (18ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2017-12-11T10:24:58.5615092-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (26ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2017-12-11T10:24:58.6044123-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (18ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-12-11T10:24:58.6280056-05:00 0HLA0LA13C5IF [INF] Executing SignInResult with authentication scheme ("ASOS") and the following principal: "System.Security.Claims.ClaimsPrincipal". (f8bf0a82)
+2017-12-11T10:24:58.6654187-05:00 0HLA0LA13C5IF [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2017-12-11T10:24:58.6654187-05:00 0HLA0LA13C5IF [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2017-12-11T10:24:58.6654187-05:00 0HLA0LA13C5IF [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2017-12-11T10:24:58.6654187-05:00 0HLA0LA13C5IF [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2017-12-11T10:24:59.0752504-05:00 0HLA0LA13C5IF [INF] Executed DbCommand (96ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4); (6438bdd5)
+2017-12-11T10:24:59.1108785-05:00 0HLA0LA13C5IF [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2017-12-11T10:24:59.1428524-05:00 0HLA0LA13C5IF [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2017-12-11T10:24:59.1614041-05:00 0HLA0LA13C5IF [INF] AuthenticationScheme: "ASOS" signed in. (c66dd7e7)
+2017-12-11T10:24:59.1619055-05:00 0HLA0LA13C5IF [INF] Executed action "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" in 1588.5895ms (afa2e885)
+2017-12-11T10:24:59.1679206-05:00 0HLA0LA13C5IF [INF] Request finished in 1823.9823ms 200 application/json;charset=UTF-8 (15c52c40)
+2017-12-11T10:25:06.2360974-05:00 0HLA0LA13C5IE [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-12-11T10:25:06.2401154-05:00 0HLA0LA13C5IE [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
+2017-12-11T10:25:06.2827708-05:00 0HLA0LA13C5IE [ERR] Connection id ""0HLA0LA11FVVQ"": An unhandled exception was thrown by the application. (8c14976b)
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.IO.Stream.<CopyToAsyncInternal>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-12-11T10:25:06.2837738-05:00 0HLA0LA13C5IE [INF] Request finished in 131694.0036ms 200 text/event-stream; charset=utf-8 (15c52c40)
+2017-12-11T19:22:01.9112300-05:00  [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2017-12-11T19:22:02.0997293-05:00  [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2017-12-11T19:22:02.1378312-05:00  [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2017-12-11T19:22:02.9860816-05:00  [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-12-11T19:22:03.0442351-05:00  [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-12-11T19:22:03.6850816-05:00 0HLA0UPFACMCA [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2017-12-11T19:22:03.8457715-05:00 0HLA0UPFACMCA [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T19:22:04.3521150-05:00 0HLA0UPFACMCA [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-12-11T19:22:07.0141795-05:00 0HLA0UPFACMCA [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-12-11T19:22:08.0810103-05:00 0HLA0UPFACMCA [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 3840.5809ms (afa2e885)
+2017-12-11T19:22:08.1351527-05:00 0HLA0UPFACMCA [INF] Request finished in 4462.8484ms 200 text/html; charset=utf-8 (15c52c40)
+2017-12-11T19:22:08.1762622-05:00 0HLA0UPFACMCB [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/vendor.css?v=yrw9MTfDil55iHyPojwYD2quA2ApcH4FrgpbDk_FeeM   (e5be5b71)
+2017-12-11T19:22:08.1902998-05:00 0HLA0UPFACMCC [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=q_5oJsPnbrvi3hS6s3Od8igpxo1EABDixaGRVwQ1S4g   (e5be5b71)
+2017-12-11T19:22:08.1913021-05:00 0HLA0UPFACMCD [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/vendor.js?v=BkbGIQnBsrT4bTZVIXy3_QTmbneqbTrl-2MCOEvzDUs   (e5be5b71)
+2017-12-11T19:22:55.5051393-05:00  [INF] webpack built 2c58dbdf063208d7c403 in 55442ms (c7964fc0)
+2017-12-11T19:22:56.2292354-05:00 0HLA0UPFACMCB [INF] Sending file. Request path: '"/dist/vendor.css"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\vendor.css"' (27b0a520)
+2017-12-11T19:22:56.4939378-05:00 0HLA0UPFACMCD [INF] Sending file. Request path: '"/dist/vendor.js"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\vendor.js"' (27b0a520)
+2017-12-11T19:22:57.0794919-05:00  [ERR] Hash: 2c58dbdf063208d7c403
+Version: webpack 2.6.1
+Time: 55442ms
+                               Asset     Size  Chunks                    Chunk Names
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+fd1f56af8e7577e1c3d8a7b508fba499.png  30.5 kB          [emitted]         
+d3ad436c1c84555e6738bf177aecc987.png  43.6 kB          [emitted]         
+b118353131dc197cb748c794c10473e7.png  25.6 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+                      main-client.js  15.2 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  18.6 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 14.9 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [988] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [989] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [990] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] ./ClientApp/app/app.module.ts 16.8 kB {0} [built]
+ [1740] ./~/querystring-es3/index.js 127 bytes {0} [built]
+ [1979] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [2037] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [2038] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [2067] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [2071] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [2078] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [2079] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [2096] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [2100] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 2086 hidden modules
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5646:15-36 Critical dependency: the request of a dependency is an expression
+
+WARNING in C:/Users/kmeghana/Source/Repos/PstarPhase2A/~/@angular/core/@angular/core.es5.js
+5662:15-102 Critical dependency: the request of a dependency is an expression
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/SurveyUrlEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\SurveyUrlEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase2A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\SurveyUrlEditModal.component.css (e46f5ef2)
+2017-12-11T19:22:58.6422519-05:00 0HLA0UPFACMCB [INF] Request finished in 50466.9854ms 200 text/css (15c52c40)
+2017-12-11T19:23:00.4029238-05:00 0HLA0UPFACMCD [INF] Request finished in 52212.2715ms 200 application/javascript (15c52c40)
+2017-12-11T19:23:08.1720567-05:00 0HLA0UPFACMCC [INF] Request finished in 59981.8379ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-12-11T19:23:11.7522992-05:00 0HLA0UPFACMCE [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2017-12-11T19:23:13.9842215-05:00 0HLA0UPFACMCE [INF] Request finished in 2230.5042ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-12-11T19:23:14.1753490-05:00 0HLA0UPFACMCF [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2017-12-11T19:23:14.2174607-05:00 0HLA0UPFACMCF [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T19:23:14.2274873-05:00 0HLA0UPFACMCF [INF] Request finished in 52.5005ms 404  (15c52c40)
+2017-12-11T19:23:14.2325035-05:00 0HLA0UPFACMCG [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2017-12-11T19:23:14.2335041-05:00 0HLA0UPFACMCG [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2017-12-11T19:23:14.2335041-05:00 0HLA0UPFACMCG [INF] Request finished in 0.8061ms 404  (15c52c40)
+2017-12-11T19:23:16.5165616-05:00 0HLA0UPFACMCH [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)

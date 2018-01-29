@@ -1,0 +1,195 @@
+2018-01-16T23:46:37.3398593-05:00  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Login failed for user ''.) ---> System.Data.SqlClient.SqlException: Login failed for user ''.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass13_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass13_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__6`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.<ExistsAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.<MigrateAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\DatabaseInitializer.cs:line 42
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at IdentityScoreJult28.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, IDatabaseInitializer databaseInitializer, ILoggerFactory loggerFactory) in C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\Startup.cs:line 275
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+---> (Inner Exception #0) System.Data.SqlClient.SqlException: Login failed for user ''.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass13_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass13_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__6`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.<ExistsAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.<MigrateAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\DAL\DatabaseInitializer.cs:line 42
+ClientConnectionId:e74b00a5-bbff-44a9-b8b7-36ccf7c63a94
+Error Number:18456,State:1,Class:14<---
+
+2018-01-16T23:46:37.3388678-05:00  [INF] webpack built 627b62addb2b3bb6207d in 31854ms (2681ebae)
+2018-01-16T23:55:50.4321925-05:00  [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-16T23:55:50.4723010-05:00  [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-16T23:55:50.4853401-05:00  [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2018-01-16T23:55:51.4168338-05:00  [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-16T23:55:51.4609505-05:00  [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-16T23:55:51.9381445-05:00 0HLATCQAOD18V [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2018-01-16T23:55:52.1717903-05:00 0HLATCQAOD18V [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-16T23:55:52.8864401-05:00 0HLATCQAOD18V [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-16T23:55:56.6373827-05:00 0HLATCQAOD18V [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-16T23:55:57.6287054-05:00 0HLATCQAOD18V [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 4873.5178ms (afa2e885)
+2018-01-16T23:55:57.7164383-05:00 0HLATCQAOD18V [INF] Request finished in 5825.6376ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-16T23:55:57.7911344-05:00 0HLATCQAOD190 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=fIsFDVxoCt9C7UNCuZcDVnSBDSFF5gJ9WGW-ePeqC-0   (e5be5b71)
+2018-01-16T23:56:30.2344894-05:00  [INF] webpack built 608f9535e53f69cf978e in 41696ms (9f7e2944)
+2018-01-16T23:57:13.4509284-05:00 0HLATCQAOD191 [INF] Request starting HTTP/1.1 POST http://localhost:4863/connect/token application/x-www-form-urlencoded 142 (e5be5b71)
+2018-01-16T23:57:13.4509284-05:00 0HLATCQAOD190 [INF] Request finished in 35603.9854ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-16T23:57:13.4509284-05:00 0HLATCQAOD192 [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2018-01-16T23:57:13.4509284-05:00 0HLATCQAOD193 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2018-01-16T23:57:13.4870275-05:00  [ERR] Hash: 608f9535e53f69cf978e
+Version: webpack 2.6.1
+Time: 41696ms
+                               Asset     Size  Chunks                    Chunk Names
+0c0c930a81c16cc16d269f2364f627f4.jpg   109 kB          [emitted]         
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+                      main-client.js  4.88 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  5.76 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 4.61 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [381] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [382] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [383] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [424] ./ClientApp/app/app.module.ts 17.2 kB {0} [built]
+  [734] ./~/querystring-es3/index.js 127 bytes {0} [built]
+  [966] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [1026] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [1027] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [1031] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1035] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1041] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1059] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1062] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 1048 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (6a1e4e50)
+2018-01-16T23:57:13.6605018-05:00  [INF] Connection id ""0HLATCQAM8PI2"" communication error. (7fa6c29c)
+Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4081 ECANCELED operation canceled
+2018-01-16T23:57:13.6615036-05:00  [INF] Connection id ""0HLATCQAM8PI2"" communication error. (7fa6c29c)
+Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4081 ECANCELED operation canceled

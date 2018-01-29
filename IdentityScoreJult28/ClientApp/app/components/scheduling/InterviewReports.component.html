@@ -1,0 +1,97 @@
+<div class="container">
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Please Select Study : </h4>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+
+                <select id="Id" #Id="ngModel" class="form-control" [(ngModel)]="nameId" (focus)=" getddlSurveyList()" name="Id" (change)="selectName();">
+                    <option [ngValue]="k.surveyId" *ngFor="let k of surveyListdata" >
+                        {{k.survey_Name}}
+                    </option>
+                </select>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <h4>Interviews reserved by partcipants</h4>
+
+    <schedule-grid [filteredList]="theeventslist"></schedule-grid>
+
+
+    <!--<ngx-datatable class="material colored-header sm table-hover"
+                       [loadingIndicator]="loadingIndicator"
+                       [rows]="theeventslist"
+                       [columns]="columns"
+                       [rowHeight]="35"
+                       [headerHeight]="35"
+                       [footerHeight]="35"
+                       [scrollbarV]="verticalScrollbar"
+                       [columnMode]="'force'"
+                       [sorts]="[{prop: 'name', dir: 'desc'}]"
+                       >
+
+
+            <ng-template #statusHeaderTemplate>
+                <i class="fa fa-check-square-o"></i>
+            </ng-template>
+            <ngx-datatable-column name="Interview" class="resizeable" >
+                <ng-template let-row="row" let-value="value"  ngx-datatable-cell-template>
+
+                        {{row.item1}}
+
+    </ng-template>
+            </ngx-datatable-column>
+
+
+            <ngx-datatable-column name="Start (dd/mm/yyyy)" class="resizeable">
+
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                        {{row.item2}}
+
+                </ng-template>
+            </ngx-datatable-column>
+
+
+            <ngx-datatable-column name="End Date-Time (dd/mm/yyyy)" class="resizeable">
+
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                        {{row.item3}}
+
+                </ng-template>
+            </ngx-datatable-column>
+
+
+        <ngx-datatable-column name="Participant Name" class="resizeable">
+
+            <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                <div class="btn btn-info btn-xs">
+                    {{row.item4}} {{row.item5}}
+                </div>
+            </ng-template>
+        </ngx-datatable-column>
+
+            <ngx-datatable-column name="Email Address" class="resizeable">
+
+                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+
+                    <a href="mailto: {{row.item6}}" >{{row.item6}}</a>
+
+                </ng-template>
+            </ngx-datatable-column>
+        </ngx-datatable>-->
+
+
+</div>
+
+

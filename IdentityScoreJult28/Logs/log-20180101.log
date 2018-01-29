@@ -1,0 +1,1358 @@
+2018-01-01T23:20:08.6870753-05:00  [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-01T23:20:08.7362045-05:00  [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-01T23:20:08.7823266-05:00  [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2018-01-01T23:20:09.8411304-05:00  [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-01T23:20:09.9143229-05:00  [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-01T23:20:10.4407154-05:00 0HLAHJ0EEAF23 [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2018-01-01T23:20:10.5710608-05:00 0HLAHJ0EEAF23 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:20:11.0593537-05:00 0HLAHJ0EEAF23 [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:20:14.2016719-05:00 0HLAHJ0EEAF23 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-01T23:20:14.8694394-05:00 0HLAHJ0EEAF23 [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 3929.2947ms (afa2e885)
+2018-01-01T23:20:14.9095447-05:00 0HLAHJ0EEAF24 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/vendor.js?v=BkbGIQnBsrT4bTZVIXy3_QTmbneqbTrl-2MCOEvzDUs   (e5be5b71)
+2018-01-01T23:20:14.9185694-05:00 0HLAHJ0EEAF25 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/vendor.css?v=yrw9MTfDil55iHyPojwYD2quA2ApcH4FrgpbDk_FeeM   (e5be5b71)
+2018-01-01T23:20:14.9235819-05:00 0HLAHJ0EEAF23 [INF] Request finished in 4512.7294ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-01T23:20:14.9336084-05:00 0HLAHJ0EEAF26 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=dxUG8GsOZC6sTQpwqoDbvnNgd_W-FDAaSgBB0hLYQGY   (e5be5b71)
+2018-01-01T23:20:14.9436349-05:00 0HLAHJ0EEAF26 [INF] Sending file. Request path: '"/dist/main-client.js"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\main-client.js"' (27b0a520)
+2018-01-01T23:20:14.9436349-05:00 0HLAHJ0EEAF25 [INF] Sending file. Request path: '"/dist/vendor.css"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\vendor.css"' (27b0a520)
+2018-01-01T23:20:14.9436349-05:00 0HLAHJ0EEAF24 [INF] Sending file. Request path: '"/dist/vendor.js"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\vendor.js"' (27b0a520)
+2018-01-01T23:20:15.0188340-05:00 0HLAHJ0EEAF25 [INF] Request finished in 100.809ms 200 text/css (15c52c40)
+2018-01-01T23:20:15.9312568-05:00 0HLAHJ0EEAF24 [INF] Request finished in 1021.8367ms 200 application/javascript (15c52c40)
+2018-01-01T23:20:16.0214957-05:00 0HLAHJ0EEAF26 [INF] Request finished in 1087.6114ms 200 application/javascript (15c52c40)
+2018-01-01T23:23:28.6053025-05:00  [INF] Executed DbCommand (143ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-01T23:23:28.6734818-05:00  [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-01T23:23:28.7055669-05:00  [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2018-01-01T23:23:29.4876425-05:00  [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-01T23:23:29.5467995-05:00  [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-01T23:23:30.1706426-05:00 0HLAHJ29V3GER [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2018-01-01T23:23:30.3370847-05:00 0HLAHJ29V3GER [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:23:31.0138813-05:00 0HLAHJ29V3GER [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:23:34.0494901-05:00 0HLAHJ29V3GER [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-01T23:23:34.8014859-05:00 0HLAHJ29V3GER [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 3900.6034ms (afa2e885)
+2018-01-01T23:23:34.8345729-05:00 0HLAHJ29V3GER [INF] Request finished in 4698.2486ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-01T23:24:02.9972242-05:00  [INF] webpack built 6fe27d8e20c2b19cf1c4 in 36196ms (ae2865c2)
+2018-01-01T23:24:03.5627239-05:00  [ERR] Hash: 6fe27d8e20c2b19cf1c4
+Version: webpack 2.6.1
+Time: 36196ms
+                               Asset     Size  Chunks                    Chunk Names
+0c0c930a81c16cc16d269f2364f627f4.jpg   109 kB          [emitted]         
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+                      main-client.js  4.85 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  5.72 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0} [built]
+  [963] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (b7cf933c)
+2018-01-01T23:24:59.3527789-05:00  [INF] Executed DbCommand (126ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-01T23:24:59.4169492-05:00  [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-01T23:24:59.4490347-05:00  [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2018-01-01T23:25:00.1759632-05:00  [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-01T23:25:00.2361224-05:00  [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-01T23:25:00.8026264-05:00 0HLAHJ34VE6CL [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2018-01-01T23:25:00.9881215-05:00 0HLAHJ34VE6CL [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:25:01.5195287-05:00 0HLAHJ34VE6CL [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:25:04.5315216-05:00 0HLAHJ34VE6CL [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-01T23:25:05.2865241-05:00 0HLAHJ34VE6CL [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 3876.779ms (afa2e885)
+2018-01-01T23:25:05.3115911-05:00 0HLAHJ34VE6CM [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=7zSYIx8RwNVjAIYe14kurMjOA8c98Tz6KWaHHC7TDnE   (e5be5b71)
+2018-01-01T23:25:05.3286351-05:00 0HLAHJ34VE6CL [INF] Request finished in 4565.7796ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-01T23:25:32.3451260-05:00  [INF] webpack built 6fe27d8e20c2b19cf1c4 in 34651ms (804ffe83)
+2018-01-01T23:25:35.0222283-05:00  [ERR] Hash: 6fe27d8e20c2b19cf1c4
+Version: webpack 2.6.1
+Time: 34651ms
+                               Asset     Size  Chunks                    Chunk Names
+0c0c930a81c16cc16d269f2364f627f4.jpg   109 kB          [emitted]         
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+                      main-client.js  4.85 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  5.72 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0} [built]
+  [963] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (6e2175d8)
+2018-01-01T23:25:35.8133279-05:00 0HLAHJ34VE6CM [INF] Request finished in 30502.6018ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:25:42.5734151-05:00 0HLAHJ34VE6CN [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2018-01-01T23:25:42.6616533-05:00 0HLAHJ34VE6CO [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2018-01-01T23:25:43.4196610-05:00 0HLAHJ34VE6CO [INF] Request finished in 757.9593ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:25:53.8582683-05:00 0HLAHJ34VE6CP [INF] Request starting HTTP/1.1 POST http://localhost:4863/connect/token application/x-www-form-urlencoded 148 (e5be5b71)
+2018-01-01T23:25:54.0036221-05:00 0HLAHJ34VE6CP [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"test2@upenn.edu\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}". (ebc01284)
+2018-01-01T23:25:54.0299284-05:00 0HLAHJ34VE6CP [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2018-01-01T23:25:54.0309315-05:00 0HLAHJ34VE6CP [INF] The token request was successfully validated. (d7e51e65)
+2018-01-01T23:25:54.0469753-05:00 0HLAHJ34VE6CP [DBG] The default token request handling was skipped from user code. (72afae05)
+2018-01-01T23:25:54.0469753-05:00 0HLAHJ34VE6CP [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:25:54.1953674-05:00 0HLAHJ34VE6CP [INF] Executing action method "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" with arguments (["{
+  \"username\": \"test2@upenn.edu\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:25:54.5011788-05:00 0HLAHJ34VE6CP [INF] Executed DbCommand (76ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2018-01-01T23:25:54.8286213-05:00 0HLAHJ34VE6CP [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2018-01-01T23:25:54.8627093-05:00 0HLAHJ34VE6CP [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2018-01-01T23:25:54.9328951-05:00 0HLAHJ34VE6CP [INF] Executed DbCommand (23ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2018-01-01T23:25:54.9750065-05:00 0HLAHJ34VE6CP [INF] Executed DbCommand (17ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2018-01-01T23:25:54.9990724-05:00 0HLAHJ34VE6CP [INF] Executing SignInResult with authentication scheme ("ASOS") and the following principal: "System.Security.Claims.ClaimsPrincipal". (f8bf0a82)
+2018-01-01T23:25:55.0411829-05:00 0HLAHJ34VE6CP [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:25:55.0411829-05:00 0HLAHJ34VE6CP [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:25:55.0411829-05:00 0HLAHJ34VE6CP [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:25:55.4655347-05:00 0HLAHJ34VE6CP [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4); (6438bdd5)
+2018-01-01T23:25:55.4967411-05:00 0HLAHJ34VE6CP [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2018-01-01T23:25:55.5278240-05:00 0HLAHJ34VE6CP [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2018-01-01T23:25:55.5478756-05:00 0HLAHJ34VE6CP [INF] AuthenticationScheme: "ASOS" signed in. (c66dd7e7)
+2018-01-01T23:25:55.5488782-05:00 0HLAHJ34VE6CP [INF] Executed action "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" in 1480.4722ms (afa2e885)
+2018-01-01T23:25:55.5538936-05:00 0HLAHJ34VE6CP [INF] Request finished in 1695.9204ms 200 application/json;charset=UTF-8 (15c52c40)
+2018-01-01T23:25:55.9753002-05:00 0HLAHJ34VE6CQ [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:25:55.9773064-05:00 0HLAHJ34VE6CQ [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:25:56.0585210-05:00 0HLAHJ34VE6CQ [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:25:56.1283651-05:00 0HLAHJ34VE6CQ [INF] Executed DbCommand (33ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:25:56.2196868-05:00 0HLAHJ34VE6CQ [INF] Executed DbCommand (27ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:25:56.2667618-05:00 0HLAHJ34VE6CQ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:25:56.2807679-05:00 0HLAHJ34VE6CQ [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 302.7011ms (afa2e885)
+2018-01-01T23:25:56.2807679-05:00 0HLAHJ34VE6CQ [INF] Request finished in 305.0797ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:25:56.2978135-05:00 0HLAHJ34VE6CR [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserTaskList/14/50   (e5be5b71)
+2018-01-01T23:25:56.2978135-05:00 0HLAHJ34VE6CR [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:25:56.3068375-05:00 0HLAHJ34VE6CS [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/userinterviewlist/50 application/json  (e5be5b71)
+2018-01-01T23:25:57.2832766-05:00 0HLAHJ34VE6CS [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:25:57.2842788-05:00 0HLAHJ34VE6CR [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" with arguments (["14", "50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:25:57.3233838-05:00 0HLAHJ34VE6CS [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:25:57.3815389-05:00 0HLAHJ34VE6CS [INF] Executed DbCommand (35ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[EventID], [p].[Description], [p].[End], [p].[IsFullDay], [p].[Location], [p].[ParticipantID], [p].[Start], [p].[Subject], [p].[SurveyID], [p].[ThemeColor]
+FROM [Events] AS [p]
+WHERE ([p].[ParticipantID] = @__pid_0) AND ([p].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:25:57.3845449-05:00 0HLAHJ34VE6CS [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:25:57.3905604-05:00 0HLAHJ34VE6CS [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" in 104.4828ms (afa2e885)
+2018-01-01T23:25:57.3905604-05:00 0HLAHJ34VE6CS [INF] Request finished in 1083.8198ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:25:57.4968429-05:00 0HLAHJ34VE6CR [INF] Executed DbCommand (38ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [pf].[TaskId], [pf].[AdminOnly], [pf].[SurveyId], [pf].[Task]
+FROM [DynamicFields] AS [pf]
+WHERE ([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)
+ORDER BY [pf].[TaskId] (6438bdd5)
+2018-01-01T23:25:57.5810672-05:00 0HLAHJ34VE6CR [INF] Executed DbCommand (26ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ParticpantId], [p].[TaskId], [p].[CompleteDate], [p].[Done]
+FROM [ParticipantDynamicFields] AS [p]
+WHERE EXISTS (
+    SELECT 1
+    FROM [DynamicFields] AS [pf]
+    WHERE (([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)) AND ([p].[TaskId] = [pf].[TaskId]))
+ORDER BY [p].[TaskId] (6438bdd5)
+2018-01-01T23:25:57.6161595-05:00 0HLAHJ34VE6CR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:25:57.6241799-05:00 0HLAHJ34VE6CR [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" in 1323.1602ms (afa2e885)
+2018-01-01T23:25:57.6241799-05:00 0HLAHJ34VE6CR [INF] Request finished in 1326.6806ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:26:14.1694832-05:00 0HLAHJ34VE6CT [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:26:14.1694832-05:00 0HLAHJ34VE6CT [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:26:14.2035729-05:00 0HLAHJ34VE6CT [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:26:14.2396695-05:00 0HLAHJ34VE6CT [INF] Executed DbCommand (26ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:26:14.2663774-05:00 0HLAHJ34VE6CT [INF] Executed DbCommand (25ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:26:14.2663774-05:00 0HLAHJ34VE6CT [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:26:14.2663774-05:00 0HLAHJ34VE6CT [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 95.5671ms (afa2e885)
+2018-01-01T23:26:14.2673829-05:00 0HLAHJ34VE6CT [INF] Request finished in 98.5698ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:26:14.3726479-05:00 0HLAHJ34VE6CU [INF] Request starting HTTP/1.1 GET http://localhost:4863/pstar/null   (e5be5b71)
+2018-01-01T23:26:14.3726479-05:00 0HLAHJ34VE6CU [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:26:14.4087466-05:00 0HLAHJ34VE6CV [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/IsBooked/50/14 application/json  (e5be5b71)
+2018-01-01T23:26:14.4087466-05:00 0HLAHJ34VE6CU [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:26:14.4097476-05:00 0HLAHJ34VE6CV [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:26:14.4418311-05:00 0HLAHJ34VE6CV [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.IsBooked (IdentityScoreJult28)" with arguments (["50", "14"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:26:14.4448403-05:00 0HLAHJ34VE6CU [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-01T23:26:14.4889561-05:00 0HLAHJ34VE6CV [INF] Executed DbCommand (27ms) [Parameters=[@__pid_0='?', @__sid_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[EventID], [e].[Description], [e].[End], [e].[IsFullDay], [e].[Location], [e].[ParticipantID], [e].[Start], [e].[Subject], [e].[SurveyID], [e].[ThemeColor]
+FROM [Events] AS [e]
+WHERE (([e].[ParticipantID] = @__pid_0) AND ([e].[SurveyID] = @__sid_1)) AND ([e].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:26:14.4899592-05:00 0HLAHJ34VE6CV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:26:14.4899592-05:00 0HLAHJ34VE6CV [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.IsBooked (IdentityScoreJult28)" in 79.0863ms (afa2e885)
+2018-01-01T23:26:14.4899592-05:00 0HLAHJ34VE6CV [INF] Request finished in 80.8754ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:26:14.6443685-05:00 0HLAHJ34VE6CU [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 263.9372ms (afa2e885)
+2018-01-01T23:26:14.6443685-05:00 0HLAHJ34VE6CU [INF] Request finished in 272.1677ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-01T23:26:28.6356289-05:00 0HLAHJ34VE6D0 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:26:28.6356289-05:00 0HLAHJ34VE6D0 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:26:28.6707216-05:00 0HLAHJ34VE6D0 [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:26:28.6974837-05:00 0HLAHJ34VE6D0 [INF] Executed DbCommand (25ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:26:28.7225473-05:00 0HLAHJ34VE6D0 [INF] Executed DbCommand (24ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:26:28.7235496-05:00 0HLAHJ34VE6D0 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:26:28.7235496-05:00 0HLAHJ34VE6D0 [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 87.1245ms (afa2e885)
+2018-01-01T23:26:28.7235496-05:00 0HLAHJ34VE6D0 [INF] Request finished in 88.1005ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:26:28.7436032-05:00 0HLAHJ34VE6D1 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserTaskList/14/50   (e5be5b71)
+2018-01-01T23:26:28.7446067-05:00 0HLAHJ34VE6D1 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:26:28.7486169-05:00 0HLAHJ34VE6D2 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/userinterviewlist/50 application/json  (e5be5b71)
+2018-01-01T23:26:28.7486169-05:00 0HLAHJ34VE6D2 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:26:28.7947393-05:00 0HLAHJ34VE6D2 [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:26:28.7947393-05:00 0HLAHJ34VE6D1 [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" with arguments (["14", "50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:26:28.8659278-05:00 0HLAHJ34VE6D2 [INF] Executed DbCommand (70ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[EventID], [p].[Description], [p].[End], [p].[IsFullDay], [p].[Location], [p].[ParticipantID], [p].[Start], [p].[Subject], [p].[SurveyID], [p].[ThemeColor]
+FROM [Events] AS [p]
+WHERE ([p].[ParticipantID] = @__pid_0) AND ([p].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:26:28.8749533-05:00 0HLAHJ34VE6D2 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:26:28.8930004-05:00 0HLAHJ34VE6D1 [INF] Executed DbCommand (15ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [pf].[TaskId], [pf].[AdminOnly], [pf].[SurveyId], [pf].[Task]
+FROM [DynamicFields] AS [pf]
+WHERE ([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)
+ORDER BY [pf].[TaskId] (6438bdd5)
+2018-01-01T23:26:28.9170712-05:00 0HLAHJ34VE6D1 [INF] Executed DbCommand (23ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ParticpantId], [p].[TaskId], [p].[CompleteDate], [p].[Done]
+FROM [ParticipantDynamicFields] AS [p]
+WHERE EXISTS (
+    SELECT 1
+    FROM [DynamicFields] AS [pf]
+    WHERE (([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)) AND ([p].[TaskId] = [pf].[TaskId]))
+ORDER BY [p].[TaskId] (6438bdd5)
+2018-01-01T23:26:28.9190692-05:00 0HLAHJ34VE6D1 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:26:28.9190692-05:00 0HLAHJ34VE6D1 [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" in 174.2465ms (afa2e885)
+2018-01-01T23:26:28.9190692-05:00 0HLAHJ34VE6D1 [INF] Request finished in 175.666ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:26:28.9270901-05:00 0HLAHJ34VE6D2 [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" in 177.9774ms (afa2e885)
+2018-01-01T23:26:28.9270901-05:00 0HLAHJ34VE6D2 [INF] Request finished in 178.7573ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:27:20.5420130-05:00  [INF] webpack building... (478286db)
+2018-01-01T23:27:32.7246704-05:00  [INF] webpack built 3f30039757c7cf042a18 in 12153ms (8b3afc48)
+2018-01-01T23:27:32.7988672-05:00 0HLAHJ34VE6D3 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/6fe27d8e20c2b19cf1c4.hot-update.json   (e5be5b71)
+2018-01-01T23:27:32.9231967-05:00 0HLAHJ34VE6D3 [INF] Request finished in 123.5922ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:27:32.9292131-05:00 0HLAHJ34VE6D4 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.6fe27d8e20c2b19cf1c4.hot-update.js   (e5be5b71)
+2018-01-01T23:27:32.9582907-05:00  [ERR] Hash: 3f30039757c7cf042a18
+Version: webpack 2.6.1
+Time: 12153ms
+                                   Asset      Size  Chunks                    Chunk Names
+    0c0c930a81c16cc16d269f2364f627f4.jpg    109 kB                            
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   4.85 MB       0  [emitted]  [big]  main-client
+    0.6fe27d8e20c2b19cf1c4.hot-update.js   3.05 kB       0  [emitted]         main-client
+    6fe27d8e20c2b19cf1c4.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   5.72 MB       0  [emitted]         main-client
+0.6fe27d8e20c2b19cf1c4.hot-update.js.map   3.66 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.6fe27d8e20c2b19cf1c4.hot-update.js, main-client.js.map, 0.6fe27d8e20c2b19cf1c4.hot-update.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0}
+  [963] ./~/strip-ansi/index.js 161 bytes {0}
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (f55f2279)
+2018-01-01T23:27:32.9863635-05:00 0HLAHJ34VE6D4 [INF] Request finished in 57.0687ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:27:38.7722442-05:00 0HLAHJ34VE6D5 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:27:38.7722442-05:00 0HLAHJ34VE6D6 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.6fe27d8e20c2b19cf1c4.hot-update.js.map   (e5be5b71)
+2018-01-01T23:27:38.7752522-05:00 0HLAHJ34VE6D5 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:27:38.8123494-05:00 0HLAHJ34VE6D5 [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:27:38.8354110-05:00 0HLAHJ34VE6D5 [INF] Executed DbCommand (22ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:27:38.8364145-05:00 0HLAHJ34VE6D6 [INF] Request finished in 63.6832ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:27:38.8705054-05:00 0HLAHJ34VE6D5 [INF] Executed DbCommand (32ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:27:38.8705054-05:00 0HLAHJ34VE6D5 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:27:38.8715076-05:00 0HLAHJ34VE6D5 [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 92.5587ms (afa2e885)
+2018-01-01T23:27:38.8715076-05:00 0HLAHJ34VE6D5 [INF] Request finished in 98.9271ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:27:38.8885524-05:00 0HLAHJ34VE6D7 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserTaskList/14/50   (e5be5b71)
+2018-01-01T23:27:38.8885524-05:00 0HLAHJ34VE6D7 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:27:38.9176288-05:00 0HLAHJ34VE6D8 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/userinterviewlist/50 application/json  (e5be5b71)
+2018-01-01T23:27:38.9176288-05:00 0HLAHJ34VE6D7 [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" with arguments (["14", "50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:27:38.9176288-05:00 0HLAHJ34VE6D8 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:27:38.9807984-05:00 0HLAHJ34VE6D8 [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:27:39.0118797-05:00 0HLAHJ34VE6D7 [INF] Executed DbCommand (65ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [pf].[TaskId], [pf].[AdminOnly], [pf].[SurveyId], [pf].[Task]
+FROM [DynamicFields] AS [pf]
+WHERE ([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)
+ORDER BY [pf].[TaskId] (6438bdd5)
+2018-01-01T23:27:39.0379480-05:00 0HLAHJ34VE6D8 [INF] Executed DbCommand (55ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[EventID], [p].[Description], [p].[End], [p].[IsFullDay], [p].[Location], [p].[ParticipantID], [p].[Start], [p].[Subject], [p].[SurveyID], [p].[ThemeColor]
+FROM [Events] AS [p]
+WHERE ([p].[ParticipantID] = @__pid_0) AND ([p].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:27:39.0379480-05:00 0HLAHJ34VE6D7 [INF] Executed DbCommand (25ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ParticpantId], [p].[TaskId], [p].[CompleteDate], [p].[Done]
+FROM [ParticipantDynamicFields] AS [p]
+WHERE EXISTS (
+    SELECT 1
+    FROM [DynamicFields] AS [pf]
+    WHERE (([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)) AND ([p].[TaskId] = [pf].[TaskId]))
+ORDER BY [p].[TaskId] (6438bdd5)
+2018-01-01T23:27:39.0389523-05:00 0HLAHJ34VE6D8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:27:39.0389523-05:00 0HLAHJ34VE6D8 [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" in 120.8242ms (afa2e885)
+2018-01-01T23:27:39.0389523-05:00 0HLAHJ34VE6D8 [INF] Request finished in 121.6508ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:27:39.0399542-05:00 0HLAHJ34VE6D7 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:27:39.0399542-05:00 0HLAHJ34VE6D7 [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" in 150.7056ms (afa2e885)
+2018-01-01T23:27:39.0399542-05:00 0HLAHJ34VE6D7 [INF] Request finished in 151.547ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:29:38.4384422-05:00  [INF] webpack building... (478286db)
+2018-01-01T23:29:42.8019998-05:00  [INF] webpack built 1215432099f0fe6a0efe in 4326ms (2c979cf6)
+2018-01-01T23:29:42.9012621-05:00 0HLAHJ34VE6D9 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/3f30039757c7cf042a18.hot-update.json   (e5be5b71)
+2018-01-01T23:29:43.0055377-05:00 0HLAHJ34VE6D9 [INF] Request finished in 71.33ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:29:43.0055377-05:00 0HLAHJ34VE6DA [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.3f30039757c7cf042a18.hot-update.js   (e5be5b71)
+2018-01-01T23:29:43.0476488-05:00  [ERR] Hash: 1215432099f0fe6a0efe
+Version: webpack 2.6.1
+Time: 4326ms
+                                   Asset      Size  Chunks                    Chunk Names
+    0c0c930a81c16cc16d269f2364f627f4.jpg    109 kB                            
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   4.85 MB       0  [emitted]  [big]  main-client
+    0.3f30039757c7cf042a18.hot-update.js   3.05 kB       0  [emitted]         main-client
+    3f30039757c7cf042a18.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   5.72 MB       0  [emitted]         main-client
+0.3f30039757c7cf042a18.hot-update.js.map   3.66 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.3f30039757c7cf042a18.hot-update.js, main-client.js.map, 0.3f30039757c7cf042a18.hot-update.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0}
+  [963] ./~/strip-ansi/index.js 161 bytes {0}
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (b6739f14)
+2018-01-01T23:29:43.0536647-05:00 0HLAHJ34VE6DA [INF] Request finished in 47.7337ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:29:47.0924078-05:00 0HLAHJ34VE6DB [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.3f30039757c7cf042a18.hot-update.js.map   (e5be5b71)
+2018-01-01T23:29:47.1726208-05:00 0HLAHJ34VE6DB [INF] Request finished in 79.673ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:29:47.2899356-05:00 0HLAHJ34VE6DC [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:29:47.2909367-05:00 0HLAHJ34VE6DC [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:29:47.3330489-05:00 0HLAHJ34VE6DC [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:29:47.3691464-05:00 0HLAHJ34VE6DC [INF] Executed DbCommand (34ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:29:47.3982235-05:00 0HLAHJ34VE6DC [INF] Executed DbCommand (27ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:29:47.3982235-05:00 0HLAHJ34VE6DC [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:29:47.3982235-05:00 0HLAHJ34VE6DC [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 107.8342ms (afa2e885)
+2018-01-01T23:29:47.3982235-05:00 0HLAHJ34VE6DC [INF] Request finished in 108.5366ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:29:47.4132624-05:00 0HLAHJ34VE6DD [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserTaskList/14/50   (e5be5b71)
+2018-01-01T23:29:47.4132624-05:00 0HLAHJ34VE6DD [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:29:47.4453471-05:00 0HLAHJ34VE6DE [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/userinterviewlist/50 application/json  (e5be5b71)
+2018-01-01T23:29:47.4453471-05:00 0HLAHJ34VE6DE [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:29:47.4473533-05:00 0HLAHJ34VE6DD [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" with arguments (["14", "50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:29:47.5165381-05:00 0HLAHJ34VE6DE [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:29:47.5225546-05:00 0HLAHJ34VE6DD [INF] Executed DbCommand (69ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [pf].[TaskId], [pf].[AdminOnly], [pf].[SurveyId], [pf].[Task]
+FROM [DynamicFields] AS [pf]
+WHERE ([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)
+ORDER BY [pf].[TaskId] (6438bdd5)
+2018-01-01T23:29:47.5927409-05:00 0HLAHJ34VE6DE [INF] Executed DbCommand (71ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[EventID], [p].[Description], [p].[End], [p].[IsFullDay], [p].[Location], [p].[ParticipantID], [p].[Start], [p].[Subject], [p].[SurveyID], [p].[ThemeColor]
+FROM [Events] AS [p]
+WHERE ([p].[ParticipantID] = @__pid_0) AND ([p].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:29:47.5937440-05:00 0HLAHJ34VE6DE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:29:47.5937440-05:00 0HLAHJ34VE6DE [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" in 148.1206ms (afa2e885)
+2018-01-01T23:29:47.5937440-05:00 0HLAHJ34VE6DE [INF] Request finished in 148.859ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:29:47.5957489-05:00 0HLAHJ34VE6DD [INF] Executed DbCommand (67ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ParticpantId], [p].[TaskId], [p].[CompleteDate], [p].[Done]
+FROM [ParticipantDynamicFields] AS [p]
+WHERE EXISTS (
+    SELECT 1
+    FROM [DynamicFields] AS [pf]
+    WHERE (([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)) AND ([p].[TaskId] = [pf].[TaskId]))
+ORDER BY [p].[TaskId] (6438bdd5)
+2018-01-01T23:29:47.5967520-05:00 0HLAHJ34VE6DD [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:29:47.5977543-05:00 0HLAHJ34VE6DD [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" in 183.9922ms (afa2e885)
+2018-01-01T23:29:47.5977543-05:00 0HLAHJ34VE6DD [INF] Request finished in 184.8545ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:30:28.0015485-05:00 0HLAHJ34VE6DF [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0c0c930a81c16cc16d269f2364f627f4.jpg   (e5be5b71)
+2018-01-01T23:30:28.0366400-05:00 0HLAHJ34VE6DF [INF] Request finished in 35.5597ms 200 image/jpeg; charset=UTF-8 (15c52c40)
+2018-01-01T23:30:44.5201176-05:00 0HLAHJ34VE6DG [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:30:44.5211203-05:00 0HLAHJ34VE6DG [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:30:44.5552198-05:00 0HLAHJ34VE6DH [INF] Request starting HTTP/1.1 GET http://localhost:4863/pstar/null   (e5be5b71)
+2018-01-01T23:30:44.5552198-05:00 0HLAHJ34VE6DG [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:30:44.5562127-05:00 0HLAHJ34VE6DH [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:30:44.6063451-05:00 0HLAHJ34VE6DH [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:30:44.6063451-05:00 0HLAHJ34VE6DH [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-01T23:30:44.6083508-05:00 0HLAHJ34VE6DG [INF] Executed DbCommand (46ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:30:44.6354226-05:00 0HLAHJ34VE6DG [INF] Executed DbCommand (26ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:30:44.6364257-05:00 0HLAHJ34VE6DG [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:30:44.6364257-05:00 0HLAHJ34VE6DG [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 115.2086ms (afa2e885)
+2018-01-01T23:30:44.6364257-05:00 0HLAHJ34VE6DG [INF] Request finished in 115.9675ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:30:44.6665063-05:00 0HLAHJ34VE6DI [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/IsBooked/50/14 application/json  (e5be5b71)
+2018-01-01T23:30:44.6665063-05:00 0HLAHJ34VE6DI [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:30:44.7046067-05:00 0HLAHJ34VE6DI [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.IsBooked (IdentityScoreJult28)" with arguments (["50", "14"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:30:44.7356916-05:00 0HLAHJ34VE6DI [INF] Executed DbCommand (30ms) [Parameters=[@__pid_0='?', @__sid_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[EventID], [e].[Description], [e].[End], [e].[IsFullDay], [e].[Location], [e].[ParticipantID], [e].[Start], [e].[Subject], [e].[SurveyID], [e].[ThemeColor]
+FROM [Events] AS [e]
+WHERE (([e].[ParticipantID] = @__pid_0) AND ([e].[SurveyID] = @__sid_1)) AND ([e].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:30:44.7356916-05:00 0HLAHJ34VE6DI [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:30:44.7366947-05:00 0HLAHJ34VE6DI [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.IsBooked (IdentityScoreJult28)" in 69.369ms (afa2e885)
+2018-01-01T23:30:44.7366947-05:00 0HLAHJ34VE6DI [INF] Request finished in 70.6153ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:30:44.9512647-05:00 0HLAHJ34VE6DH [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 395.4391ms (afa2e885)
+2018-01-01T23:30:44.9522678-05:00 0HLAHJ34VE6DH [INF] Request finished in 396.514ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-01T23:30:47.4363505-05:00 0HLAHJ34VE6DJ [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:30:47.4363505-05:00 0HLAHJ34VE6DJ [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:30:47.4714453-05:00 0HLAHJ34VE6DJ [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:30:47.4995961-05:00 0HLAHJ34VE6DJ [INF] Executed DbCommand (25ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:30:47.5296562-05:00 0HLAHJ34VE6DJ [INF] Executed DbCommand (28ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:30:47.5296562-05:00 0HLAHJ34VE6DJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:30:47.5296562-05:00 0HLAHJ34VE6DJ [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 93.1323ms (afa2e885)
+2018-01-01T23:30:47.5296562-05:00 0HLAHJ34VE6DJ [INF] Request finished in 93.8088ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:30:47.5457022-05:00 0HLAHJ34VE6DK [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserTaskList/14/50   (e5be5b71)
+2018-01-01T23:30:47.5467045-05:00 0HLAHJ34VE6DK [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:30:47.5807958-05:00 0HLAHJ34VE6DL [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/userinterviewlist/50 application/json  (e5be5b71)
+2018-01-01T23:30:47.5807958-05:00 0HLAHJ34VE6DL [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:30:47.5838038-05:00 0HLAHJ34VE6DK [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" with arguments (["14", "50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:30:47.6329336-05:00 0HLAHJ34VE6DL [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:30:47.6670249-05:00 0HLAHJ34VE6DK [INF] Executed DbCommand (80ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [pf].[TaskId], [pf].[AdminOnly], [pf].[SurveyId], [pf].[Task]
+FROM [DynamicFields] AS [pf]
+WHERE ([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)
+ORDER BY [pf].[TaskId] (6438bdd5)
+2018-01-01T23:30:47.6680275-05:00 0HLAHJ34VE6DL [INF] Executed DbCommand (34ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[EventID], [p].[Description], [p].[End], [p].[IsFullDay], [p].[Location], [p].[ParticipantID], [p].[Start], [p].[Subject], [p].[SurveyID], [p].[ThemeColor]
+FROM [Events] AS [p]
+WHERE ([p].[ParticipantID] = @__pid_0) AND ([p].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:30:47.7051285-05:00 0HLAHJ34VE6DL [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:30:47.7071322-05:00 0HLAHJ34VE6DL [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" in 126.0672ms (afa2e885)
+2018-01-01T23:30:47.7081349-05:00 0HLAHJ34VE6DL [INF] Request finished in 126.9571ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:30:47.7091376-05:00 0HLAHJ34VE6DK [INF] Executed DbCommand (40ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ParticpantId], [p].[TaskId], [p].[CompleteDate], [p].[Done]
+FROM [ParticipantDynamicFields] AS [p]
+WHERE EXISTS (
+    SELECT 1
+    FROM [DynamicFields] AS [pf]
+    WHERE (([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)) AND ([p].[TaskId] = [pf].[TaskId]))
+ORDER BY [p].[TaskId] (6438bdd5)
+2018-01-01T23:30:47.7101402-05:00 0HLAHJ34VE6DK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:30:47.7101402-05:00 0HLAHJ34VE6DK [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" in 163.0075ms (afa2e885)
+2018-01-01T23:30:47.7101402-05:00 0HLAHJ34VE6DK [INF] Request finished in 164.5415ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:31:36.3053515-05:00 0HLAHJ34VE6DM [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/account/users/me   (e5be5b71)
+2018-01-01T23:31:36.3374383-05:00 0HLAHJ34VE6DM [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Bearer". (bdba1d38)
+2018-01-01T23:31:36.3755386-05:00 0HLAHJ34VE6DM [INF] Executing action method "IdentityScoreJult28.Controllers.AccountController.GetCurrentUser (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:31:36.4346960-05:00 0HLAHJ34VE6DM [INF] Executed DbCommand (38ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2018-01-01T23:31:36.4507387-05:00 0HLAHJ34VE6DM [INF] Authorization was successful for user: "testtwotesttwo". (d7eb274a)
+2018-01-01T23:31:36.4537476-05:00 0HLAHJ34VE6DM [INF] Authorization was successful for user: "testtwotesttwo". (d7eb274a)
+2018-01-01T23:31:36.5115408-05:00 0HLAHJ34VE6DM [INF] Executed DbCommand (34ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Id] = @__userId_0
+ORDER BY [u].[Id] (6438bdd5)
+2018-01-01T23:31:36.5426351-05:00 0HLAHJ34VE6DM [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT DISTINCT TOP(1) [u].[Id]
+    FROM [AspNetUsers] AS [u]
+    WHERE [u].[Id] = @__userId_0
+    ORDER BY [u].[Id]
+) AS [u0] ON [a].[UserId] = [u0].[Id]
+ORDER BY [u0].[Id] (6438bdd5)
+2018-01-01T23:31:36.6118114-05:00 0HLAHJ34VE6DM [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[Id] IN (N'a783d21f-93d4-4924-b9eb-d7f265ec3eaa') (6438bdd5)
+2018-01-01T23:31:36.6438998-05:00 0HLAHJ34VE6DM [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:31:36.6509148-05:00 0HLAHJ34VE6DM [INF] Executed action "IdentityScoreJult28.Controllers.AccountController.GetCurrentUser (IdentityScoreJult28)" in 310.5554ms (afa2e885)
+2018-01-01T23:31:36.6519187-05:00 0HLAHJ34VE6DM [INF] Request finished in 346.4791ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:31:49.9010674-05:00 0HLAHJ34VE6DN [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantDTO/GetPidSid/testtwotesttwo application/json  (e5be5b71)
+2018-01-01T23:31:49.9020717-05:00 0HLAHJ34VE6DN [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:31:49.9321503-05:00 0HLAHJ34VE6DN [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" with arguments (["testtwotesttwo"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:31:49.9622317-05:00 0HLAHJ34VE6DN [INF] Executed DbCommand (29ms) [Parameters=[@__userfullname_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ParticpantId], [p].[AddrLatitude], [p].[AddrLongitude], [p].[AddressScore], [p].[Age], [p].[AgeScore], [p].[AgeValid], [p].[Browser], [p].[City], [p].[CityValid], [p].[Date_of_Birth], [p].[EmailAddress], [p].[FinalScaoreVal], [p].[FirstName], [p].[FirstName_Match], [p].[GenderIdentity], [p].[Gender_Match], [p].[Hispanic], [p].[LastName], [p].[LastName_Match], [p].[OS], [p].[OtherGenderType], [p].[OtherRace], [p].[OtherSexualOrientation], [p].[Password], [p].[PhoneNumber], [p].[Race], [p].[RegisterDate], [p].[SexualOrientation], [p].[SocialScore], [p].[State], [p].[StateValid], [p].[TwoFactorScore], [p].[Verified], [p].[Zip], [p].[geo_City], [p].[geo_CountryName], [p].[geo_IP], [p].[geo_RegionName], [p].[geo_ZipCode], [p].[geo_lattude], [p].[geo_longitude], [p].[latlangMatch]
+FROM [Participant] AS [p]
+WHERE ([p].[FirstName] + [p].[LastName]) = @__userfullname_0 (6438bdd5)
+2018-01-01T23:31:50.0238965-05:00 0HLAHJ34VE6DN [INF] Executed DbCommand (60ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ParticpantId], [x].[SurveyId], [x].[IsActive]
+FROM [SurveyParticipant] AS [x]
+WHERE ([x].[ParticpantId] = @__pid_0) AND ([x].[IsActive] = 1) (6438bdd5)
+2018-01-01T23:31:50.0243991-05:00 0HLAHJ34VE6DN [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:31:50.0243991-05:00 0HLAHJ34VE6DN [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantDTOController.GetPidSid (IdentityScoreJult28)" in 122.3622ms (afa2e885)
+2018-01-01T23:31:50.0243991-05:00 0HLAHJ34VE6DN [INF] Request finished in 123.058ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:31:50.0499697-05:00 0HLAHJ34VE6DO [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/userinterviewlist/50 application/json  (e5be5b71)
+2018-01-01T23:31:50.0499697-05:00 0HLAHJ34VE6DO [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:31:50.0549839-05:00 0HLAHJ34VE6DP [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserTaskList/14/50   (e5be5b71)
+2018-01-01T23:31:50.0549839-05:00 0HLAHJ34VE6DP [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:31:50.1191550-05:00 0HLAHJ34VE6DO [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:31:50.1221626-05:00 0HLAHJ34VE6DP [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" with arguments (["14", "50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:31:50.1983650-05:00 0HLAHJ34VE6DO [INF] Executed DbCommand (78ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[EventID], [p].[Description], [p].[End], [p].[IsFullDay], [p].[Location], [p].[ParticipantID], [p].[Start], [p].[Subject], [p].[SurveyID], [p].[ThemeColor]
+FROM [Events] AS [p]
+WHERE ([p].[ParticipantID] = @__pid_0) AND ([p].[Subject] = N'Booked') (6438bdd5)
+2018-01-01T23:31:50.2314536-05:00 0HLAHJ34VE6DO [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:31:50.2314536-05:00 0HLAHJ34VE6DO [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.userinterviewlist (IdentityScoreJult28)" in 181.1327ms (afa2e885)
+2018-01-01T23:31:50.2314536-05:00 0HLAHJ34VE6DO [INF] Request finished in 181.8379ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:31:50.2324571-05:00 0HLAHJ34VE6DP [INF] Executed DbCommand (109ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [pf].[TaskId], [pf].[AdminOnly], [pf].[SurveyId], [pf].[Task]
+FROM [DynamicFields] AS [pf]
+WHERE ([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)
+ORDER BY [pf].[TaskId] (6438bdd5)
+2018-01-01T23:31:50.2765743-05:00 0HLAHJ34VE6DP [INF] Executed DbCommand (43ms) [Parameters=[@__SurveyID_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ParticpantId], [p].[TaskId], [p].[CompleteDate], [p].[Done]
+FROM [ParticipantDynamicFields] AS [p]
+WHERE EXISTS (
+    SELECT 1
+    FROM [DynamicFields] AS [pf]
+    WHERE (([pf].[SurveyId] = @__SurveyID_0) AND ([pf].[AdminOnly] = 0)) AND ([p].[TaskId] = [pf].[TaskId]))
+ORDER BY [p].[TaskId] (6438bdd5)
+2018-01-01T23:31:50.2785797-05:00 0HLAHJ34VE6DP [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:31:50.2785797-05:00 0HLAHJ34VE6DP [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserTaskList (IdentityScoreJult28)" in 223.3649ms (afa2e885)
+2018-01-01T23:31:50.2785797-05:00 0HLAHJ34VE6DP [INF] Request finished in 224.3926ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:32:22.0305194-05:00 0HLAHJ34VE6DQ [INF] Request starting HTTP/1.1 POST http://localhost:4863/connect/token application/x-www-form-urlencoded 142 (e5be5b71)
+2018-01-01T23:32:22.0535796-05:00 0HLAHJ34VE6DQ [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}". (ebc01284)
+2018-01-01T23:32:22.0535796-05:00 0HLAHJ34VE6DQ [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2018-01-01T23:32:22.0535796-05:00 0HLAHJ34VE6DQ [INF] The token request was successfully validated. (d7e51e65)
+2018-01-01T23:32:22.0535796-05:00 0HLAHJ34VE6DQ [DBG] The default token request handling was skipped from user code. (72afae05)
+2018-01-01T23:32:22.0535796-05:00 0HLAHJ34VE6DQ [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:32:22.0926835-05:00 0HLAHJ34VE6DQ [INF] Executing action method "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" with arguments (["{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:32:22.1237676-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2018-01-01T23:32:22.1448315-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2018-01-01T23:32:22.1769080-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2018-01-01T23:32:22.2180184-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (40ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2018-01-01T23:32:22.2380727-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (18ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2018-01-01T23:32:22.2801948-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (41ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2018-01-01T23:32:22.2811868-05:00 0HLAHJ34VE6DQ [INF] Executing SignInResult with authentication scheme ("ASOS") and the following principal: "System.Security.Claims.ClaimsPrincipal". (f8bf0a82)
+2018-01-01T23:32:22.2811868-05:00 0HLAHJ34VE6DQ [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:32:22.2811868-05:00 0HLAHJ34VE6DQ [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:32:22.2811868-05:00 0HLAHJ34VE6DQ [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:32:22.2811868-05:00 0HLAHJ34VE6DQ [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2018-01-01T23:32:22.3433514-05:00 0HLAHJ34VE6DQ [INF] Executed DbCommand (59ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4); (6438bdd5)
+2018-01-01T23:32:22.3463602-05:00 0HLAHJ34VE6DQ [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2018-01-01T23:32:22.3473629-05:00 0HLAHJ34VE6DQ [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2018-01-01T23:32:22.3483655-05:00 0HLAHJ34VE6DQ [INF] AuthenticationScheme: "ASOS" signed in. (c66dd7e7)
+2018-01-01T23:32:22.3483655-05:00 0HLAHJ34VE6DQ [INF] Executed action "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" in 294.2375ms (afa2e885)
+2018-01-01T23:32:22.3483655-05:00 0HLAHJ34VE6DQ [INF] Request finished in 318.0549ms 200 application/json;charset=UTF-8 (15c52c40)
+2018-01-01T23:32:30.2443263-05:00 0HLAHJ34VE6DR [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/GetMemberesListPages/page/0/10   (e5be5b71)
+2018-01-01T23:32:30.2443263-05:00 0HLAHJ34VE6DR [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:32:30.2754252-05:00 0HLAHJ34VE6DR [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.GetMemberesListPages (IdentityScoreJult28)" with arguments (["0", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:32:30.3447302-05:00 0HLAHJ34VE6DR [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Participant] AS [p] (6438bdd5)
+2018-01-01T23:32:30.4074638-05:00 0HLAHJ34VE6DR [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+ORDER BY [c].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY (6438bdd5)
+2018-01-01T23:32:30.4205367-05:00 0HLAHJ34VE6DR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:32:30.4505816-05:00 0HLAHJ34VE6DR [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.GetMemberesListPages (IdentityScoreJult28)" in 203.8621ms (afa2e885)
+2018-01-01T23:32:30.4515835-05:00 0HLAHJ34VE6DR [INF] Request finished in 207.4276ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:32:54.0270465-05:00 0HLAHJ34VE6DS [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/GetMemberesListPages/page/40/10   (e5be5b71)
+2018-01-01T23:32:54.0270465-05:00 0HLAHJ34VE6DS [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:32:54.0481027-05:00 0HLAHJ34VE6DS [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.GetMemberesListPages (IdentityScoreJult28)" with arguments (["40", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:32:54.0758460-05:00 0HLAHJ34VE6DS [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Participant] AS [p] (6438bdd5)
+2018-01-01T23:32:54.1069297-05:00 0HLAHJ34VE6DS [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+ORDER BY [c].[LastName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY (6438bdd5)
+2018-01-01T23:32:54.1089338-05:00 0HLAHJ34VE6DS [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:32:54.1089338-05:00 0HLAHJ34VE6DS [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.GetMemberesListPages (IdentityScoreJult28)" in 81.4703ms (afa2e885)
+2018-01-01T23:32:54.1089338-05:00 0HLAHJ34VE6DS [INF] Request finished in 82.1842ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:33:05.4213835-05:00 0HLAHJ34VE6DT [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/getMemberbyid/50   (e5be5b71)
+2018-01-01T23:33:05.4223857-05:00 0HLAHJ34VE6DT [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:33:05.4304075-05:00 0HLAHJ34VE6DU [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/GetSurveyOptions/SurveyTest02 application/json  (e5be5b71)
+2018-01-01T23:33:05.4304075-05:00 0HLAHJ34VE6DU [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:33:05.4604877-05:00 0HLAHJ34VE6DV [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserSummaryTasks/50   (e5be5b71)
+2018-01-01T23:33:05.4604877-05:00 0HLAHJ34VE6DV [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:33:05.4845502-05:00 0HLAHJ34VE6DT [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:33:05.4855533-05:00 0HLAHJ34VE6DU [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" with arguments (["SurveyTest02"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:33:05.5156339-05:00 0HLAHJ34VE6DV [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserSummaryTasks (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:33:05.5507295-05:00 0HLAHJ34VE6DU [INF] Executed DbCommand (25ms) [Parameters=[@__surveyName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[SurveyId], [x].[CalAddressScore], [x].[CalAgeScore], [x].[CalSocialScore], [x].[CalTwoFactorScore], [x].[Survey_Active], [x].[Survey_Name]
+FROM [Survey] AS [x]
+WHERE [x].[Survey_Name] = @__surveyName_0 (6438bdd5)
+2018-01-01T23:33:05.6038692-05:00 0HLAHJ34VE6DT [INF] Executed DbCommand (46ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+WHERE [c].[ParticpantId] = @__id_0 (6438bdd5)
+2018-01-01T23:33:05.6048727-05:00 0HLAHJ34VE6DT [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:33:05.6048727-05:00 0HLAHJ34VE6DT [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" in 179.3805ms (afa2e885)
+2018-01-01T23:33:05.6048727-05:00 0HLAHJ34VE6DT [INF] Request finished in 183.5741ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:33:05.6530002-05:00 0HLAHJ34VE6DV [INF] Executed DbCommand (41ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [df].[Task], [pdf].[Done], [pdf].[CompleteDate]
+FROM [ParticipantDynamicFields] AS [pdf]
+INNER JOIN [DynamicFields] AS [df] ON [pdf].[TaskId] = [df].[TaskId]
+WHERE ([pdf].[ParticpantId] = @__pid_0) AND ([df].[AdminOnly] = 0) (6438bdd5)
+2018-01-01T23:33:05.6550059-05:00 0HLAHJ34VE6DV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:33:05.6580135-05:00 0HLAHJ34VE6DU [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:33:05.6630273-05:00 0HLAHJ34VE6DV [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserSummaryTasks (IdentityScoreJult28)" in 199.9774ms (afa2e885)
+2018-01-01T23:33:05.6630273-05:00 0HLAHJ34VE6DV [INF] Request finished in 203.7189ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:33:05.6680411-05:00 0HLAHJ34VE6DU [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" in 236.3392ms (afa2e885)
+2018-01-01T23:33:05.6690433-05:00 0HLAHJ34VE6DU [INF] Request finished in 238.8607ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:37:30.1269924-05:00  [INF] webpack building... (478286db)
+2018-01-01T23:37:35.3867450-05:00  [INF] webpack built 3854d2bd1bdf5175fbe7 in 5204ms (64f9f64c)
+2018-01-01T23:37:35.5110757-05:00 0HLAHJ34VE6E0 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/1215432099f0fe6a0efe.hot-update.json   (e5be5b71)
+2018-01-01T23:37:35.6113436-05:00  [ERR] Hash: 3854d2bd1bdf5175fbe7
+Version: webpack 2.6.1
+Time: 5204ms
+                                   Asset      Size  Chunks                    Chunk Names
+    0c0c930a81c16cc16d269f2364f627f4.jpg    109 kB                            
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   4.85 MB       0  [emitted]  [big]  main-client
+    0.1215432099f0fe6a0efe.hot-update.js     26 kB       0  [emitted]         main-client
+    1215432099f0fe6a0efe.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   5.72 MB       0  [emitted]         main-client
+0.1215432099f0fe6a0efe.hot-update.js.map   29.2 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.1215432099f0fe6a0efe.hot-update.js, main-client.js.map, 0.1215432099f0fe6a0efe.hot-update.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0}
+  [963] ./~/strip-ansi/index.js 161 bytes {0}
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (1820157a)
+2018-01-01T23:37:35.6243774-05:00 0HLAHJ34VE6E0 [INF] Request finished in 115.6722ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:37:35.6374117-05:00 0HLAHJ34VE6E1 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.1215432099f0fe6a0efe.hot-update.js   (e5be5b71)
+2018-01-01T23:37:35.6885473-05:00 0HLAHJ34VE6E1 [INF] Request finished in 50.7113ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:37:40.4792886-05:00 0HLAHJ34VE6E2 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.1215432099f0fe6a0efe.hot-update.js.map   (e5be5b71)
+2018-01-01T23:37:40.5324299-05:00 0HLAHJ34VE6E2 [INF] Request finished in 52.7282ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:37:40.6627770-05:00 0HLAHJ34VE6E3 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/getMemberbyid/50   (e5be5b71)
+2018-01-01T23:37:40.6637797-05:00 0HLAHJ34VE6E3 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:37:40.6968673-05:00 0HLAHJ34VE6E4 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/GetSurveyOptions/SurveyTest02 application/json  (e5be5b71)
+2018-01-01T23:37:40.6968673-05:00 0HLAHJ34VE6E3 [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:37:40.6968673-05:00 0HLAHJ34VE6E4 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:37:40.6988722-05:00 0HLAHJ34VE6E5 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/DynamicFieldsDTO/UserSummaryTasks/50   (e5be5b71)
+2018-01-01T23:37:40.7269473-05:00 0HLAHJ34VE6E5 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:37:40.7279503-05:00 0HLAHJ34VE6E4 [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" with arguments (["SurveyTest02"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:37:40.7830966-05:00 0HLAHJ34VE6E5 [INF] Executing action method "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserSummaryTasks (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:37:40.8111713-05:00 0HLAHJ34VE6E3 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+WHERE [c].[ParticpantId] = @__id_0 (6438bdd5)
+2018-01-01T23:37:40.8643130-05:00 0HLAHJ34VE6E3 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:37:40.8653153-05:00 0HLAHJ34VE6E3 [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" in 201.3677ms (afa2e885)
+2018-01-01T23:37:40.8653153-05:00 0HLAHJ34VE6E3 [INF] Request finished in 202.5727ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:37:40.8673206-05:00 0HLAHJ34VE6E5 [INF] Executed DbCommand (55ms) [Parameters=[@__pid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [df].[Task], [pdf].[Done], [pdf].[CompleteDate]
+FROM [ParticipantDynamicFields] AS [pdf]
+INNER JOIN [DynamicFields] AS [df] ON [pdf].[TaskId] = [df].[TaskId]
+WHERE ([pdf].[ParticpantId] = @__pid_0) AND ([df].[AdminOnly] = 0) (6438bdd5)
+2018-01-01T23:37:40.8683237-05:00 0HLAHJ34VE6E5 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:37:40.8683237-05:00 0HLAHJ34VE6E5 [INF] Executed action "IdentityScoreJult28.Controllers.DynamicFieldsDTOController.UserSummaryTasks (IdentityScoreJult28)" in 140.9435ms (afa2e885)
+2018-01-01T23:37:40.8683237-05:00 0HLAHJ34VE6E5 [INF] Request finished in 169.1183ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:37:40.8683237-05:00 0HLAHJ34VE6E4 [INF] Executed DbCommand (55ms) [Parameters=[@__surveyName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[SurveyId], [x].[CalAddressScore], [x].[CalAgeScore], [x].[CalSocialScore], [x].[CalTwoFactorScore], [x].[Survey_Active], [x].[Survey_Name]
+FROM [Survey] AS [x]
+WHERE [x].[Survey_Name] = @__surveyName_0 (6438bdd5)
+2018-01-01T23:37:40.8693263-05:00 0HLAHJ34VE6E4 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:37:40.8693263-05:00 0HLAHJ34VE6E4 [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" in 171.8847ms (afa2e885)
+2018-01-01T23:37:40.8693263-05:00 0HLAHJ34VE6E4 [INF] Request finished in 172.6436ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:37:58.5243540-05:00  [INF] webpack building... (478286db)
+2018-01-01T23:38:10.6472886-05:00  [INF] webpack built 95f5abc69cfbe93939e8 in 12095ms (bf54b241)
+2018-01-01T23:38:10.7495585-05:00 0HLAHJ34VE6E6 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/3854d2bd1bdf5175fbe7.hot-update.json   (e5be5b71)
+2018-01-01T23:38:10.8267635-05:00 0HLAHJ34VE6E6 [INF] Request finished in 62.0943ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:38:10.8307749-05:00  [ERR] Hash: 95f5abc69cfbe93939e8
+Version: webpack 2.6.1
+Time: 12095ms
+                                   Asset      Size  Chunks                    Chunk Names
+    0c0c930a81c16cc16d269f2364f627f4.jpg    109 kB                            
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   4.85 MB       0  [emitted]  [big]  main-client
+    0.3854d2bd1bdf5175fbe7.hot-update.js   9.99 kB       0  [emitted]         main-client
+    3854d2bd1bdf5175fbe7.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   5.72 MB       0  [emitted]         main-client
+0.3854d2bd1bdf5175fbe7.hot-update.js.map   16.2 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.3854d2bd1bdf5175fbe7.hot-update.js, main-client.js.map, 0.3854d2bd1bdf5175fbe7.hot-update.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0}
+  [963] ./~/strip-ansi/index.js 161 bytes {0}
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (ac38d1fc)
+2018-01-01T23:38:10.8428069-05:00 0HLAHJ34VE6E7 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.3854d2bd1bdf5175fbe7.hot-update.js   (e5be5b71)
+2018-01-01T23:38:10.8668701-05:00 0HLAHJ34VE6E7 [INF] Request finished in 23.0998ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:38:16.2521998-05:00 0HLAHJ34VE6E8 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.3854d2bd1bdf5175fbe7.hot-update.js.map   (e5be5b71)
+2018-01-01T23:38:16.2852874-05:00 0HLAHJ34VE6E8 [INF] Request finished in 32.4217ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:38:16.5349522-05:00 0HLAHJ34VE6E9 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/getMemberbyid/50   (e5be5b71)
+2018-01-01T23:38:16.5349522-05:00 0HLAHJ34VE6E9 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:38:16.5670363-05:00 0HLAHJ34VE6EA [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/GetSurveyOptions/SurveyTest02 application/json  (e5be5b71)
+2018-01-01T23:38:16.5670363-05:00 0HLAHJ34VE6E9 [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:38:16.5670363-05:00 0HLAHJ34VE6EA [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:38:16.6362211-05:00 0HLAHJ34VE6EA [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" with arguments (["SurveyTest02"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:38:16.6652976-05:00 0HLAHJ34VE6E9 [INF] Executed DbCommand (95ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+WHERE [c].[ParticpantId] = @__id_0 (6438bdd5)
+2018-01-01T23:38:16.6663007-05:00 0HLAHJ34VE6E9 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:38:16.6663007-05:00 0HLAHJ34VE6E9 [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" in 131.1831ms (afa2e885)
+2018-01-01T23:38:16.6663007-05:00 0HLAHJ34VE6EA [INF] Executed DbCommand (27ms) [Parameters=[@__surveyName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[SurveyId], [x].[CalAddressScore], [x].[CalAgeScore], [x].[CalSocialScore], [x].[CalTwoFactorScore], [x].[Survey_Active], [x].[Survey_Name]
+FROM [Survey] AS [x]
+WHERE [x].[Survey_Name] = @__surveyName_0 (6438bdd5)
+2018-01-01T23:38:16.6663007-05:00 0HLAHJ34VE6E9 [INF] Request finished in 132.1316ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:38:16.6673034-05:00 0HLAHJ34VE6EA [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:38:16.6673034-05:00 0HLAHJ34VE6EA [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" in 99.4687ms (afa2e885)
+2018-01-01T23:38:16.6673034-05:00 0HLAHJ34VE6EA [INF] Request finished in 100.0976ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:42:54.5077413-05:00  [INF] webpack building... (478286db)
+2018-01-01T23:43:00.4384781-05:00  [INF] webpack built dbfefddd72ed93044a6f in 5881ms (ab39786f)
+2018-01-01T23:43:00.5908837-05:00  [ERR] Hash: dbfefddd72ed93044a6f
+Version: webpack 2.6.1
+Time: 5881ms
+                                   Asset      Size  Chunks                    Chunk Names
+    0c0c930a81c16cc16d269f2364f627f4.jpg    109 kB                            
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   4.85 MB       0  [emitted]  [big]  main-client
+    0.95f5abc69cfbe93939e8.hot-update.js   11.8 kB       0  [emitted]         main-client
+    95f5abc69cfbe93939e8.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   5.73 MB       0  [emitted]         main-client
+0.95f5abc69cfbe93939e8.hot-update.js.map   16.9 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.95f5abc69cfbe93939e8.hot-update.js, main-client.js.map, 0.95f5abc69cfbe93939e8.hot-update.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0}
+  [963] ./~/strip-ansi/index.js 161 bytes {0}
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (6534068d)
+2018-01-01T23:43:09.7491974-05:00 0HLAHJ34VE6EB [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/95f5abc69cfbe93939e8.hot-update.json   (e5be5b71)
+2018-01-01T23:43:09.7812830-05:00 0HLAHJ34VE6EB [INF] Request finished in 32.3528ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:43:09.7913084-05:00 0HLAHJ34VE6EC [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.95f5abc69cfbe93939e8.hot-update.js   (e5be5b71)
+2018-01-01T23:43:09.8494627-05:00 0HLAHJ34VE6EC [INF] Request finished in 59.2045ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:43:13.2603717-05:00 0HLAHJ34VE6ED [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.95f5abc69cfbe93939e8.hot-update.js.map   (e5be5b71)
+2018-01-01T23:43:13.3155176-05:00 0HLAHJ34VE6ED [INF] Request finished in 54.5115ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:43:13.5992714-05:00 0HLAHJ34VE6EE [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/getMemberbyid/50   (e5be5b71)
+2018-01-01T23:43:13.5992714-05:00 0HLAHJ34VE6EE [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:43:13.6323584-05:00 0HLAHJ34VE6EE [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:43:13.6323584-05:00 0HLAHJ34VE6EF [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/GetSurveyOptions/SurveyTest02 application/json  (e5be5b71)
+2018-01-01T23:43:13.6323584-05:00 0HLAHJ34VE6EF [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:43:13.6975325-05:00 0HLAHJ34VE6EF [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" with arguments (["SurveyTest02"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:43:13.7045495-05:00 0HLAHJ34VE6EE [INF] Executed DbCommand (69ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+WHERE [c].[ParticpantId] = @__id_0 (6438bdd5)
+2018-01-01T23:43:13.7045495-05:00 0HLAHJ34VE6EE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:43:13.7055538-05:00 0HLAHJ34VE6EE [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" in 105.4334ms (afa2e885)
+2018-01-01T23:43:13.7055538-05:00 0HLAHJ34VE6EE [INF] Request finished in 106.2773ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:43:13.7376377-05:00 0HLAHJ34VE6EF [INF] Executed DbCommand (34ms) [Parameters=[@__surveyName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[SurveyId], [x].[CalAddressScore], [x].[CalAgeScore], [x].[CalSocialScore], [x].[CalTwoFactorScore], [x].[Survey_Active], [x].[Survey_Name]
+FROM [Survey] AS [x]
+WHERE [x].[Survey_Name] = @__surveyName_0 (6438bdd5)
+2018-01-01T23:43:13.7376377-05:00 0HLAHJ34VE6EF [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:43:13.7376377-05:00 0HLAHJ34VE6EF [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" in 105.5044ms (afa2e885)
+2018-01-01T23:43:13.7386408-05:00 0HLAHJ34VE6EF [INF] Request finished in 106.0028ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:45:56.8107647-05:00  [INF] webpack building... (478286db)
+2018-01-01T23:46:08.5433743-05:00  [INF] webpack built eae3b77d707ec4009823 in 11659ms (1c4a6234)
+2018-01-01T23:46:08.7078098-05:00  [ERR] Hash: eae3b77d707ec4009823
+Version: webpack 2.6.1
+Time: 11659ms
+                                   Asset      Size  Chunks                    Chunk Names
+    0c0c930a81c16cc16d269f2364f627f4.jpg    109 kB                            
+    674f50d287a8c48dc19ba404d20fe713.eot    166 kB                            
+    912ec66d7572ff821749319396470bde.svg    444 kB                     [big]  
+    b06871f281fee6b241d60582ae9369b9.ttf    166 kB                            
+                          main-client.js   4.85 MB       0  [emitted]  [big]  main-client
+    0.dbfefddd72ed93044a6f.hot-update.js   10.4 kB       0  [emitted]         main-client
+    dbfefddd72ed93044a6f.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map   5.73 MB       0  [emitted]         main-client
+0.dbfefddd72ed93044a6f.hot-update.js.map   16.9 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.dbfefddd72ed93044a6f.hot-update.js, main-client.js.map, 0.dbfefddd72ed93044a6f.hot-update.js.map (main-client) 4.58 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [380] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [381] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+  [382] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [423] ./ClientApp/app/app.module.ts 17 kB {0} [built]
+  [731] ./~/querystring-es3/index.js 127 bytes {0}
+  [963] ./~/strip-ansi/index.js 161 bytes {0}
+ [1022] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+ [1023] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+ [1027] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1031] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1037] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1055] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1058] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 1044 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (7ac39250)
+2018-01-01T23:46:09.7575949-05:00 0HLAHJ34VE6EG [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/dbfefddd72ed93044a6f.hot-update.json   (e5be5b71)
+2018-01-01T23:46:09.7926876-05:00 0HLAHJ34VE6EG [INF] Request finished in 35.433ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:46:09.8167515-05:00 0HLAHJ34VE6EH [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.dbfefddd72ed93044a6f.hot-update.js   (e5be5b71)
+2018-01-01T23:46:09.8708956-05:00 0HLAHJ34VE6EH [INF] Request finished in 53.9515ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-01T23:46:13.5797376-05:00 0HLAHJ34VE6EI [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/0.dbfefddd72ed93044a6f.hot-update.js.map   (e5be5b71)
+2018-01-01T23:46:13.6328777-05:00 0HLAHJ34VE6EI [INF] Request finished in 53.6155ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-01T23:46:13.8584768-05:00 0HLAHJ34VE6EJ [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/ParticipantEndpoint/getMemberbyid/50   (e5be5b71)
+2018-01-01T23:46:13.8604821-05:00 0HLAHJ34VE6EJ [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:46:13.8975805-05:00 0HLAHJ34VE6EJ [INF] Executing action method "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" with arguments (["50"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:46:13.8975805-05:00 0HLAHJ34VE6EK [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/GetSurveyOptions/SurveyTest02 application/json  (e5be5b71)
+2018-01-01T23:46:13.8985836-05:00 0HLAHJ34VE6EK [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-01T23:46:13.9808018-05:00 0HLAHJ34VE6EK [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" with arguments (["SurveyTest02"]) - ModelState is Valid (ba7f4ac2)
+2018-01-01T23:46:13.9808018-05:00 0HLAHJ34VE6EJ [INF] Executed DbCommand (82ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [c].[ParticpantId], [c].[AddrLatitude], [c].[AddrLongitude], [c].[AddressScore], [c].[Age], [c].[AgeScore], [c].[AgeValid], [c].[Browser], [c].[City], [c].[CityValid], [c].[Date_of_Birth], [c].[EmailAddress], [c].[FinalScaoreVal], [c].[FirstName], [c].[FirstName_Match], [c].[GenderIdentity], [c].[Gender_Match], [c].[Hispanic], [c].[LastName], [c].[LastName_Match], [c].[OS], [c].[OtherGenderType], [c].[OtherRace], [c].[OtherSexualOrientation], [c].[Password], [c].[PhoneNumber], [c].[Race], [c].[RegisterDate], [c].[SexualOrientation], [c].[SocialScore], [c].[State], [c].[StateValid], [c].[TwoFactorScore], [c].[Verified], [c].[Zip], [c].[geo_City], [c].[geo_CountryName], [c].[geo_IP], [c].[geo_RegionName], [c].[geo_ZipCode], [c].[geo_lattude], [c].[geo_longitude], [c].[latlangMatch]
+FROM [Participant] AS [c]
+WHERE [c].[ParticpantId] = @__id_0 (6438bdd5)
+2018-01-01T23:46:14.0078724-05:00 0HLAHJ34VE6EJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:46:14.0088758-05:00 0HLAHJ34VE6EJ [INF] Executed action "IdentityScoreJult28.Controllers.ParticipantEndpointController.getMemberbyid (IdentityScoreJult28)" in 147.8523ms (afa2e885)
+2018-01-01T23:46:14.0088758-05:00 0HLAHJ34VE6EJ [INF] Request finished in 150.274ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-01T23:46:14.0088758-05:00 0HLAHJ34VE6EK [INF] Executed DbCommand (26ms) [Parameters=[@__surveyName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[SurveyId], [x].[CalAddressScore], [x].[CalAgeScore], [x].[CalSocialScore], [x].[CalTwoFactorScore], [x].[Survey_Active], [x].[Survey_Name]
+FROM [Survey] AS [x]
+WHERE [x].[Survey_Name] = @__surveyName_0 (6438bdd5)
+2018-01-01T23:46:14.0088758-05:00 0HLAHJ34VE6EK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-01T23:46:14.0088758-05:00 0HLAHJ34VE6EK [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.GetSurveyOptions (IdentityScoreJult28)" in 110.7581ms (afa2e885)
+2018-01-01T23:46:14.0088758-05:00 0HLAHJ34VE6EK [INF] Request finished in 111.5224ms 200 application/json; charset=utf-8 (15c52c40)

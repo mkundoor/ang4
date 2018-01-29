@@ -1,0 +1,49 @@
+
+<div>
+   <br/>
+    <hr />
+ 
+    <h4> To create a new study please click here     <button class="btn btn-md btn-primary" (click)="CreateSurvey()"> <i class="fa fa-plus-circle">  New Study </i></button></h4>
+    <br/>
+ 
+    <hr/>
+        <h3>List of Studies</h3>
+    <table class="table-striped table-hover custom-table">
+        <thead >
+            <tr>
+                <th>Id</th>
+                <th>Study Name</th>
+                <th>Study Active</th>
+                <th>Address </th>
+                <th>Social Media</th>
+                <th>Age </th>
+                <th>Two Factor</th>
+                <th>Redirecting Url</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of surveyListdata">
+                <td>{{ row.surveyId }}</td>
+                <td>{{ row.survey_Name }}</td>
+                <td>{{ row.survey_Active }}</td>
+                <td>{{ row.calAddressScore }}</td>
+                <td>{{ row.calSocialScore }}</td>
+                <td>{{ row.calAgeScore }}</td>
+                <td>{{ row.calTwoFactorScore }}</td>
+                <td>{{row.redirectingUrl}}</td>
+                <td *ngIf="row.surveyId != deleteId">
+       
+                    <button class="btn btn-md btn-warning"
+                            (click)="editSurvey(row.surveyId)"><i class="fa fa-pencil-square-o">  Edit</i>
+                        
+                    </button>
+                    <button class="btn btn-md btn-danger"
+                            (click)="deleteSurveyrow(row)"><i class="fa fa-trash">  Delete</i>
+                    </button>
+                </td>
+               
+            </tr>
+        </tbody>
+    </table>
+</div>

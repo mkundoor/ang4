@@ -1,0 +1,693 @@
+﻿<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <IsPackable>false</IsPackable>
+    <Description>ASPNET Core - Angular4 startup template for Quick Application development</Description>
+    <Copyright>Copyright © 2017</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Company></Company>
+    <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="1.16.2" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AspNet.Security.OAuth.Validation" Version="1.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" />
+    <PackageReference Include="OpenIddict" Version="1.0.0-beta2-0614" />
+    <PackageReference Include="OpenIddict.Mvc" Version="1.0.0-beta2-0614" />
+    <PackageReference Include="OpenIddict.EntityFrameworkCore" Version="1.0.0-beta2-0614" />
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.1.0" />
+    <PackageReference Include="Swashbuckle" Version="6.0.0-beta902" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.0.1" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Files not to show in IDE -->
+    <None Remove="ClientApp\app\models\apptModel.ts" />
+    <None Remove="yarn.lock" />
+    <Compile Remove="wwwroot\dist\**" />
+
+    <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Content Remove="ClientApp\**" />
+    <Content Remove="wwwroot\dist\**" />
+    <EmbeddedResource Remove="wwwroot\dist\**" />
+    <None Remove="wwwroot\dist\**" />
+  </ItemGroup>
+  <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec Command="npm install" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --env.prod" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**; ClientApp\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+  <Target Name="WebpackBuildVendorPackages" AfterTargets="Compile" Condition="!Exists('wwwroot\dist\vendor.js')">
+    <!-- Build the vendor packages on first run -->
+    <Exec Command="npm run dev-build" />
+  </Target>
+  <ItemGroup>
+    <Content Include="ClientApp\app\assets\images\QuickApp.ico">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\app\assets\images\logo.png" />
+    <Content Include="ClientApp\app\assets\locale\ar.json" />
+    <Content Include="ClientApp\app\assets\locale\ko.json" />
+    <Content Include="ClientApp\app\assets\locale\en.json" />
+    <Content Include="ClientApp\app\assets\locale\fr.json" />
+    <Content Include="ClientApp\app\data\scheduleevents.json" />
+    <Content Include="node_modules\aspnet-webpack\LICENSE.txt" />
+    <Content Include="node_modules\aspnet-webpack\package.json" />
+    <Content Include="node_modules\aspnet-webpack\tsconfig.json" />
+    <Content Include="node_modules\webpack-dev-middleware\node_modules\memory-fs\package.json" />
+    <Content Include="node_modules\webpack-dev-middleware\package.json" />
+    <Content Include="node_modules\webpack-hot-middleware\example\index-multientry.html" />
+    <Content Include="node_modules\webpack-hot-middleware\example\index.html" />
+    <Content Include="node_modules\webpack-hot-middleware\example\package.json" />
+    <Content Include="node_modules\webpack-hot-middleware\package.json" />
+    <Content Include="node_modules\webpack-merge\package.json" />
+    <Content Include="node_modules\webpack-node-externals\package.json" />
+    <Content Include="node_modules\webpack-sources\node_modules\source-list-map\package.json" />
+    <Content Include="node_modules\webpack-sources\package.json" />
+    <Content Include="node_modules\webpack\node_modules\ajv\lib\refs\json-schema-draft-04.json" />
+    <Content Include="node_modules\webpack\node_modules\ajv\lib\refs\json-schema-v5.json" />
+    <Content Include="node_modules\webpack\node_modules\ajv\package.json" />
+    <Content Include="node_modules\webpack\node_modules\camelcase\package.json" />
+    <Content Include="node_modules\webpack\node_modules\cliui\LICENSE.txt" />
+    <Content Include="node_modules\webpack\node_modules\cliui\package.json" />
+    <Content Include="node_modules\webpack\node_modules\memory-fs\package.json" />
+    <Content Include="node_modules\webpack\node_modules\source-list-map\package.json" />
+    <Content Include="node_modules\webpack\node_modules\supports-color\package.json" />
+    <Content Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\package.json" />
+    <Content Include="node_modules\webpack\node_modules\uglify-js\package.json" />
+    <Content Include="node_modules\webpack\node_modules\uglify-js\tools\domprops.json" />
+    <Content Include="node_modules\webpack\node_modules\uglify-js\tools\props.html" />
+    <Content Include="node_modules\webpack\node_modules\webpack-sources\package.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs-parser\LICENSE.txt" />
+    <Content Include="node_modules\webpack\node_modules\yargs-parser\node_modules\camelcase\package.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs-parser\package.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\be.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\de.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\en.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\es.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\fr.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\hi.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\hu.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\id.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\it.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\ja.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\ko.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\nb.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\nl.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\pirate.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\pl.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\pt.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\pt_BR.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\ru.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\th.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\tr.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\locales\zh_CN.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\node_modules\camelcase\package.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\node_modules\cliui\LICENSE.txt" />
+    <Content Include="node_modules\webpack\node_modules\yargs\node_modules\cliui\package.json" />
+    <Content Include="node_modules\webpack\node_modules\yargs\package.json" />
+    <Content Include="node_modules\webpack\package.json" />
+    <Content Include="node_modules\webpack\schemas\webpackOptionsSchema.json" />
+    <Content Include="wwwroot\penn-logo-sm.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="System\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="node_modules\aspnet-webpack\.npmignore" />
+    <None Include="node_modules\aspnet-webpack\index.js" />
+    <None Include="node_modules\aspnet-webpack\LoadViaWebpack.js" />
+    <None Include="node_modules\aspnet-webpack\README.md" />
+    <None Include="node_modules\aspnet-webpack\RequireNewCopy.js" />
+    <None Include="node_modules\aspnet-webpack\WebpackDevMiddleware.js" />
+    <None Include="node_modules\aspnet-webpack\yarn.lock" />
+    <None Include="node_modules\webpack-dev-middleware\lib\GetFilenameFromUrl.js" />
+    <None Include="node_modules\webpack-dev-middleware\lib\PathJoin.js" />
+    <None Include="node_modules\webpack-dev-middleware\lib\Shared.js" />
+    <None Include="node_modules\webpack-dev-middleware\LICENSE" />
+    <None Include="node_modules\webpack-dev-middleware\middleware.js" />
+    <None Include="node_modules\webpack-dev-middleware\node_modules\memory-fs\lib\join.js" />
+    <None Include="node_modules\webpack-dev-middleware\node_modules\memory-fs\lib\MemoryFileSystem.js" />
+    <None Include="node_modules\webpack-dev-middleware\node_modules\memory-fs\lib\normalize.js" />
+    <None Include="node_modules\webpack-dev-middleware\node_modules\memory-fs\README.md" />
+    <None Include="node_modules\webpack-dev-middleware\README.md" />
+    <None Include="node_modules\webpack-hot-middleware\.eslintignore" />
+    <None Include="node_modules\webpack-hot-middleware\.eslintrc" />
+    <None Include="node_modules\webpack-hot-middleware\.npmignore" />
+    <None Include="node_modules\webpack-hot-middleware\.travis.yml" />
+    <None Include="node_modules\webpack-hot-middleware\client-overlay.js" />
+    <None Include="node_modules\webpack-hot-middleware\client.js" />
+    <None Include="node_modules\webpack-hot-middleware\example\client.js" />
+    <None Include="node_modules\webpack-hot-middleware\example\extra.js" />
+    <None Include="node_modules\webpack-hot-middleware\example\README.md" />
+    <None Include="node_modules\webpack-hot-middleware\example\server.js" />
+    <None Include="node_modules\webpack-hot-middleware\example\webpack.config.js" />
+    <None Include="node_modules\webpack-hot-middleware\example\webpack.config.multientry.js" />
+    <None Include="node_modules\webpack-hot-middleware\helpers.js" />
+    <None Include="node_modules\webpack-hot-middleware\middleware.js" />
+    <None Include="node_modules\webpack-hot-middleware\process-update.js" />
+    <None Include="node_modules\webpack-hot-middleware\README.md" />
+    <None Include="node_modules\webpack-hot-middleware\test\client-test.js" />
+    <None Include="node_modules\webpack-hot-middleware\test\helpers-test.js" />
+    <None Include="node_modules\webpack-hot-middleware\test\middleware-test.js" />
+    <None Include="node_modules\webpack-hot-middleware\test\mocha.opts" />
+    <None Include="node_modules\webpack-merge\CHANGELOG.md" />
+    <None Include="node_modules\webpack-merge\lib\index.js" />
+    <None Include="node_modules\webpack-merge\lib\join-arrays-smart.js" />
+    <None Include="node_modules\webpack-merge\lib\join-arrays.js" />
+    <None Include="node_modules\webpack-merge\lib\unique.js" />
+    <None Include="node_modules\webpack-merge\lib\unite-rules.js" />
+    <None Include="node_modules\webpack-merge\LICENSE" />
+    <None Include="node_modules\webpack-merge\README.md" />
+    <None Include="node_modules\webpack-node-externals\index.js" />
+    <None Include="node_modules\webpack-node-externals\LICENSE" />
+    <None Include="node_modules\webpack-node-externals\README.md" />
+    <None Include="node_modules\webpack-sources\lib\CachedSource.js" />
+    <None Include="node_modules\webpack-sources\lib\ConcatSource.js" />
+    <None Include="node_modules\webpack-sources\lib\index.js" />
+    <None Include="node_modules\webpack-sources\lib\LineToLineMappedSource.js" />
+    <None Include="node_modules\webpack-sources\lib\OriginalSource.js" />
+    <None Include="node_modules\webpack-sources\lib\PrefixSource.js" />
+    <None Include="node_modules\webpack-sources\lib\RawSource.js" />
+    <None Include="node_modules\webpack-sources\lib\ReplaceSource.js" />
+    <None Include="node_modules\webpack-sources\lib\Source.js" />
+    <None Include="node_modules\webpack-sources\lib\SourceAndMapMixin.js" />
+    <None Include="node_modules\webpack-sources\lib\SourceMapSource.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\base64-vlq.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\CodeNode.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\fromStringWithSourceMap.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\helpers.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\index.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\MappingsContext.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\SingleLineNode.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\SourceListMap.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\lib\SourceNode.js" />
+    <None Include="node_modules\webpack-sources\node_modules\source-list-map\README.md" />
+    <None Include="node_modules\webpack-sources\README.md" />
+    <None Include="node_modules\webpack\bin\config-optimist.js" />
+    <None Include="node_modules\webpack\bin\config-yargs.js" />
+    <None Include="node_modules\webpack\bin\convert-argv.js" />
+    <None Include="node_modules\webpack\bin\webpack.js" />
+    <None Include="node_modules\webpack\buildin\.eslintrc" />
+    <None Include="node_modules\webpack\buildin\amd-define.js" />
+    <None Include="node_modules\webpack\buildin\amd-options.js" />
+    <None Include="node_modules\webpack\buildin\global.js" />
+    <None Include="node_modules\webpack\buildin\harmony-module.js" />
+    <None Include="node_modules\webpack\buildin\module.js" />
+    <None Include="node_modules\webpack\buildin\system.js" />
+    <None Include="node_modules\webpack\hot\.eslintrc" />
+    <None Include="node_modules\webpack\hot\dev-server.js" />
+    <None Include="node_modules\webpack\hot\emitter.js" />
+    <None Include="node_modules\webpack\hot\log-apply-result.js" />
+    <None Include="node_modules\webpack\hot\only-dev-server.js" />
+    <None Include="node_modules\webpack\hot\poll.js" />
+    <None Include="node_modules\webpack\hot\signal.js" />
+    <None Include="node_modules\webpack\lib\AmdMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\APIPlugin.js" />
+    <None Include="node_modules\webpack\lib\AsyncDependenciesBlock.js" />
+    <None Include="node_modules\webpack\lib\AutomaticPrefetchPlugin.js" />
+    <None Include="node_modules\webpack\lib\BannerPlugin.js" />
+    <None Include="node_modules\webpack\lib\BasicEvaluatedExpression.js" />
+    <None Include="node_modules\webpack\lib\CachePlugin.js" />
+    <None Include="node_modules\webpack\lib\CaseSensitiveModulesWarning.js" />
+    <None Include="node_modules\webpack\lib\Chunk.js" />
+    <None Include="node_modules\webpack\lib\ChunkRenderError.js" />
+    <None Include="node_modules\webpack\lib\ChunkTemplate.js" />
+    <None Include="node_modules\webpack\lib\compareLocations.js" />
+    <None Include="node_modules\webpack\lib\CompatibilityPlugin.js" />
+    <None Include="node_modules\webpack\lib\Compilation.js" />
+    <None Include="node_modules\webpack\lib\Compiler.js" />
+    <None Include="node_modules\webpack\lib\ConstPlugin.js" />
+    <None Include="node_modules\webpack\lib\ContextModule.js" />
+    <None Include="node_modules\webpack\lib\ContextModuleFactory.js" />
+    <None Include="node_modules\webpack\lib\ContextReplacementPlugin.js" />
+    <None Include="node_modules\webpack\lib\DefinePlugin.js" />
+    <None Include="node_modules\webpack\lib\DelegatedModule.js" />
+    <None Include="node_modules\webpack\lib\DelegatedModuleFactoryPlugin.js" />
+    <None Include="node_modules\webpack\lib\DelegatedPlugin.js" />
+    <None Include="node_modules\webpack\lib\DependenciesBlock.js" />
+    <None Include="node_modules\webpack\lib\DependenciesBlockVariable.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDDefineDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDDefineDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDRequireArrayDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDRequireContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDRequireDependenciesBlock.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDRequireDependenciesBlockParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDRequireDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\AMDRequireItemDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\CommonJsPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\CommonJsRequireContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\CommonJsRequireDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\CommonJsRequireDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ConstDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ContextDependencyHelpers.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ContextDependencyTemplateAsId.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ContextDependencyTemplateAsRequireCall.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ContextElementDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\CriticalDependencyWarning.js" />
+    <None Include="node_modules\webpack\lib\dependencies\DelegatedSourceDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\DepBlockHelpers.js" />
+    <None Include="node_modules\webpack\lib\dependencies\DllEntryDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\getFunctionExpression.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyAcceptDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyAcceptImportDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyCompatibilityDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyDetectionParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyExportDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyExportExpressionDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyExportHeaderDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyExportImportedSpecifierDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyExportSpecifierDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyImportDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyImportDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyImportSpecifierDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyModulesHelpers.js" />
+    <None Include="node_modules\webpack\lib\dependencies\HarmonyModulesPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportDependenciesBlock.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportEagerContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportEagerDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportLazyContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportLazyOnceContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ImportPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\LoaderDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\LoaderPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\LocalModule.js" />
+    <None Include="node_modules\webpack\lib\dependencies\LocalModuleDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\LocalModulesHelpers.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ModuleDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ModuleDependencyTemplateAsId.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ModuleDependencyTemplateAsRequireId.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ModuleHotAcceptDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\ModuleHotDeclineDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\MultiEntryDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\NullDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\PrefetchDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireContextDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireContextPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireEnsureDependenciesBlock.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireEnsureDependenciesBlockParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireEnsureDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireEnsureItemDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireEnsurePlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireHeaderDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireIncludeDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireIncludeDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireIncludePlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireResolveContextDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireResolveDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireResolveDependencyParserPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\RequireResolveHeaderDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\SingleEntryDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\SystemPlugin.js" />
+    <None Include="node_modules\webpack\lib\dependencies\UnsupportedDependency.js" />
+    <None Include="node_modules\webpack\lib\dependencies\WebpackMissingModule.js" />
+    <None Include="node_modules\webpack\lib\Dependency.js" />
+    <None Include="node_modules\webpack\lib\DllEntryPlugin.js" />
+    <None Include="node_modules\webpack\lib\DllModule.js" />
+    <None Include="node_modules\webpack\lib\DllModuleFactory.js" />
+    <None Include="node_modules\webpack\lib\DllPlugin.js" />
+    <None Include="node_modules\webpack\lib\DllReferencePlugin.js" />
+    <None Include="node_modules\webpack\lib\DynamicEntryPlugin.js" />
+    <None Include="node_modules\webpack\lib\EntryModuleNotFoundError.js" />
+    <None Include="node_modules\webpack\lib\EntryOptionPlugin.js" />
+    <None Include="node_modules\webpack\lib\Entrypoint.js" />
+    <None Include="node_modules\webpack\lib\EnvironmentPlugin.js" />
+    <None Include="node_modules\webpack\lib\ErrorHelpers.js" />
+    <None Include="node_modules\webpack\lib\EvalDevToolModulePlugin.js" />
+    <None Include="node_modules\webpack\lib\EvalDevToolModuleTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\EvalSourceMapDevToolModuleTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\EvalSourceMapDevToolPlugin.js" />
+    <None Include="node_modules\webpack\lib\ExtendedAPIPlugin.js" />
+    <None Include="node_modules\webpack\lib\ExternalModule.js" />
+    <None Include="node_modules\webpack\lib\ExternalModuleFactoryPlugin.js" />
+    <None Include="node_modules\webpack\lib\ExternalsPlugin.js" />
+    <None Include="node_modules\webpack\lib\FlagDependencyExportsPlugin.js" />
+    <None Include="node_modules\webpack\lib\FlagDependencyUsagePlugin.js" />
+    <None Include="node_modules\webpack\lib\FlagInitialModulesAsUsedPlugin.js" />
+    <None Include="node_modules\webpack\lib\formatLocation.js" />
+    <None Include="node_modules\webpack\lib\FunctionModulePlugin.js" />
+    <None Include="node_modules\webpack\lib\FunctionModuleTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\HashedModuleIdsPlugin.js" />
+    <None Include="node_modules\webpack\lib\HotModuleReplacement.runtime.js" />
+    <None Include="node_modules\webpack\lib\HotModuleReplacementPlugin.js" />
+    <None Include="node_modules\webpack\lib\HotUpdateChunkTemplate.js" />
+    <None Include="node_modules\webpack\lib\IgnorePlugin.js" />
+    <None Include="node_modules\webpack\lib\JsonpChunkTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\JsonpExportMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\JsonpHotUpdateChunkTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\JsonpMainTemplate.runtime.js" />
+    <None Include="node_modules\webpack\lib\JsonpMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\JsonpTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\LibManifestPlugin.js" />
+    <None Include="node_modules\webpack\lib\LibraryTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\LoaderOptionsPlugin.js" />
+    <None Include="node_modules\webpack\lib\LoaderTargetPlugin.js" />
+    <None Include="node_modules\webpack\lib\MainTemplate.js" />
+    <None Include="node_modules\webpack\lib\MemoryOutputFileSystem.js" />
+    <None Include="node_modules\webpack\lib\Module.js" />
+    <None Include="node_modules\webpack\lib\ModuleBuildError.js" />
+    <None Include="node_modules\webpack\lib\ModuleDependencyError.js" />
+    <None Include="node_modules\webpack\lib\ModuleDependencyWarning.js" />
+    <None Include="node_modules\webpack\lib\ModuleError.js" />
+    <None Include="node_modules\webpack\lib\ModuleFilenameHelpers.js" />
+    <None Include="node_modules\webpack\lib\ModuleNotFoundError.js" />
+    <None Include="node_modules\webpack\lib\ModuleParseError.js" />
+    <None Include="node_modules\webpack\lib\ModuleReason.js" />
+    <None Include="node_modules\webpack\lib\ModuleTemplate.js" />
+    <None Include="node_modules\webpack\lib\ModuleWarning.js" />
+    <None Include="node_modules\webpack\lib\MovedToPluginWarningPlugin.js" />
+    <None Include="node_modules\webpack\lib\MultiCompiler.js" />
+    <None Include="node_modules\webpack\lib\MultiEntryPlugin.js" />
+    <None Include="node_modules\webpack\lib\MultiModule.js" />
+    <None Include="node_modules\webpack\lib\MultiModuleFactory.js" />
+    <None Include="node_modules\webpack\lib\MultiStats.js" />
+    <None Include="node_modules\webpack\lib\MultiWatching.js" />
+    <None Include="node_modules\webpack\lib\NamedChunksPlugin.js" />
+    <None Include="node_modules\webpack\lib\NamedModulesPlugin.js" />
+    <None Include="node_modules\webpack\lib\NewWatchingPlugin.js" />
+    <None Include="node_modules\webpack\lib\NodeStuffPlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeChunkTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeEnvironmentPlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeHotUpdateChunkTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeMainTemplate.runtime.js" />
+    <None Include="node_modules\webpack\lib\node\NodeMainTemplateAsync.runtime.js" />
+    <None Include="node_modules\webpack\lib\node\NodeMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeOutputFileSystem.js" />
+    <None Include="node_modules\webpack\lib\node\NodeSourcePlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeTargetPlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\node\NodeWatchFileSystem.js" />
+    <None Include="node_modules\webpack\lib\NoEmitOnErrorsPlugin.js" />
+    <None Include="node_modules\webpack\lib\NoErrorsPlugin.js" />
+    <None Include="node_modules\webpack\lib\NormalModule.js" />
+    <None Include="node_modules\webpack\lib\NormalModuleFactory.js" />
+    <None Include="node_modules\webpack\lib\NormalModuleReplacementPlugin.js" />
+    <None Include="node_modules\webpack\lib\NullFactory.js" />
+    <None Include="node_modules\webpack\lib\optimize\AggressiveMergingPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\AggressiveSplittingPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\ChunkModuleIdRangePlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\CommonsChunkPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\DedupePlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\EnsureChunkConditionsPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\FlagIncludedChunksPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\LimitChunkCountPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\MergeDuplicateChunksPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\MinChunkSizePlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\OccurrenceOrderPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\RemoveEmptyChunksPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\RemoveParentModulesPlugin.js" />
+    <None Include="node_modules\webpack\lib\optimize\UglifyJsPlugin.js" />
+    <None Include="node_modules\webpack\lib\OptionsApply.js" />
+    <None Include="node_modules\webpack\lib\OptionsDefaulter.js" />
+    <None Include="node_modules\webpack\lib\Parser.js" />
+    <None Include="node_modules\webpack\lib\ParserHelpers.js" />
+    <None Include="node_modules\webpack\lib\performance\AssetsOverSizeLimitWarning.js" />
+    <None Include="node_modules\webpack\lib\performance\EntrypointsOverSizeLimitWarning.js" />
+    <None Include="node_modules\webpack\lib\performance\NoAsyncChunksWarning.js" />
+    <None Include="node_modules\webpack\lib\performance\SizeLimitsPlugin.js" />
+    <None Include="node_modules\webpack\lib\PrefetchPlugin.js" />
+    <None Include="node_modules\webpack\lib\ProgressPlugin.js" />
+    <None Include="node_modules\webpack\lib\ProvidePlugin.js" />
+    <None Include="node_modules\webpack\lib\RawModule.js" />
+    <None Include="node_modules\webpack\lib\RecordIdsPlugin.js" />
+    <None Include="node_modules\webpack\lib\removeAndDo.js" />
+    <None Include="node_modules\webpack\lib\RequestShortener.js" />
+    <None Include="node_modules\webpack\lib\RequireJsStuffPlugin.js" />
+    <None Include="node_modules\webpack\lib\RuleSet.js" />
+    <None Include="node_modules\webpack\lib\SetVarMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\SingleEntryPlugin.js" />
+    <None Include="node_modules\webpack\lib\SizeFormatHelpers.js" />
+    <None Include="node_modules\webpack\lib\SourceMapDevToolModuleOptionsPlugin.js" />
+    <None Include="node_modules\webpack\lib\SourceMapDevToolPlugin.js" />
+    <None Include="node_modules\webpack\lib\Stats.js" />
+    <None Include="node_modules\webpack\lib\Template.js" />
+    <None Include="node_modules\webpack\lib\TemplatedPathPlugin.js" />
+    <None Include="node_modules\webpack\lib\UmdMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\UnsupportedFeatureWarning.js" />
+    <None Include="node_modules\webpack\lib\UseStrictPlugin.js" />
+    <None Include="node_modules\webpack\lib\util\identifier.js" />
+    <None Include="node_modules\webpack\lib\validateSchema.js" />
+    <None Include="node_modules\webpack\lib\WarnCaseSensitiveModulesPlugin.js" />
+    <None Include="node_modules\webpack\lib\WatchIgnorePlugin.js" />
+    <None Include="node_modules\webpack\lib\webpack.js" />
+    <None Include="node_modules\webpack\lib\webpack.web.js" />
+    <None Include="node_modules\webpack\lib\WebpackError.js" />
+    <None Include="node_modules\webpack\lib\WebpackOptionsApply.js" />
+    <None Include="node_modules\webpack\lib\WebpackOptionsDefaulter.js" />
+    <None Include="node_modules\webpack\lib\WebpackOptionsValidationError.js" />
+    <None Include="node_modules\webpack\lib\webworker\WebWorkerChunkTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\webworker\WebWorkerHotUpdateChunkTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\webworker\WebWorkerMainTemplate.runtime.js" />
+    <None Include="node_modules\webpack\lib\webworker\WebWorkerMainTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\webworker\WebWorkerTemplatePlugin.js" />
+    <None Include="node_modules\webpack\lib\web\WebEnvironmentPlugin.js" />
+    <None Include="node_modules\webpack\LICENSE" />
+    <None Include="node_modules\webpack\node_modules\.bin\uglifyjs" />
+    <None Include="node_modules\webpack\node_modules\.bin\uglifyjs.cmd" />
+    <None Include="node_modules\webpack\node_modules\ajv\.tonic_example.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\dist\ajv.bundle.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\dist\ajv.min.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\dist\ajv.min.js.map" />
+    <None Include="node_modules\webpack\node_modules\ajv\dist\nodent.min.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\dist\regenerator.min.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\ajv.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\async.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\cache.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\equal.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\formats.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\index.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\resolve.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\rules.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\schema_obj.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\ucs2length.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\util.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\validation_error.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\compile\_rules.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\allOf.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\anyOf.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\constant.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\custom.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\dependencies.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\enum.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\format.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\items.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\multipleOf.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\not.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\oneOf.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\pattern.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\patternRequired.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\properties.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\README.md" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\ref.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\required.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\switch.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\uniqueItems.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\validate.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\_formatLimit.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\_limit.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\_limitItems.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\_limitLength.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dotjs\_limitProperties.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\allOf.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\anyOf.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\coerce.def" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\custom.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\defaults.def" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\definitions.def" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\dependencies.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\enum.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\errors.def" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\format.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\items.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\missing.def" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\multipleOf.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\not.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\oneOf.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\pattern.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\properties.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\ref.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\required.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\uniqueItems.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\v5\constant.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\v5\patternRequired.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\v5\switch.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\v5\_formatLimit.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\validate.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\_limit.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\_limitItems.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\_limitLength.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\dot\_limitProperties.jst" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\keyword.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\lib\v5.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\LICENSE" />
+    <None Include="node_modules\webpack\node_modules\ajv\README.md" />
+    <None Include="node_modules\webpack\node_modules\ajv\scripts\.eslintrc.yml" />
+    <None Include="node_modules\webpack\node_modules\ajv\scripts\bundle.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\scripts\compile-dots.js" />
+    <None Include="node_modules\webpack\node_modules\ajv\scripts\info" />
+    <None Include="node_modules\webpack\node_modules\ajv\scripts\prepare-tests" />
+    <None Include="node_modules\webpack\node_modules\ajv\scripts\travis-gh-pages" />
+    <None Include="node_modules\webpack\node_modules\camelcase\index.js" />
+    <None Include="node_modules\webpack\node_modules\camelcase\license" />
+    <None Include="node_modules\webpack\node_modules\camelcase\readme.md" />
+    <None Include="node_modules\webpack\node_modules\cliui\.coveralls.yml" />
+    <None Include="node_modules\webpack\node_modules\cliui\.npmignore" />
+    <None Include="node_modules\webpack\node_modules\cliui\.travis.yml" />
+    <None Include="node_modules\webpack\node_modules\cliui\index.js" />
+    <None Include="node_modules\webpack\node_modules\cliui\README.md" />
+    <None Include="node_modules\webpack\node_modules\cliui\test\cliui.js" />
+    <None Include="node_modules\webpack\node_modules\memory-fs\lib\join.js" />
+    <None Include="node_modules\webpack\node_modules\memory-fs\lib\MemoryFileSystem.js" />
+    <None Include="node_modules\webpack\node_modules\memory-fs\lib\normalize.js" />
+    <None Include="node_modules\webpack\node_modules\memory-fs\README.md" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\base64-vlq.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\CodeNode.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\fromStringWithSourceMap.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\helpers.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\index.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\MappingsContext.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\SingleLineNode.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\SourceListMap.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\lib\SourceNode.js" />
+    <None Include="node_modules\webpack\node_modules\source-list-map\README.md" />
+    <None Include="node_modules\webpack\node_modules\supports-color\browser.js" />
+    <None Include="node_modules\webpack\node_modules\supports-color\index.js" />
+    <None Include="node_modules\webpack\node_modules\supports-color\license" />
+    <None Include="node_modules\webpack\node_modules\supports-color\readme.md" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\bin\extract-props.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\bin\uglifyjs" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\ast.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\compress.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\mozilla-ast.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\output.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\parse.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\propmangle.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\scope.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\sourcemap.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\transform.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\lib\utils.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\LICENSE" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\CHANGELOG.md" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\completion.sh.hbs" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\index.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\lib\completion.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\lib\parser.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\lib\usage.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\lib\validation.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\LICENSE" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\node_modules\yargs\README.md" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\README.md" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\tools\exports.js" />
+    <None Include="node_modules\webpack\node_modules\uglify-js\tools\node.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\CachedSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\ConcatSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\index.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\LineToLineMappedSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\OriginalSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\PrefixSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\RawSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\ReplaceSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\Source.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\SourceAndMapMixin.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\lib\SourceMapSource.js" />
+    <None Include="node_modules\webpack\node_modules\webpack-sources\README.md" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\CHANGELOG.md" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\index.js" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\lib\tokenize-arg-string.js" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\node_modules\camelcase\index.js" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\node_modules\camelcase\license" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\node_modules\camelcase\readme.md" />
+    <None Include="node_modules\webpack\node_modules\yargs-parser\README.md" />
+    <None Include="node_modules\webpack\node_modules\yargs\CHANGELOG.md" />
+    <None Include="node_modules\webpack\node_modules\yargs\completion.sh.hbs" />
+    <None Include="node_modules\webpack\node_modules\yargs\index.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\assign.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\command.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\completion.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\levenshtein.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\obj-filter.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\usage.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\lib\validation.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\LICENSE" />
+    <None Include="node_modules\webpack\node_modules\yargs\node_modules\camelcase\index.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\node_modules\camelcase\license" />
+    <None Include="node_modules\webpack\node_modules\yargs\node_modules\camelcase\readme.md" />
+    <None Include="node_modules\webpack\node_modules\yargs\node_modules\cliui\CHANGELOG.md" />
+    <None Include="node_modules\webpack\node_modules\yargs\node_modules\cliui\index.js" />
+    <None Include="node_modules\webpack\node_modules\yargs\node_modules\cliui\README.md" />
+    <None Include="node_modules\webpack\node_modules\yargs\README.md" />
+    <None Include="node_modules\webpack\node_modules\yargs\yargs.js" />
+    <None Include="node_modules\webpack\README.md" />
+    <None Include="node_modules\webpack\schemas\ajv.absolutePath.js" />
+    <None Include="node_modules\webpack\web_modules\node-libs-browser.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\models\apptModel.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\LoadViaWebpack.d.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\RequireNewCopy.d.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\index.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\LoadViaWebpack.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\RequireNewCopy.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\typings\memory-fs.d.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\typings\require-from-string.d.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\typings\webpack-node-externals.d.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\src\WebpackDevMiddleware.ts" />
+    <TypeScriptCompile Include="node_modules\aspnet-webpack\WebpackDevMiddleware.d.ts" />
+    <TypeScriptCompile Include="node_modules\webpack\node_modules\ajv\lib\ajv.d.ts" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="http://json.schemastore.org/band-manifest" /></VisualStudio></ProjectExtensions>
+</Project>

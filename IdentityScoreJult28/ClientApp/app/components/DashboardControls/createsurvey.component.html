@@ -1,0 +1,88 @@
+
+<div>
+    <h3>Please Select Scoring Strategy</h3>
+    <br/>
+   
+    <form #f="ngForm" name="SurveyForm" class="form-horizontal editForm" (submit)="submitdata(f)" novalidate>
+        <div class="form-group has-feedback ">
+            <div class="col-md-8 " [ngClass]="{'has-success': f.submitted && survey_Name.valid, 'has-error' : f.submitted && !survey_Name.valid}">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-file fa-fw"></i></span>
+                    <input type="text" id="survey_Name" name="survey_Name" placeholder=" Please Enter Survey Name" class="form-control" [(ngModel)]="model.survey_Name" #survey_Name="ngModel" required pattern="[a-zA-Z0-9 ]*" minlength="2" maxlength="30" />
+                    <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': survey_Name.valid, 'glyphicon-remove' : !survey_Name.valid}" aria-hidden="true"></span>
+                </div>
+                <div [hidden]="survey_Name.valid || (survey_Name.pristine && !f.submitted)" class="text-danger">
+                    <div [hidden]="!survey_Name.hasError('minlength')">Enter proper Survey Name</div>
+                    <div [hidden]="!survey_Name.hasError('required')">Survey Name required</div>
+                    <div [hidden]="!survey_Name.hasError('pattern')">Invalid Survey Name</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-8 ">
+            <div class="form-group has-feedback">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="survey_Active" #survey_Active="ngModel" [(ngModel)]="model.survey_Active">
+                        Please select if Survey is Active.
+                    </label>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="calAddressScore" #calAddressScore="ngModel" [(ngModel)]="model.calAddressScore">
+                        Score based on calAddressScore
+                    </label>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="calSocialScore" #calSocialScore="ngModel" [(ngModel)]="model.calSocialScore">
+                        Score based on Social Media
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="calAgeScore" #calAgeScore="ngModel" [(ngModel)]="model.calAgeScore">
+                        Score based on Age
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="calTwoFactorScore" #calTwoFactorScore="ngModel" [(ngModel)]="model.calTwoFactorScore">
+                        Score based on Two-calTwoFactorScore authentication
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group has-feedback">
+            <div class="col-md-8 " [ngClass]="{'has-success': f.submitted && redirectingUrl.valid, 'has-error' : f.submitted && !redirectingUrl.valid}">
+                <div class="input-group">
+                    <input type="text" id="redirectingUrl" name="redirectingUrl" placeholder=" Please Enter Redirect Url" class="form-control" [(ngModel)]="model.redirectingUrl" #redirectingUrl="ngModel" required maxlength="50" />
+                    <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': redirectingUrl.valid, 'glyphicon-remove' : !redirectingUrl.valid}" aria-hidden="true"></span>
+                </div>
+                    <div [hidden]="redirectingUrl.valid || (redirectingUrl.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!redirectingUrl.hasError('required')">Survey redirect url required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <button type="submit" class="btn btn-md btn-primary" [disabled]="!f.valid"><i class='fa fa-floppy-o'></i> {{operationText}}</button>
+                </div>
+            </div>
+</form>
+
+<hr />
+  
+</div>

@@ -1,0 +1,353 @@
+﻿<div class="container  container-color">
+<h1>Please enter your details below to subscribe to the Survey</h1>
+    <div class="col-md-8 col-md-offset-2 bg-form"> 
+
+        <h3 class="RegisterHeader"><i class="fa fa-info-circle fa-lg page-caption" aria-hidden="true"></i>  Register </h3>
+        <hr />
+        <form #f="ngForm" name="RegistrationForm" class="form-horizontal login" (submit)="submitform(f)" novalidate>
+          
+            <div class="form-group has-feedback ">
+                <div class="col-md-8 " [ngClass]="{'has-success': f.submitted && FirstName.valid, 'has-error' : f.submitted && !FirstName.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <input type="text" id="FirstName" name="FirstName" placeholder="First Name" class="form-control" [(ngModel)]="model.FirstName" #FirstName="ngModel" required  pattern="[a-zA-Z ]*" minlength="1"  maxlength="12"/>
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': FirstName.valid, 'glyphicon-remove' : !FirstName.valid}" aria-hidden="true"></span>
+                </div>
+                <div [hidden]="FirstName.valid || (FirstName.pristine && !f.submitted)" class="text-danger">
+                    <div [hidden]="!FirstName.hasError('minlength')">Enter proper First Name</div>
+                    <div [hidden]="!FirstName.hasError('required')">First Name required</div>
+                    <div [hidden]="!FirstName.hasError('pattern')">Invalid First Name</div>
+                </div>
+                </div>
+             </div>
+
+                <div class="form-group has-feedback">
+                    <div class="col-md-8 " [ngClass]="{'has-success': f.submitted && LastName.valid, 'has-error' : f.submitted && !LastName.valid}">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                            <input type="text" id="LastName" name="LastName" placeholder=" Last Name" class="form-control" [(ngModel)]="model.LastName" #LastName="ngModel" required pattern="[a-zA-Z ]*" minlength="2"  maxlength="15" />
+                            <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': LastName.valid, 'glyphicon-remove' : !LastName.valid}" aria-hidden="true"></span>
+                        </div>
+                            <div [hidden]="LastName.valid || (LastName.pristine && !f.submitted)" class="text-danger">
+                                <div [hidden]="!LastName.hasError('minlength')">Enter proper Last Name</div>
+                                <div [hidden]="!LastName.hasError('required')">Last Name required</div>
+                                <div [hidden]="!LastName.hasError('pattern')">Invalid Last Name</div>
+                                </div>
+                        </div>
+                </div>
+     
+
+         <div class="form-group has-feedback">
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && EmailAddress.valid, 'has-error' : f.submitted && !EmailAddress.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                        <input type="email" id="EmailAddress" name="EmailAddress" placeholder="Email Address" class="form-control" [(ngModel)]="model.EmailAddress " #EmailAddress="ngModel" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': EmailAddress.valid, 'glyphicon-remove' : !EmailAddress.valid}" aria-hidden="true"></span>
+                    </div>
+                        <div class="text-danger" [hidden]="EmailAddress.valid || (EmailAddress.pristine && !f.submitted)">
+                            <div *ngIf="EmailAddress.errors && EmailAddress.errors.required">
+                                Email is required
+                            </div>
+                            <div *ngIf="EmailAddress.errors && EmailAddress.errors.pattern">
+                                Email is invalid
+                            </div>
+                            </div>
+                  </div>
+            </div>
+
+
+            <!--add some password requirements like length-->
+            <div class="form-group has-feedback">
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && Password.valid, 'has-error' : f.submitted && !Password.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                        <input type="password" id="Password" name="Password" placeholder="Password" class="form-control" [(ngModel)]="model.Password" #Password="ngModel" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{8,15}$" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': Password.valid, 'glyphicon-remove' : !Password.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div class="text-danger" [hidden]="Password.valid || (Password.pristine && !f.submitted)">
+
+                        <div *ngIf="Password.errors && Password.errors.pattern">
+                            Password required, [8-15]alphanumeric charaters with atleast one capital letter and special character
+
+                        </div>
+                        </div>
+                        <!--<small [hidden]="Password.valid || (Password.pristine && !f.submitted)" class="text-danger">
+            Password is required, [6-12] alphnumeric and special characters
+            </small>-->
+
+                    </div>
+            </div>
+            
+            <ng2-password-strength-bar [passwordToCheck]="model.Password" [barLabel]="barLabel"> </ng2-password-strength-bar>
+
+         <div class="form-group has-feedback">
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && confirmPassword.valid, 'has-error' : f.submitted && !confirmPassword.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-repeat fa-fw"></i></span>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Retype Password" class="form-control" [ngModel]="model.confirmPassword" #confirmPassword="ngModel" validateEqual="Password" required  />
+                     </div>  
+                        <small [hidden]="confirmPassword.valid || (confirmPassword.pristine && !f.submitted)" class="text-danger">
+                            Password Mismatch
+                        </small>
+                 </div>
+            </div>
+
+
+            <div>
+                <p> Please confirm your identity by logging into one of your social media accounts ... </p>
+                <a class="btn btn-social-icon btn-facebook" (click)="loginWithFacebook()" ><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                 <a class="btn btn-social-icon btn-google-plus" ><i class="fa fa-google-plus"></i></a>
+                <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-primary btn-social-icon social-linkedin" ><i class="fa fa-linkedin"></i></a>
+                
+             </div> 
+            <br />
+
+
+            <div class="form-group has-feedback">
+                <div class="col-md-6" [ngClass]="{'has-success': f.submitted && PhoneNumber.valid, 'has-error' : f.submitted && !PhoneNumber.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
+                        <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Phone Number" class="form-control" [ngModel]="model.PhoneNumber" #PhoneNumber="ngModel" required pattern="[0-9]*"  minlength="10"  maxlength="10" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': PhoneNumber.valid, 'glyphicon-remove' : !PhoneNumber.valid}" aria-hidden="true"></span>
+                    </div>
+                        <div [hidden]="PhoneNumber.valid || (PhoneNumber.pristine && !f.submitted)"
+                             class= "text-danger">
+                            <div [hidden]="!PhoneNumber.hasError('minlength')">PhoneNumber should be 10digit</div>
+                            <div [hidden]="!PhoneNumber.hasError('required')">PhoneNumber is required</div>
+                            <div [hidden]="!PhoneNumber.hasError('pattern')">PhoneNumber number should be only numbers</div>
+                        </div>
+                    
+                </div>
+            </div>
+
+        
+
+            <div class="row">
+                <div class="col-md-4 form-group has-feedback box Colpad">
+
+                    <div [ngClass]="{'has-success': f.submitted && City.valid, 'has-error' : f.submitted && !City.valid}">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <input type="text" id="City" name="City" placeholder="City" class="form-control" [ngModel]="model.City" #City="ngModel" required pattern="[a-zA-Z ]*" minlength="3" maxlength="15" />
+                            <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': City.valid, 'glyphicon-remove' : !City.valid}" aria-hidden="true"></span>
+                        </div>
+                        <div [hidden]="City.valid || (City.pristine && !f.submitted)" class="text-danger">
+                            <div [hidden]="!City.hasError('minlength')">Enter proper City Name</div>
+                            <div [hidden]="!City.hasError('required')">City required</div>
+                            <div [hidden]="!City.hasError('pattern')">Invalid City Name</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4 form-group has-feedback box Colpad">
+
+                    <div [ngClass]="{'has-success': f.submitted && State.valid, 'has-error' : f.submitted && !State.valid}">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <input type="text" id="State" name="State" placeholder="State" class="form-control" [ngModel]="model.State" #State="ngModel" required pattern="[a-zA-Z ]*" minlength="2" maxlength="2" />
+                            <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': State.valid, 'glyphicon-remove' : !State.valid}" aria-hidden="true"></span>
+                        </div>
+                        <div [hidden]="State.valid || (State.pristine && !f.submitted)" class="text-danger">
+                            <div [hidden]="!State.hasError('minlength')">Enter proper State Abbrevation</div>
+                            <div [hidden]="!State.hasError('required')">State required</div>
+                            <div [hidden]="!State.hasError('pattern')">Invalid State Name</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 form-group has-feedback box Colpad">
+
+                    <div [ngClass]="{'has-success': f.submitted && Zip.valid, 'has-error' : f.submitted && !Zip.valid}">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <input type="text" id="Zip" name="Zip" placeholder="Zip Code" class="form-control" [ngModel]="model.Zip" #Zip="ngModel" required pattern="[0-9]*" minlength="5" maxlength="5" />
+                        </div>
+                        <div [hidden]="Zip.valid || (Zip.pristine && !f.submitted)"
+                             class="text-danger">
+                            <div [hidden]="!Zip.hasError('minlength')">Zip can't be laess than 5 digits</div>
+                            <div [hidden]="!Zip.hasError('required')">Zip Code is required</div>
+                            <div [hidden]="!Zip.hasError('pattern')">Zip Code should be only numbers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+
+            <div class="form-group has-feedback">
+                     <p><label>What is your current gender identity?</label></p>
+                       <div class="radio col-sm-offset-1" *ngFor="let GenderIdentity of genderIdentityArray">
+                            <label>
+                                <input type="radio" name="GenderIdentity" [(ngModel)]="model.GenderIdentity" [value]="GenderIdentity.value"  required>
+                                {{GenderIdentity.display}}
+                            </label>
+                      </div>
+                <div *ngIf="model.GenderIdentity == 'Other'" class="col-md-4">
+                    <input type="text" id="othergender" placeholder="Specify Gender Type" name="otherGender" class="form-control othercss"  [(ngModel)]="model.othergender" #othergender="ngModel" required pattern ="[a-zA-Z ]*" />
+                    <div [hidden]="othergender.valid || (othergender.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!othergender.hasError('required')">Please enter the gender</div>
+                        <div [hidden]="!othergender.hasError('pattern')">Please enter proper gender type</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                <p><label>What is your sexual orientation?</label></p>
+                <div class="radio col-sm-offset-1" *ngFor="let SexualOrientation of sexualOrientationIdentityArray">
+                    <label>
+                        <input type="radio" name="SexualOrientation" [(ngModel)]="model.SexualOrientation" [value]="SexualOrientation.value" required>
+                        {{SexualOrientation.display}}
+                    </label>
+                </div>
+
+                <div *ngIf="model.SexualOrientation == 'Other'" class="col-md-4">
+                    <input type="text" id="otherSex" placeholder="Specify Sexual Orientation" name="otherSex" class="form-control othercss" [(ngModel)]="model.otherSex" #otherSex="ngModel" required pattern="[a-zA-Z ]*" />
+                    <div [hidden]="otherSex.valid || (otherSex.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!otherSex.hasError('required')">Please enter your Sexual Orientation</div>
+                        <div [hidden]="!otherSex.hasError('pattern')">Please enter proper Sexual Orientation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                 <p><label>What is your race?</label></p>
+                    <div class="radio col-sm-offset-1" *ngFor="let race of RaceArray">
+                        <label>
+                            <input type="radio" name="Race" [(ngModel)]="model.Race" [value]="race.value" required>
+                            {{race.display}}
+                        </label>
+                    </div>
+                <div *ngIf="model.Race == 'Other'" class="col-md-4">
+                    <input type="text" id="otherRace" placeholder="Specify Race" name="otherRace" class="form-control othercss" [(ngModel)]="model.otherRace" #otherRace="ngModel" required pattern="[a-zA-Z ]*" />
+                    <div [hidden]="otherRace.valid || (otherRace.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!otherRace.hasError('required')">Please enter your Race</div>
+                        <div [hidden]="!otherRace.hasError('pattern')">Please enter proper Race</div>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="form-group has-feedback">
+                    <p><label>Are you Hispanic or Latino?</label></p>
+                    <div class="radio col-sm-offset-1" *ngFor="let hispanic of HispanicArray">
+                        <label>
+                            <input type="radio" name="Hispanic" [(ngModel)]="model.Hispanic" [value]="hispanic.value" required>
+                            {{hispanic.display}}
+                        </label>
+                    </div>
+                    <!--<div [hidden]="!f.controls.Hispanic?.hasError('required')" class="text-danger">
+                      Please select if you are Hispanic or Latino
+                    </div>-->
+                </div>
+
+                <div class="row ">
+
+                    <div class="col-md-4 form-group has-feedback box Colpad">
+                        <label><p>Age</p></label>
+                        <div [ngClass]="{'has-success': f.submitted && Age.valid, 'has-error' : f.submitted && !Age.valid}">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-birthday-cake fa-fw"></i></span>
+                                <input type="text" id="Age" name="Age" placeholder="Age" class="form-control" [ngModel]="model.Age" #Age="ngModel" required pattern="[0-9]*" minlength="2" maxlength="2" />
+                            </div>
+                            <div [hidden]="Age.valid || (Age.pristine && !f.submitted)"
+                                 class="text-danger">
+                                <div [hidden]="!Age.hasError('minlength')">Invalid Age</div>
+                                <div [hidden]="!Age.hasError('required')">Age is required</div>
+                                <div [hidden]="!Age.hasError('pattern')">Age number should be only numbers</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <fieldset>
+                    <legend> Please Select your Date of Birth</legend>
+                    <div class="row">
+                        <div class="col-md-4 form-group has-feedback box Colpad">
+                            <div class="input-group ">
+                                <label><p>Month</p></label>
+                                <select class="form-control" required id="MonthofBirth" name="MonthofBirth" #MonthofBirth="ngModel" [(ngModel)]="model.MonthofBirth">
+                                    <option>Jan</option>
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                    <option>Apr</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>Aug</option>
+                                    <option>Sep</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dec</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 form-group has-feedback box Colpad">
+                            <div class="input-group">
+                                <label><p> Year</p></label>
+                                <select class="form-control" required id="YearofBirth" name="YearofBirth" #YearofBirth="ngModel" [(ngModel)]="model.YearofBirth">
+                                    <option *ngFor="let y of years" [selected]="yy === y ">{{y}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <!--<div class="col-md-4 form-group has-feedback box Colpad">
+            <label><p>Date of Birth</p></label>
+            <div [ngClass]="{'has-success': f.submitted && Date_of_Birth.valid, 'has-error' : f.submitted && !Date_of_Birth.valid}">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+                    <input type="text" bootstrapDatepicker id="Date_of_Birth" name="Date_of_Birth" placeholder="MM/YYYY" class="form-control" [(ngModel)]="model.Date_of_Birth" #Date_of_Birth="ngModel"  required />
+                    <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': Date_of_Birth.valid, 'glyphicon-remove' : !Date_of_Birth.valid}" aria-hidden="true"></span>
+                </div>
+                    <small [hidden]="Date_of_Birth.valid || (Date_of_Birth.pristine && !f.submitted)" class="text-danger">
+                        Please Enter Date of Birth
+                     </small>
+            </div>
+        </div>-->
+
+            <div>
+                <br />
+                <!--(resolved)="resolved($event)"-->
+                <re-captcha [(ngModel)]="model.captcha"
+                            name="captcha"
+                            required
+                            siteKey="6LdpmTUUAAAAAMvJh0RYhbnRAauDnq1kfBzTcfEd"
+                            #captcha="ngModel" ngDefaultControl>
+                    <!--(captchaResponse)="handleCorrectCaptcha($event)" > -->
+
+                </re-captcha>
+                <div [hidden]="captcha.valid || (captcha.pristine && !f.submitted)"
+                     class="text-danger">
+                    <div [hidden]="!captcha.hasError('required')">captcha is required</div>
+                 
+                </div>
+
+                <!--<span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': captchaVer.valid, 'glyphicon-remove' : !captchaVer.valid}" aria-hidden="true"></span>-->
+
+            </div>
+
+                <br />
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-md btn-primary" [disabled]="!f.valid "><i *ngIf="isLoading" class='fa fa-circle-o-notch fa-spin'></i> Register Here >></button>
+                    </div>
+                </div>
+</form>
+
+    
+  </div>
+</div>
+
+   
+

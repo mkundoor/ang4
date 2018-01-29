@@ -1,0 +1,438 @@
+<div class="container  container-color">
+    <h3>
+        <span class="glyphicon glyphicon-user"></span> Update Participant details
+    </h3>
+    <div class="col-md-8 col-md-offset-2 bg-form">
+
+       
+        <form #f="ngForm" name="RegistrationForm" class="form-horizontal login" (submit)="submitform(f)" novalidate>
+
+            <div class="form-group has-feedback ">
+                <div class="col-md-8 " [ngClass]="{'has-success': f.submitted && firstName.valid, 'has-error' : f.submitted && !firstName.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" class="form-control" [(ngModel)]="model.firstName" #firstName="ngModel" required pattern="[a-zA-Z ]*" minlength="2" maxlength="12" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': firstName.valid, 'glyphicon-remove' : !firstName.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div [hidden]="firstName.valid || (firstName.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!firstName.hasError('minlength')">Enter proper First Name</div>
+                        <div [hidden]="!firstName.hasError('required')">First Name required</div>
+                        <div [hidden]="!firstName.hasError('pattern')">Invalid First Name</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                <div class="col-md-8 " [ngClass]="{'has-success': f.submitted && lastName.valid, 'has-error' : f.submitted && !lastName.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <input type="text" id="lastName" name="lastName" placeholder=" Last Name" class="form-control" [(ngModel)]="model.lastName" #lastName="ngModel" required pattern="[a-zA-Z ]*" minlength="2" maxlength="15" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': lastName.valid, 'glyphicon-remove' : !lastName.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div [hidden]="lastName.valid || (lastName.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!lastName.hasError('minlength')">Enter proper Last Name</div>
+                        <div [hidden]="!lastName.hasError('required')">Last Name required</div>
+                        <div [hidden]="!lastName.hasError('pattern')">Invalid Last Name</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group has-feedback">
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && emailAddress.valid, 'has-error' : f.submitted && !emailAddress.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                        <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" class="form-control" [(ngModel)]="model.emailAddress" #emailAddress="ngModel" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': emailAddress.valid, 'glyphicon-remove' : !emailAddress.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div class="text-danger" [hidden]="emailAddress.valid || (emailAddress.pristine && !f.submitted)">
+                        <div *ngIf="emailAddress.errors && emailAddress.errors.required">
+                            Email is required
+                        </div>
+                        <div *ngIf="emailAddress.errors && emailAddress.errors.pattern">
+                            Email is invalid
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group has-feedback">
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && phoneNumber.valid, 'has-error' : f.submitted && !phoneNumber.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" [(ngModel)]="model.phoneNumber" #phoneNumber="ngModel" required pattern="[0-9]*" minlength="10" maxlength="10" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': phoneNumber.valid, 'glyphicon-remove' : !phoneNumber.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div class="text-danger" [hidden]="phoneNumber.valid || (phoneNumber.pristine && !f.submitted)">
+                        <div [hidden]="!phoneNumber.hasError('minlength')">phoneNumber should be 10digit</div>
+                        <div [hidden]="!phoneNumber.hasError('required')">phoneNumber is required</div>
+                        <div [hidden]="!phoneNumber.hasError('pattern')">phoneNumber number should be only numbers</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group has-feedback ">
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && phoneNumber.valid, 'has-error' : f.submitted && !phoneNumber.valid}">
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                        <input type="text" id="city" name="city" placeholder="city" class="form-control" [(ngModel)]="model.city" #city="ngModel" required pattern="[a-zA-Z ]*" minlength="3" maxlength="15" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': city.valid, 'glyphicon-remove' : !city.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div [hidden]="city.valid || (city.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!city.hasError('minlength')">Enter proper city Name</div>
+                        <div [hidden]="!city.hasError('required')">city required</div>
+                        <div [hidden]="!city.hasError('pattern')">Invalid city Name</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group has-feedback ">
+
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && state.valid, 'has-error' : f.submitted && !state.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                        <input type="text" id="state" name="state" placeholder="state" class="form-control" [(ngModel)]="model.state" #state="ngModel" required pattern="[a-zA-Z ]*" minlength="2" maxlength="2" />
+                        <span *ngIf="f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': state.valid, 'glyphicon-remove' : !state.valid}" aria-hidden="true"></span>
+                    </div>
+                    <div [hidden]="state.valid || (state.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!state.hasError('minlength')">Enter proper state Abbrevation</div>
+                        <div [hidden]="!state.hasError('required')">state required</div>
+                        <div [hidden]="!state.hasError('pattern')">Invalid state Name</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class=" form-group has-feedback ">
+
+                <div class="col-md-8" [ngClass]="{'has-success': f.submitted && zip.valid, 'has-error' : f.submitted && !zip.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                        <input type="text" id="zip" name="zip" placeholder="zip Code" class="form-control" [(ngModel)]="model.zip" #zip="ngModel" required pattern="[0-9]*" minlength="5" maxlength="5" />
+                    </div>
+                    <div [hidden]="zip.valid || (zip.pristine && !f.submitted)"
+                         class="text-danger">
+                        <div [hidden]="!zip.hasError('minlength')">zip can't be laess than 5 digits</div>
+                        <div [hidden]="!zip.hasError('required')">zip Code is required</div>
+                        <div [hidden]="!zip.hasError('pattern')">zip Code should be only numbers</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group has-feedback">
+                <p><label>What is your current gender identity?</label></p>
+                <div class="radio col-sm-offset-1" *ngFor="let genderIdentity of genderIdentityArray">
+                    <label>
+                        <input type="radio" name="genderIdentity" [(ngModel)]="model.genderIdentity" [value]="genderIdentity.value" required>
+                        {{genderIdentity.display}}
+                    </label>
+                </div>
+                <div *ngIf="model.genderIdentity == 'Other'" class="col-md-4">
+                    <input type="text" id="otherGenderType" placeholder="Specify Gender Type" name="otherGenderType" class="form-control othercss" [(ngModel)]="model.otherGenderType" #otherGenderType="ngModel" required pattern="[a-zA-Z ]*" />
+                    <div [hidden]="otherGenderType.valid || (otherGenderType.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!otherGenderType.hasError('required')">Please enter the gender</div>
+                        <div [hidden]="!otherGenderType.hasError('pattern')">Please enter proper gender type</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                <p><label>What is your sexual orientation?</label></p>
+                <div class="radio col-sm-offset-1" *ngFor="let sexualOrientation of sexualOrientationIdentityArray">
+                    <label>
+                        <input type="radio" name="sexualOrientation" [(ngModel)]="model.sexualOrientation" [value]="sexualOrientation.value" required>
+                        {{sexualOrientation.display}}
+                    </label>
+                </div>
+
+                <div *ngIf="model.sexualOrientation == 'Other'" class="col-md-4">
+                    <input type="text" id="otherSexualOrientation" placeholder="Specify Sexual Orientation" name="otherSexualOrientation" class="form-control othercss" [(ngModel)]="model.otherSexualOrientation" #otherSexualOrientation="ngModel" required pattern="[a-zA-Z ]*" />
+                    <div [hidden]="otherSexualOrientation.valid || (otherSexualOrientation.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!otherSexualOrientation.hasError('required')">Please enter your Sexual Orientation</div>
+                        <div [hidden]="!otherSexualOrientation.hasError('pattern')">Please enter proper Sexual Orientation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group has-feedback">
+                <p><label>What is your race?</label></p>
+                <div class="radio col-sm-offset-1" *ngFor="let race of RaceArray">
+                    <label>
+                        <input type="radio" name="race" [(ngModel)]="model.race" [value]="race.value" required>
+                        {{race.display}}
+                    </label>
+                </div>
+                <div *ngIf="model.race == 'Other'" class="col-md-4">
+                    <input type="text" id="otherRace" placeholder="Specify Race" name="otherRace" class="form-control othercss" [(ngModel)]="model.otherRace" #otherRace="ngModel" required pattern="[a-zA-Z ]*" />
+                    <div [hidden]="otherRace.valid || (otherRace.pristine && !f.submitted)" class="text-danger">
+                        <div [hidden]="!otherRace.hasError('required')">Please enter your Race</div>
+                        <div [hidden]="!otherRace.hasError('pattern')">Please enter proper Race</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group has-feedback">
+                <p><label>Are you Hispanic or Latino?</label></p>
+                <div class="radio col-sm-offset-1" *ngFor="let hispanic of HispanicArray">
+                    <label>
+                        <input type="radio" name="hispanic" [(ngModel)]="model.hispanic" [value]="hispanic.value" required>
+                        {{hispanic.display}}
+                    </label>
+                </div>
+                <!--<div [hidden]="!f.controls.Hispanic?.hasError('required')" class="text-danger">
+                  Please select if you are Hispanic or Latino
+                </div>-->
+            </div>
+
+
+            <!--<fieldset>
+                <legend> Please Select your Date of Birth</legend>
+                <div class="row">
+                    <div class="col-md-4 form-group has-feedback box Colpad">
+                        <div class="input-group ">
+                            <label><p>Month</p></label>
+                            <select class="form-control" required id="MonthofBirth" name="MonthofBirth" #MonthofBirth="ngModel" [(ngModel)]="model.MonthofBirth">
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>Aug</option>
+                                <option>Sep</option>
+                                <option>Oct</option>
+                                <option>Nov</option>
+                                <option>Dec</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group has-feedback box Colpad">
+                        <div class="input-group">
+                            <label><p> Year</p></label>
+                            <select class="form-control" required id="YearofBirth" name="YearofBirth" #YearofBirth="ngModel" [(ngModel)]="model.YearofBirth">
+                                <option *ngFor="let y of years" [selected]="yy === y ">{{y}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>-->
+            <h5>  <label>Social Media Score / </label> <label style="color:orangered"> Set - {{this._surveoptions.calSocialScore}} </label></h5>
+            <div class="form-group has-feedback  ">
+
+                <div class="col-md-4" [ngClass]="{'has-success': f.submitted && socialScore.valid, 'has-error' : f.submitted && !socialScore.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                        <input type="number" id="socialScore" name="socialScore" placeholder="Social Media Score" class="form-control" [(ngModel)]="model.socialScore" #socialScore="ngModel" required pattern="^$|^([0-9]|[0-4][0-9]|[5][0])?" maxlength="2"  />
+                    </div>
+                    
+
+                    <div [hidden]="socialScore.valid || (socialScore.pristine && !f.submitted)"
+                         class="text-danger">
+
+                        <div [hidden]="!socialScore.hasError('required')">Social Media Score is required</div>
+                        <div [hidden]="!socialScore.hasError('pattern')">Social Media Score range [0 - 50]</div>
+                    </div>
+                </div>
+            </div>
+
+            <h5>  <label>Age Score  / </label><label style="color:orangered"> Set - {{this._surveoptions.calAgeScore}} </label></h5>
+            <div class="form-group has-feedback ">
+
+                <div class="col-md-4" [ngClass]="{'has-success': f.submitted && ageScore.valid, 'has-error' : f.submitted && !ageScore.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                        <input type="number" id="ageScore" name="ageScore" placeholder="Age Score" class="form-control" [(ngModel)]="model.ageScore" #ageScore="ngModel" required pattern="^$|^([0-9]|[1][0-5])?" maxlength="2" />
+                    </div>
+                    <div [hidden]="ageScore.valid || (ageScore.pristine && !f.submitted)" class="text-danger">
+                        <!--<p *ngIf="ageScore.errors?.rangeLength">error message from range</p>-->
+                        <div [hidden]="!ageScore.hasError('required')">Age Score is required</div>
+                        <div [hidden]="!ageScore.hasError('pattern')">Age Score  range [0-15]</div>
+                    </div>
+                </div>
+            </div>
+
+            <h5><label>Address Score  / </label><label style="color:orangered"> Set - {{this._surveoptions.calAddressScore}} </label></h5>
+            <div class="form-group has-feedback ">
+
+                <div class="col-md-4" [ngClass]="{'has-success': f.submitted && addressScore.valid, 'has-error' : f.submitted && !addressScore.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                        <input type="number" id="addressScore" name="addressScore" placeholder="0" class="form-control" [(ngModel)]="model.addressScore" #addressScore="ngModel" required pattern="^$|^([0-9]|[0-4][0-9]|[5][0])?" maxlength="2" />
+                    </div>
+                    <div [hidden]="addressScore.valid || (addressScore.pristine && !f.submitted)"
+                         class="text-danger">
+
+                        <div [hidden]="!addressScore.hasError('required')">Address Score is required</div>
+                        <div [hidden]="!addressScore.hasError('pattern')">Address Score range [0-50]</div>
+                    </div>
+                </div>
+            </div>
+           
+            <h4>
+            
+                <label style="color:forestgreen">Your new calculated Final Score - </label>
+
+                {{(((model.addressScore + model.ageScore + model.socialScore)/(this.totalsum))*100).toFixed(2) }} %
+            </h4>
+            <p> Please Enter the Final Score in the box below and click update !!</p>
+              <div class="form-group has-feedback ">
+
+                <div class="col-md-4" [ngClass]="{'has-success': f.submitted && finalScaoreVal.valid, 'has-error' : f.submitted && !finalScaoreVal.valid}">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                        <input type="number" id="finalScaoreVal" name="finalScaoreVal" placeholder="Final Score" class="form-control" [(ngModel)]="model.finalScaoreVal" #finalScaoreVal="ngModel" required pattern="^$|^([0-9]|[1-9][0-9]|[1][0][0])?"  />
+                    </div>
+                    <div [hidden]="finalScaoreVal.valid || (finalScaoreVal.pristine && !f.submitted)"
+                         class="text-danger">
+                        <div [hidden]="!finalScaoreVal.hasError('required')">Final Score Val is required</div>
+                        <div [hidden]="!finalScaoreVal.hasError('pattern')">Final Score Val should be a whole number range[0-100] </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div *ngIf="model">
+
+                <!--<div class="pull-right"-->
+                <div class="pull-left">
+                    <button class="btn btn-danger" (click)="cancel($event)"><i class='fa fa-times'></i> Cancel</button>&nbsp;&nbsp;
+                    <button type="submit" class="btn btn-primary" [disabled]="!f.valid"><i class='fa fa-floppy-o'></i> {{ operationText }}</button>
+                </div>
+            </div>
+        </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p><label>ReadOnly only Participant details</label></p>
+        <div class="col-md-10">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="bg-info text-white"> <i class="fa fa-hashtag fa-fw" style="color:blue"></i>Type</th>
+                        <th class="bg-info text-white">  Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> <td>Social Media Verified</td>  <td>{{ model.verified }}</td></tr>
+                    <tr> <td>Last Name Match </td>  <td>{{ model.lastName_Match }}</td></tr>
+                    <tr> <td>Firrst name Match</td>  <td>{{ model.firstName_Match }}</td></tr>
+                    <tr> <td>Gender Match</td>  <td>{{ model.gender_Match }}</td></tr>
+                    <tr> <td>Age Valid</td>  <td>{{ model.ageValid }}</td></tr>
+                    <tr> <td>City Valid</td>  <td>{{ model.cityValid }}</td></tr>
+                    <tr> <td>State Valid</td>  <td>{{ model.stateValid }}</td></tr>
+                    <tr> <td>ipaddress</td>  <td>{{ model.geo_IP }}</td></tr>
+                    <tr> <td>Zipcode (by IP address)</td>  <td>{{ model.geo_ZipCode }}</td></tr>
+                    <tr> <td>City (by IP City)</td>  <td>{{ model.geo_City }}</td></tr>
+                    <tr> <td>Region (by IP address)</td>  <td>{{ model.geo_RegionName }}</td></tr>
+                    <tr> <td>Country (by IP address)</td>  <td>{{ model.geo_CountryName }}</td></tr>
+                    <tr> <td>Latitude (by IP address)</td>  <td>{{ model.geo_lattude }}</td></tr>
+                    <tr> <td>Longitude (by IP address)</td>  <td>{{ model.geo_longitude }}</td></tr>
+                    <tr> <td>Latitude (by participant's address)</td>  <td>{{ model.addrLatitude }}</td></tr>
+                    <tr> <td>Longitude (by participant's address)</td>  <td>{{ model.addrLongitude }}</td></tr>
+                    <tr> <td>Browser</td>  <td>{{ model.browser }}</td></tr>
+                    <tr> <td>OS</td>  <td>{{ model.os }}</td></tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+        <br />
+       <div class="col-md-10">
+           <hr />
+           <h4>Tasks List</h4>
+        
+           <hr />
+           <ngx-datatable class="material colored-header sm table-hover"
+                          [loadingIndicator]="loadingIndicator"
+                          [rows]="taskrows"
+                          [rowHeight]="35"
+                          [headerHeight]="35"
+                          [footerHeight]="35"
+                          [columns]="columns"
+                          [scrollbarV]="verticalScrollbar"
+                          [columnMode]="'force'">
+
+
+               <ng-template #statusHeaderTemplate>
+                   <i class="fa fa-check-square-o"></i>
+               </ng-template>
+               <ngx-datatable-column name="Task" class="resizeable">
+                   <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                       {{row.task}}
+                   </ng-template>
+               </ngx-datatable-column>
+
+               <ngx-datatable-column name="Admin" class="resizeable" >
+                   <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                       {{row.isAdmin}}
+                   </ng-template>
+               </ngx-datatable-column>
+
+               
+               <ngx-datatable-column name="Status" class="resizeable" >
+
+                   <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                       <button class="btn btn-primary btn-xs" (click)="completeTask(row)">
+                           {{row.isDone? "Complete":"Incomplete"}}
+                       </button>
+                   </ng-template>
+               </ngx-datatable-column>
+
+
+               <ngx-datatable-column name="Completed Date" class="resizeable" >
+
+                   <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                       <div class="btn btn-success btn-xs">
+                           {{row.completeDate}}
+                       </div>
+                   </ng-template>
+               </ngx-datatable-column>
+           </ngx-datatable>
+
+
+        <!--<table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Completed Date</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr  *ngFor="let obj of taskrows">
+                        <td>{{obj.item1}}</td>
+                        <td>{{obj.item2}}</td>
+                        <td>{{obj.item3}}</td>
+                    </tr>
+                </tbody>
+            
+        </table>-->
+</div>
+
+        <br />
+        <div class="pull-left">
+            <button class="btn btn-md btn-primary" (click)="backbutton()"><i class="fa fa-list"> Back to Participants List</i> </button>
+        </div>
+
+    </div>
+</div>

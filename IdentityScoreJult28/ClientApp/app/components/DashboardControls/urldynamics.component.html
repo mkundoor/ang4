@@ -1,0 +1,13 @@
+<div class="container">
+   
+<form novalidate>
+    <div class="form-group has-feedback">
+    <div class="col-md-10"> <input type="text" placeholder="Enter Survey Url"  [(ngModel)]="_url.surveyUrl" name="surveyUrl" #surveyUrl="ngModel" class="form-control">  </div>
+    
+    <div class="col-md-1"><button type="submit" class="btn btn-primary" (click)="save()"><i class="fa fa-floppy-o" aria-hidden="true"></i></button></div>
+    <div class="col-md-1"><button type="button" class="btn btn-default" (click)="removeObject()"><i class="fa fa-trash-o" aria-hidden="true" style="font-size:18px;color:orangered"></i></button></div>
+    <br/>
+        <br />
+   </div>
+</form>
+</div>

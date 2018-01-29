@@ -1,0 +1,82 @@
+﻿<div class="container  container-color">
+    <br/>
+    <h4>Next on List:</h4>
+   
+        <div class="col-md-12">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Interview (Location/PhoneNumber)</th>
+                        <th>Start</th>
+                        <th>End</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let obj of intuserlist">
+                        <td>
+                            {{obj.themeColor === 'blue' ? 'PerelmanSchool01' : ''}}
+                            {{obj.themeColor === 'deepPink' ? 'PerelmanSchool02' : ''}}
+                            {{obj.themeColor === 'red' ? 'PennNursinng02' : ''}}
+                            {{obj.themeColor === 'green' ? 'PennNursinng01' : ''}}
+                            {{obj.themeColor === 'darkturquoise' ? 'Skype Call' : ''}}
+                            {{obj.themeColor === 'gray' ? 'Phone Interview' : ''}}
+                        </td>
+                        <td>{{obj.start | date :'short'}}</td>
+                        <td>{{obj.end | date :'short'}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+          
+</div>
+          
+
+            <h4> Tasks to be completed before Final Interview</h4>
+            <hr />
+            <ngx-datatable class="material colored-header sm table-hover"
+                           [loadingIndicator]="loadingIndicator"
+                           [rows]="taskrows"
+                           [rowHeight]="35"
+                           [headerHeight]="35"
+                           [footerHeight]="35"
+                           [columns]="columns"
+                           [scrollbarV]="verticalScrollbar"
+                           [columnMode]="'force'">
+
+
+                <ng-template #statusHeaderTemplate>
+                    <i class="fa fa-check-square-o"></i>
+                </ng-template>
+                <ngx-datatable-column name="Task" class="resizeable">
+                    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                        {{row.task}}
+                    </ng-template>
+                </ngx-datatable-column>
+
+
+                <ngx-datatable-column name="Status" [width]="10">
+
+                    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                        <button class="btn btn-primary btn-xs" (click)="completeTask(row)">
+                            {{row.isDone? "Complete":"Incomplete"}}
+                        </button>
+                    </ng-template>
+                </ngx-datatable-column>
+
+
+                <ngx-datatable-column name="Completed Date" [width]="10">
+
+                    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+                        <div class="btn btn-success btn-xs">
+                            {{row.completeDate}}
+                        </div>
+                    </ng-template>
+                </ngx-datatable-column>
+            </ngx-datatable>
+
+
+        </div>
+
+
+

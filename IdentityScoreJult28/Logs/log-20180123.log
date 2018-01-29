@@ -1,0 +1,242 @@
+2018-01-23T14:40:46.3651890-05:00  [INF] Executed DbCommand (135ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-23T14:40:46.4012850-05:00  [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); (6438bdd5)
+2018-01-23T14:40:46.4253568-05:00  [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; (6438bdd5)
+2018-01-23T14:40:47.6215540-05:00  [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-23T14:40:47.6696854-05:00  [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Participant] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2018-01-23T14:40:48.3911255-05:00 0HLB2J4PV983U [INF] Request starting HTTP/1.1 GET http://localhost:4863/   (e5be5b71)
+2018-01-23T14:40:48.7290184-05:00 0HLB2J4PV983U [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:40:49.5201211-05:00 0HLB2J4PV983U [INF] Executing action method "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-23T14:40:53.1987277-05:00 0HLB2J4PV983U [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-01-23T14:40:54.7856720-05:00 0HLB2J4PV983U [INF] Executed action "IdentityScoreJult28.Controllers.HomeController.Index (IdentityScoreJult28)" in 5367.8758ms (afa2e885)
+2018-01-23T14:40:54.8493396-05:00 0HLB2J4PV983U [INF] Request finished in 6582.6218ms 200 text/html; charset=utf-8 (15c52c40)
+2018-01-23T14:40:54.8603696-05:00 0HLB2J4PV983V [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/vendor.css?v=yrw9MTfDil55iHyPojwYD2quA2ApcH4FrgpbDk_FeeM   (e5be5b71)
+2018-01-23T14:40:54.8779152-05:00 0HLB2J4PV9840 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/vendor.js?v=BkbGIQnBsrT4bTZVIXy3_QTmbneqbTrl-2MCOEvzDUs   (e5be5b71)
+2018-01-23T14:40:54.8919532-05:00 0HLB2J4PV9841 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js?v=szksGUhXbucZ3vFkcGUCAhCE_sKQ1_481oAzSjSzGrU   (e5be5b71)
+2018-01-23T14:41:25.2547290-05:00  [INF] webpack built 608f9535e53f69cf978e in 41026ms (087b5f2f)
+2018-01-23T14:41:25.7711839-05:00  [ERR] Hash: 608f9535e53f69cf978e
+Version: webpack 2.6.1
+Time: 41026ms
+                               Asset     Size  Chunks                    Chunk Names
+0c0c930a81c16cc16d269f2364f627f4.jpg   109 kB          [emitted]         
+674f50d287a8c48dc19ba404d20fe713.eot   166 kB          [emitted]         
+912ec66d7572ff821749319396470bde.svg   444 kB          [emitted]  [big]  
+b06871f281fee6b241d60582ae9369b9.ttf   166 kB          [emitted]         
+                      main-client.js  4.88 MB       0  [emitted]  [big]  main-client
+                  main-client.js.map  5.76 MB       0  [emitted]         main-client
+chunk    {0} main-client.js, main-client.js.map (main-client) 4.61 MB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/@angular/core.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+    [4] external "vendor_21bb31f8cf7f1e3d6efd" 42 bytes {0} [not cacheable]
+  [381] ./ClientApp/boot-client.ts 935 bytes {0} [built]
+  [382] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0} [built]
+  [383] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+  [424] ./ClientApp/app/app.module.ts 17.2 kB {0} [built]
+  [734] ./~/querystring-es3/index.js 127 bytes {0} [built]
+  [966] ./~/strip-ansi/index.js 161 bytes {0} [built]
+ [1026] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0} [built]
+ [1027] (webpack)-hot-middleware/process-update.js 3.88 kB {0} [built]
+ [1031] delegated ./node_modules/@angular/platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1035] delegated ./node_modules/core-js/client/shim.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1041] delegated ./node_modules/web-animations-js/web-animations.min.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1059] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_21bb31f8cf7f1e3d6efd 42 bytes {0} [not cacheable] [built]
+ [1062] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0} [built]
+     + 1048 hidden modules
+
+WARNING in ./ClientApp/app/components/DashboardControls/taskeditmodal.component.ts
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\surveyboard.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\app.module.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.html
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\html-loader\index.js?minimize=false!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.html
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\taskeditmodal.component.ts
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\awesome-typescript-loader\dist\entry.js?silent=true!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\angular2-template-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.ts
+
+WARNING in ./~/css-loader!./ClientApp/app/components/DashboardControls/TaskEditModal.component.css
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\DashboardControls\TaskEditModal.component.css
+* C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css
+    Used by 1 module(s), i. e.
+    C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\to-string-loader\src\to-string.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\node_modules\css-loader\index.js!C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\ClientApp\app\components\dashboardcontrols\TaskEditModal.component.css (82726869)
+2018-01-23T14:41:25.8333476-05:00 0HLB2J4PV9840 [INF] Sending file. Request path: '"/dist/vendor.js"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\vendor.js"' (27b0a520)
+2018-01-23T14:41:25.8343536-05:00 0HLB2J4PV983V [INF] Sending file. Request path: '"/dist/vendor.css"'. Physical path: '"C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\wwwroot\dist\vendor.css"' (27b0a520)
+2018-01-23T14:41:26.4970921-05:00 0HLB2J4PV983V [INF] Request finished in 31637.1736ms 200 text/css (15c52c40)
+2018-01-23T14:41:27.1821860-05:00 0HLB2J4PV9840 [INF] Request finished in 32304.618ms 200 application/javascript (15c52c40)
+2018-01-23T14:41:29.2947514-05:00 0HLB2J4PV9841 [INF] Request finished in 34403.2915ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2018-01-23T14:41:31.4840658-05:00 0HLB2J4PV9842 [INF] Request starting HTTP/1.1 GET http://localhost:4863/dist/main-client.js.map   (e5be5b71)
+2018-01-23T14:41:35.3647878-05:00 0HLB2J4PV9842 [INF] Request finished in 3880.3373ms 200 application/json; charset=UTF-8 (15c52c40)
+2018-01-23T14:41:35.5166885-05:00 0HLB2J4PV9843 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/dist/webpack.config.js   (e5be5b71)
+2018-01-23T14:41:35.5257140-05:00 0HLB2J4PV9843 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:41:35.5497769-05:00 0HLB2J4PV9843 [INF] Request finished in 33.403ms 404  (15c52c40)
+2018-01-23T14:41:35.5963999-05:00 0HLB2J4PV9844 [INF] Request starting HTTP/1.1 HEAD http://localhost:4863/webpack.config.js   (e5be5b71)
+2018-01-23T14:41:35.5963999-05:00 0HLB2J4PV9844 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:41:35.5969016-05:00 0HLB2J4PV9844 [INF] Request finished in 0.7626ms 404  (15c52c40)
+2018-01-23T14:41:37.8477269-05:00 0HLB2J4PV9845 [INF] Request starting HTTP/1.1 GET http://localhost:4863/__webpack_hmr   (e5be5b71)
+2018-01-23T14:41:43.4746255-05:00 0HLB2J4PV9846 [INF] Request starting HTTP/1.1 POST http://localhost:4863/connect/token application/x-www-form-urlencoded 158 (e5be5b71)
+2018-01-23T14:41:43.6321430-05:00 0HLB2J4PV9846 [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"pstaradmin@upenn.edu\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}". (ebc01284)
+2018-01-23T14:41:43.6582111-05:00 0HLB2J4PV9846 [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2018-01-23T14:41:43.6602177-05:00 0HLB2J4PV9846 [INF] The token request was successfully validated. (d7e51e65)
+2018-01-23T14:41:43.6712464-05:00 0HLB2J4PV9846 [DBG] The default token request handling was skipped from user code. (72afae05)
+2018-01-23T14:41:43.6722499-05:00 0HLB2J4PV9846 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:41:43.8106406-05:00 0HLB2J4PV9846 [INF] Executing action method "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" with arguments (["{
+  \"username\": \"pstaradmin@upenn.edu\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}"]) - ModelState is Valid (ba7f4ac2)
+2018-01-23T14:41:44.2744625-05:00 0HLB2J4PV9846 [INF] Executed DbCommand (69ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2018-01-23T14:41:44.3351324-05:00 0HLB2J4PV9846 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2018-01-23T14:41:44.3842608-05:00 0HLB2J4PV9846 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-23T14:41:44.4143486-05:00 0HLB2J4PV9846 [INF] Executed action "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" in 721.8993ms (afa2e885)
+2018-01-23T14:41:44.4213729-05:00 0HLB2J4PV9846 [INF] Request finished in 946.0771ms 400 application/json; charset=utf-8 (15c52c40)
+2018-01-23T14:41:59.6531993-05:00 0HLB2J4PV9847 [INF] Request starting HTTP/1.1 POST http://localhost:4863/connect/token application/x-www-form-urlencoded 142 (e5be5b71)
+2018-01-23T14:41:59.6752754-05:00 0HLB2J4PV9847 [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}". (ebc01284)
+2018-01-23T14:41:59.6762662-05:00 0HLB2J4PV9847 [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2018-01-23T14:41:59.6762662-05:00 0HLB2J4PV9847 [INF] The token request was successfully validated. (d7e51e65)
+2018-01-23T14:41:59.6762662-05:00 0HLB2J4PV9847 [DBG] The default token request handling was skipped from user code. (72afae05)
+2018-01-23T14:41:59.6762662-05:00 0HLB2J4PV9847 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:41:59.6782711-05:00 0HLB2J4PV9847 [INF] Executing action method "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" with arguments (["{
+  \"username\": \"admin\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email profile offline_access roles\",
+  \"resource\": \"http://localhost:4863\"
+}"]) - ModelState is Valid (ba7f4ac2)
+2018-01-23T14:41:59.7133638-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2018-01-23T14:41:59.7183771-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Configuration], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsEnabled], [u].[JobTitle], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2018-01-23T14:42:00.1066291-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2018-01-23T14:42:00.1276952-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0 (6438bdd5)
+2018-01-23T14:42:00.1648552-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0 (6438bdd5)
+2018-01-23T14:42:00.1908858-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2018-01-23T14:42:00.2129820-05:00 0HLB2J4PV9847 [INF] Executing SignInResult with authentication scheme ("ASOS") and the following principal: "System.Security.Claims.ClaimsPrincipal". (f8bf0a82)
+2018-01-23T14:42:00.2576508-05:00 0HLB2J4PV9847 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2018-01-23T14:42:00.2576508-05:00 0HLB2J4PV9847 [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2018-01-23T14:42:00.2576508-05:00 0HLB2J4PV9847 [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2018-01-23T14:42:00.2576508-05:00 0HLB2J4PV9847 [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2018-01-23T14:42:00.6534721-05:00 0HLB2J4PV9847 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4); (6438bdd5)
+2018-01-23T14:42:00.6926497-05:00 0HLB2J4PV9847 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2018-01-23T14:42:00.7397751-05:00 0HLB2J4PV9847 [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2018-01-23T14:42:00.7503120-05:00 0HLB2J4PV9847 [INF] AuthenticationScheme: "ASOS" signed in. (c66dd7e7)
+2018-01-23T14:42:00.7508129-05:00 0HLB2J4PV9847 [INF] Executed action "IdentityScoreJult28.Controllers.AuthorizationController.Exchange (IdentityScoreJult28)" in 1073.0891ms (afa2e885)
+2018-01-23T14:42:00.7523165-05:00 0HLB2J4PV9847 [INF] Request finished in 1099.0436ms 200 application/json;charset=UTF-8 (15c52c40)
+2018-01-23T14:42:03.8383110-05:00 0HLB2J4PV9848 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/SurveysList   (e5be5b71)
+2018-01-23T14:42:03.8393137-05:00 0HLB2J4PV9848 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:42:03.8488438-05:00 0HLB2J4PV9848 [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.SurveysList (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-23T14:42:03.9065005-05:00 0HLB2J4PV9848 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[SurveyId], [s].[CalAddressScore], [s].[CalAgeScore], [s].[CalSocialScore], [s].[CalTwoFactorScore], [s].[Survey_Active], [s].[Survey_Name]
+FROM [Survey] AS [s]
+ORDER BY [s].[Survey_Name] (6438bdd5)
+2018-01-23T14:42:03.9551360-05:00 0HLB2J4PV9848 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-23T14:42:03.9762579-05:00 0HLB2J4PV9848 [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.SurveysList (IdentityScoreJult28)" in 134.7506ms (afa2e885)
+2018-01-23T14:42:03.9762579-05:00 0HLB2J4PV9848 [INF] Request finished in 138.0889ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-23T14:42:11.5288846-05:00 0HLB2J4PV9849 [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/OptionsDTO/SurveysList   (e5be5b71)
+2018-01-23T14:42:11.5298877-05:00 0HLB2J4PV9849 [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:42:11.5308904-05:00 0HLB2J4PV9849 [INF] Executing action method "IdentityScoreJult28.Controllers.OptionsDTOController.SurveysList (IdentityScoreJult28)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-01-23T14:42:11.5449251-05:00 0HLB2J4PV9849 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[SurveyId], [s].[CalAddressScore], [s].[CalAgeScore], [s].[CalSocialScore], [s].[CalTwoFactorScore], [s].[Survey_Active], [s].[Survey_Name]
+FROM [Survey] AS [s]
+ORDER BY [s].[Survey_Name] (6438bdd5)
+2018-01-23T14:42:11.5459278-05:00 0HLB2J4PV9849 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-23T14:42:11.5459278-05:00 0HLB2J4PV9849 [INF] Executed action "IdentityScoreJult28.Controllers.OptionsDTOController.SurveysList (IdentityScoreJult28)" in 16.2875ms (afa2e885)
+2018-01-23T14:42:11.5469292-05:00 0HLB2J4PV9849 [INF] Request finished in 18.0758ms 200 application/json; charset=utf-8 (15c52c40)
+2018-01-23T14:42:22.7899413-05:00 0HLB2J4PV984A [INF] Request starting HTTP/1.1 GET http://localhost:4863/api/EventsDTO/EventsList/14 application/json  (e5be5b71)
+2018-01-23T14:42:22.7899413-05:00 0HLB2J4PV984A [DBG] Authentication was skipped because no bearer token was received. (9de85986)
+2018-01-23T14:42:22.8452459-05:00 0HLB2J4PV984A [INF] Executing action method "IdentityScoreJult28.Controllers.EventsDTOController.EventsList (IdentityScoreJult28)" with arguments (["14"]) - ModelState is Valid (ba7f4ac2)
+2018-01-23T14:42:22.9184471-05:00 0HLB2J4PV984A [INF] Executed DbCommand (6ms) [Parameters=[@__sid_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [evnt].[Description], [evnt].[Start], [evnt].[End], [partpants].[FirstName], [partpants].[LastName], [partpants].[EmailAddress]
+FROM [Participant] AS [partpants]
+INNER JOIN [Events] AS [evnt] ON [partpants].[ParticpantId] = [evnt].[ParticipantID]
+WHERE ([evnt].[SurveyID] = @__sid_0) AND ([evnt].[Subject] = N'Booked') (6438bdd5)
+2018-01-23T14:42:22.9274784-05:00 0HLB2J4PV984A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-01-23T14:42:22.9355341-05:00 0HLB2J4PV984A [INF] Executed action "IdentityScoreJult28.Controllers.EventsDTOController.EventsList (IdentityScoreJult28)" in 143.437ms (afa2e885)
+2018-01-23T14:42:22.9355341-05:00 0HLB2J4PV984A [INF] Request finished in 145.8201ms 200 application/json; charset=utf-8 (15c52c40)

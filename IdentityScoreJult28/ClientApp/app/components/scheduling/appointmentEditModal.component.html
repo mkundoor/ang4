@@ -1,0 +1,70 @@
+<div bsModal #apptchildModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left"><i class="fa fa-calendar-check-o"></i>Enter Event</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              
+                <form novalidate>
+                    <div class="form-group has-feedback">
+                        <div class="col-md-3">
+                            Title:
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" placeholder="" class="form-control" name="title" id="title" [(ngModel)]="model.title" #title="ngModel" maxlength="70">
+                            </div>
+                     </div>
+                    <div class="form-group has-feedback">
+                        <div class="col-md-3">
+                           Location:
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" placeholder="location" class="form-control" name="location" id="location" [(ngModel)]="model.location" #location="ngModel" maxlength="70">
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <div class="col-md-3">
+                            Start Time:
+                        </div>
+                        <div class="col-md-9">
+                            <input type="time" class="form-control" [(ngModel)]="model.startTime"   name="start" value="08:30:00" step="600" />
+                           
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <div class="col-md-3">
+                           End Time
+                        </div>
+                        <div class="col-md-9">
+                            <input type="time" class="form-control" [(ngModel)]="model.endTime"  name="end" value="10:30:00" step="600" />
+     
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <div class="col-md-3">
+                            Description:
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" placeholder="" class="form-control" name="description" id="description" [(ngModel)]="model.description" #description="ngModel" maxlength="70">
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+            <br/>
+            <br/>
+            <div class="modal-footer">
+                <div class="pull-right">
+                    <button  type="button" (click)="hide()" class="btn btn-danger" [disabled]="isSaving"><i class='fa fa-times'></i> cancel</button>
+                    <button type="submit" (click) ="save()" class="btn btn-primary" [disabled]="isSaving"><i *ngIf="!isSaving" class='fa fa-save'></i><i *ngIf="isSaving" class='fa fa-circle-o-notch fa-spin'></i> save</button>
+</div>
+            </div>
+        </div>
+    </div>
+</div>

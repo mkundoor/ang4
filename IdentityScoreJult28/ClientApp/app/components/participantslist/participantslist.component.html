@@ -1,0 +1,103 @@
+<div class="container-fluid">
+    <header class="pageHeader">
+       
+    </header>
+
+    <div [@fadeInOut]>
+        <span class="text-muted">-- Score Card--</span><div>
+    
+    <div>
+        <h3><button (click)="loadSurveyeeData()" class="btn btn-md btn-primary"> Load List of Participants </button> </h3>
+
+    </div>
+    <hr /><hr />
+    <br />
+                                                           <div>
+                                                               <table class="table-striped table-hover custom-table">
+                                                                   <thead>
+                                                                       <tr>
+
+                                                                           <th> <p> FirstName </p> </th>
+                                                                           <th> <p> LastName </p> </th>
+                                                                           <th> <p> Email </p> </th>
+                                                                           <th> <p> PhoneNumber </p> </th>
+                                                                           <th> <p> City </p> </th>
+                                                                           <th> <p> State </p> </th>
+                                                                           <th> <p> Zip </p> </th>
+                                                                           <th> <p> GenderIdentity </p> </th>
+                                                                           <th> <p> SexualOrientation </p> </th>
+                                                                           <th> <p> Race </p> </th>
+                                                                           <th> <p> OtherGenderType </p> </th>
+                                                                           <th> <p> OtherSexualOrientation </p> </th>
+                                                                           <th> <p> OtherRace </p> </th>
+
+                                                                           <th> <p> Hispanic </p> </th>
+                                                                           <th> <p> Age </p> </th>
+                                                                           <th> <p> Date_of_Birth </p> </th>
+
+                                                                           <th> <p> AgeValid </p> </th>
+                                                                           <th> <p> StateValid </p> </th>
+                                                                           <th> <p> CityValid </p> </th>
+                                                                           <th> <p> FirstName_Match </p> </th>
+                                                                           <th> <p> LastName_Match </p> </th>
+                                                                           <th> <p> Gender_Match </p> </th>
+                                                                           <th> <p> Verified </p> </th>
+                                                                           <th> <p> ScaoreVal </p> </th>
+
+                                                                           <th> <p> geo_IP </p> </th>
+                                                                           <th> <p> geo_CountryName </p> </th>
+                                                                           <th> <p> geo_RegionName </p> </th>
+                                                                           <th> <p> geo_City </p> </th>
+                                                                           <th> <p> geo_ZipCode </p> </th>
+
+
+                                                                           <th> <p> Browser </p> </th>
+                                                                           <th> <p> OS </p> </th>
+                                                                          
+
+
+                                                                       </tr>
+                                                                   </thead>
+                                                                   <tbody>
+                                                                       <tr *ngFor="let dataoutput of dbparticipant">
+                                                                           <td>{{dataoutput?.firstName}}</td>
+                                                                           <td>{{dataoutput?.lastName}}</td>
+                                                                           <td>{{dataoutput?.emailAddress}}</td>
+                                                                           <td>{{dataoutput?.phoneNumber}}</td>
+                                                                           <td>{{dataoutput?.city}}</td>
+                                                                           <td>{{dataoutput?.state}}</td>
+                                                                           <td>{{dataoutput?.zip}}</td>
+                                                                           <td>{{dataoutput?.genderIdentity}}</td>
+                                                                           <td>{{dataoutput?.sexualOrientation}}</td>
+                                                                           <td>{{dataoutput?.race}}</td>
+                                                                           <td>{{dataoutput?.otherGenderType}}</td>
+                                                                           <td>{{dataoutput?.otherSexualOrientation}}</td>
+                                                                           <td>{{dataoutput?.otherRace}}</td>
+                                                                           <td>{{dataoutput?.hispanic}}</td>
+                                                                           <td>{{dataoutput?.age}}</td>
+                                                                           <td>{{dataoutput?.date_of_Birth}}</td>
+
+                                                                           <td>{{dataoutput?.ageValid}}</td>
+                                                                           <td>{{dataoutput?.stateValid}}</td>
+                                                                           <td>{{dataoutput?.cityValid}}</td>
+                                                                           <td>{{dataoutput?.firstName_Match}}</td>
+                                                                           <td>{{dataoutput?.lastName_Match}}</td>
+                                                                           <td>{{dataoutput?.gender_Match}}</td>
+                                                                           <td>{{dataoutput?.verified}}</td>
+                                                                           <td>{{dataoutput?.scaoreVal}}</td>
+
+                                                                           <td>{{dataoutput?.geo_IP}}</td>
+                                                                           <td>{{dataoutput?.geo_CountryName}}</td>
+                                                                           <td>{{dataoutput?.geo_RegionName}}</td>
+                                                                           <td>{{dataoutput?.geo_City}}</td>
+                                                                           <td>{{dataoutput?.geo_ZipCode}}</td>
+                                                                           <td>{{dataoutput?.browser}}</td>
+                                                                           <td>{{dataoutput?.os}}</td>
+                                                                           
+                                                                       </tr>
+                                                                          
+                                                                   </tbody>
+                                                               </table>
+                                                           </div>
+</div>
+</div>

@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row grid-container">
+        <div class="col-md-10">
+            <div class="table">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            
+                            <th class="bg-primary text-white" (click)="sort('firstName')">First <i class="fa fa-sort" style="color:gray"></i></th>
+                            <th class="bg-primary text-white" (click)="sort('lastName')">Last <i class="fa fa-sort" style="color:gray"></i></th>
+                            <th class="bg-primary text-white" (click)="sort('city')">City<i class="fa fa-sort" style="color:gray"></i></th>
+                            <th  class="bg-primary text-white"(click)="sort('state')">State</th>
+                            <th class="bg-primary text-white">ZipCode</th>
+                            <th class="bg-primary text-white">Phone</th>
+                            <th class="bg-primary text-white" (click)="sort('age')">Age</th>
+                            <th class="bg-primary text-white">Email </th>
+                            <!--<th>DOB</th>-->
+                            <th class="bg-primary text-white">Gender Identity</th>
+                            <th class="bg-primary text-white">Race</th>
+                            <th class="bg-primary text-white">Sexual Orientation</th>
+                            <th class="bg-primary text-white">Hispanic</th>
+                            <th class="bg-primary text-white" (click)="sort('finalScaoreVal')">Final Score</th>
+                            <th class="bg-primary text-white" (click)="sort('socialScore')">Social Score</th>
+                            <th class="bg-primary text-white" (click)="sort('addressScore')">Address Score</th>
+                            <th class="bg-primary text-white" (click)="sort('ageScore')">Age Score</th>
+                            <th class="bg-primary text-white" (click)="sort('twoFactorScore')"> Two Factor Score</th>
+                            <th class="bg-primary text-white">Registration Date</th>
+                            
+</tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let member of filteredList;trackBy:trackby.member">
+                            <!--<td><a [routerLink]="['/customers',customer.id]"></a></td>-->
+                            <td><a [routerLink]="['/memberedit',member.particpantId]">{{ member.firstName }}</a></td>
+                            <td>{{ member.lastName }}</td>
+                            <td>{{ member.city }}</td>
+                            <td>{{ member.state }}</td>
+                            <td>{{ member.zip }}</td>
+                            <td>{{ member.phoneNumber }}</td>
+                            <td>{{ member.age }}</td>
+                            <td>{{ member.emailAddress}}</td>
+                            <!--<td>member.date_of_Birth | date:'shortDate'</td>-->
+                            <td>{{ member.genderIdentity}}</td>
+                            <td>{{ member.race}}</td>
+                            <td>{{ member.sexualOrientation}}</td>
+                            <td>{{ member.hispanic}}</td>
+                            <td>{{member.finalScaoreVal}}%</td>
+                            <td>{{member.socialScore}}</td>
+                            <td>{{member.addressScore}}</td>
+                            <td>{{member.ageScore}}</td>
+                            <td>{{member.twoFactorScore}}</td>
+                            <td>{{member.registerDate| date :'short'}}</td>
+
+
+                        </tr>
+                        <tr *ngIf="!filteredList?.length">
+                            <td>&nbsp;</td>
+                            <td colspan="6">No Records Found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+                            

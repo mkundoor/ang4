@@ -1,0 +1,12 @@
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.deps.json
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.runtimeconfig.json
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.runtimeconfig.dev.json
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\DAL.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\bin\Any CPU\Release\netcoreapp1.1\DAL.pdb
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\obj\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.csproj.CoreCompileInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\obj\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.AssemblyInfoInputs.cache
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\obj\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.AssemblyInfo.cs
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\obj\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.dll
+C:\Users\kmeghana\Source\Repos\PstarPhase3A\IdentityScoreJult28\IdentityScoreJult28\obj\Any CPU\Release\netcoreapp1.1\IdentityScoreJult28.pdb

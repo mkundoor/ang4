@@ -1,0 +1,127 @@
+<div class="container-fluid">
+    <header class="pageHeader">
+       
+    </header>
+
+    <div [@fadeInOut]>
+        <span class="text-muted">-- Score Card--</span><div>
+    
+<div>
+  <h3>Surveyee Results <button (click)="loadUser()" class="btn btn-md btn-primary"> Load User Profile </button> </h3>
+</div>
+    <hr /><hr />
+    <br />
+    <div>
+        <table class="table-striped table-hover custom-table">
+            <thead>
+                <tr>
+                    <th>
+                        <h4>Header Type</h4>
+                    </th>
+                    <th>
+                        <h4>Value</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>  <p>Score Value </p>   </td>
+                    <td> {{dataoutput?.scaoreVal}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>FaceBook Account Verified? </p>   </td>
+                    <td> {{dataoutput?.verified}} </td>
+                </tr>
+
+                <tr>
+                    <td>  <p>First Name Matches Social Media Account? </p>   </td>
+                    <td> {{dataoutput?.firstName_Match}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>Last Name Matches Social Media Account? </p>   </td>
+                    <td> {{dataoutput?.lastName_Match}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>Gender Matches Social Media Account? </p>   </td>
+                    <td> {{dataoutput?.gender_Match}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Entered  Valid City? </p>   </td>
+                    <td> {{dataoutput?.cityValid}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Entered  Valid State?</p>   </td>
+                    <td> {{dataoutput?.stateValid}} </td>
+                </tr>
+
+                <tr>
+                    <td>  <p>User IP Address</p>   </td>
+                    <td> {{geoLocs?.ip}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Country Code</p>   </td>
+                    <td> {{geoLocs?.country_code}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Country Name</p>   </td>
+                    <td> {{geoLocs?.country_name}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Region Code</p>   </td>
+                    <td> {{geoLocs?.region_code}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Region Name</p>   </td>
+                    <td> {{geoLocs?.region_name}} </td>
+                </tr>
+
+                <tr>
+                    <td>  <p>User City Based on IP Address</p>   </td>
+                    <td> {{geoLocs?.city}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User Zip Code Based on IP Address</p>   </td>
+                    <td> {{geoLocs?.zip_code}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>User time_zone Based on IP Address</p>   </td>
+                    <td> {{geoLocs?.time_zone}} </td>
+                </tr>
+
+                <tr>
+                    <td>  <p>Latitude Based on IP Address</p>   </td>
+                    <td> {{geoLocs?.latitude}} </td>
+                </tr>
+                <tr>
+                    <td>  <p>Longitude Based on IP Address</p>   </td>
+                    <td> {{geoLocs?.longitude}} </td>
+                </tr>
+                <tr>
+                    <td>  <p> User Metro_code Based on IP Address</p>   </td>
+                    <td> {{geoLocs?.metro_code}} </td>
+                </tr>
+                <tr>
+                    <td>Browser Type</td>
+                    <td>{{browsertypes?.browser.name}}</td>
+                </tr>
+                <tr>
+                    <td>Browser Version</td>
+                    <td>{{browsertypes?.browser.version}}</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>{{browsertypes?.os.name}}</td>
+                </tr>
+                <tr>
+                    <td>Operating System Version</td>
+                    <td>{{browsertypes?.os.version}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<div>
+<h3>Save Participant <button (click)="loadSurveyeeData()" class="btn btn-md btn-primary"> Save to Database </button> </h3>
+</div>
+</div>
+</div>

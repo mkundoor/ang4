@@ -1,0 +1,23 @@
+﻿h4 {
+    color:darkblue;
+    font-size: 28px;
+    font-family: 'Helvetica Neue';
+    padding-bottom: 10px;
+}
+
+h5 {
+    color: crimson;
+    font-size: 22px;
+    font-family: 'Helvetica Neue';
+    padding-bottom: 10px;
+}
+.active {
+    background-color: crimson;
+}
+ label {
+    color: darkred;
+}
+
+    input:checked ~ label {
+        color: blue;
+    }

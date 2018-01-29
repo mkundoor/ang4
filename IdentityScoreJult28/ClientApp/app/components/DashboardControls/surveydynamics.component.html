@@ -1,0 +1,20 @@
+<div class="container">
+<form novalidate>
+    <div class="form-group has-feedback">
+    <div class="col-md-7"> <input type="text" placeholder="List your Task"  [(ngModel)]="_task.task" name="task" #task="ngModel" class="form-control">  </div>
+    <div class="col-md-3"><label class="checkbox-inline"><input type="checkbox" value=""  [(ngModel)]="_task.adminonly" name="adminonly" #adminonly="ngModel">Admin Only</label>
+
+        <!--<div class="onoffswitch">
+    <input type="checkbox" name="adminonly" class="onoffswitch-checkbox" id="adminonly" checked [(ngModel)]="_task.adminonly"  #adminonly="ngModel">
+    <label class="onoffswitch-label" for="adminonly">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>--></div>
+    <div class="col-md-1"><button type="submit" class="btn btn-primary" (click)="save()"><i class="fa fa-floppy-o" aria-hidden="true"></i></button></div>
+    <div class="col-md-1"><button type="button" class="btn btn-default" (click)="removeObject()"><i class="fa fa-trash-o" aria-hidden="true" style="font-size:18px;color:orangered"></i></button></div>
+    <br/>
+        <br />
+   </div>
+</form>
+</div>
